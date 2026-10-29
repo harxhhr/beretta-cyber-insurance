@@ -1,0 +1,418 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1720" height="1084" viewBox="0 0 1720 1084" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>Platform database: ER diagram</title>
+<defs>
+<marker id="m-arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11 z" fill="#0b0e14"/></marker>
+<marker id="m-open" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11" fill="none" stroke="#0b0e14" stroke-width="1.3"/></marker>
+<marker id="m-tri" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,1 L15,8 L1,15 z" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-diamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#0b0e14" stroke="#0b0e14"/></marker>
+<marker id="m-odiamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#ffffff" stroke="#0b0e14"/></marker>
+<marker id="m-many" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M19,2 L5,10 L19,18 M5,2 L5,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-one" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M9,3 L9,17 M14,3 L14,17" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-zmany" viewBox="0 0 26 20" refX="25" refY="10" markerWidth="26" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M25,2 L13,10 L25,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/><circle cx="7" cy="10" r="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+</defs>
+<rect width="1720" height="1084" fill="#ffffff"/>
+<text x="20" y="32" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0b0e14">Platform database (kyh.db): entities and relationships</text>
+<rect x="20" y="60" width="250" height="120.0" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="20" y="60" width="250" height="26" rx="4" fill="#12161d" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="20.6" y="78" width="248.8" height="8" rx="0" fill="#12161d" stroke="none" stroke-width="1.2"/>
+<text x="145.0" y="77.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#ffffff">users</text>
+<text x="28" y="100.08" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#1d5fbf">PK</text>
+<text x="60" y="100.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="start" fill="#0b0e14">user_id</text>
+<text x="262" y="100.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="60" y="117.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">name</text>
+<text x="262" y="117.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="60" y="135.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">role</text>
+<text x="262" y="135.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="60" y="152.88" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">token</text>
+<text x="262" y="152.88" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="28" y="170.48000000000002" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="60" y="170.48000000000002" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">company_id</text>
+<text x="262" y="170.48000000000002" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<rect x="20" y="220" width="250" height="137.60000000000002" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="20" y="220" width="250" height="26" rx="4" fill="#12161d" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="20.6" y="238" width="248.8" height="8" rx="0" fill="#12161d" stroke="none" stroke-width="1.2"/>
+<text x="145.0" y="237.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#ffffff">documents</text>
+<text x="28" y="260.08" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#1d5fbf">PK</text>
+<text x="60" y="260.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="start" fill="#0b0e14">document_id</text>
+<text x="262" y="260.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="28" y="277.68" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="60" y="277.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">company_id</text>
+<text x="262" y="277.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="60" y="295.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">document_type</text>
+<text x="262" y="295.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="60" y="312.88" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">category</text>
+<text x="262" y="312.88" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="60" y="330.48" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">assessment_status</text>
+<text x="262" y="330.48" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="60" y="348.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">default_strength</text>
+<text x="262" y="348.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<rect x="20" y="400" width="250" height="137.60000000000002" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="20" y="400" width="250" height="26" rx="4" fill="#12161d" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="20.6" y="418" width="248.8" height="8" rx="0" fill="#12161d" stroke="none" stroke-width="1.2"/>
+<text x="145.0" y="417.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#ffffff">claims</text>
+<text x="28" y="440.08" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#1d5fbf">PK</text>
+<text x="60" y="440.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="start" fill="#0b0e14">claim_id</text>
+<text x="262" y="440.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="28" y="457.68" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="60" y="457.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">company_id</text>
+<text x="262" y="457.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="60" y="475.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">incident_date</text>
+<text x="262" y="475.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="60" y="492.88" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">incident_type</text>
+<text x="262" y="492.88" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="60" y="510.48" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">loss_amount_inr</text>
+<text x="262" y="510.48" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">REAL</text>
+<text x="60" y="528.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">material</text>
+<text x="262" y="528.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">INT</text>
+<rect x="20" y="580" width="250" height="120.0" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="20" y="580" width="250" height="26" rx="4" fill="#12161d" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="20.6" y="598" width="248.8" height="8" rx="0" fill="#12161d" stroke="none" stroke-width="1.2"/>
+<text x="145.0" y="597.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#ffffff">outside_in_signals</text>
+<text x="28" y="620.08" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#1d5fbf">PK</text>
+<text x="60" y="620.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="start" fill="#0b0e14">signal_id</text>
+<text x="262" y="620.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="28" y="637.68" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="60" y="637.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">company_id</text>
+<text x="262" y="637.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="60" y="655.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">signal_type</text>
+<text x="262" y="655.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="60" y="672.88" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">severity</text>
+<text x="262" y="672.88" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="28" y="690.48" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="60" y="690.48" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">related_control_id</text>
+<text x="262" y="690.48" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<rect x="20" y="780" width="250" height="172.8" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="20" y="780" width="250" height="26" rx="4" fill="#12161d" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="20.6" y="798" width="248.8" height="8" rx="0" fill="#12161d" stroke="none" stroke-width="1.2"/>
+<text x="145.0" y="797.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#ffffff">audit_events</text>
+<text x="28" y="820.08" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#1d5fbf">PK</text>
+<text x="60" y="820.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="start" fill="#0b0e14">event_id</text>
+<text x="262" y="820.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="60" y="837.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">timestamp</text>
+<text x="262" y="837.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="60" y="855.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">actor</text>
+<text x="262" y="855.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="60" y="872.88" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">event_type</text>
+<text x="262" y="872.88" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="60" y="890.48" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">entity_type</text>
+<text x="262" y="890.48" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="60" y="908.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">entity_id</text>
+<text x="262" y="908.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="60" y="925.6800000000001" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">old_value</text>
+<text x="262" y="925.6800000000001" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">JSON</text>
+<text x="60" y="943.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">new_value</text>
+<text x="262" y="943.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">JSON</text>
+<rect x="330" y="330" width="250" height="172.8" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="330" y="330" width="250" height="26" rx="4" fill="#12161d" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="330.6" y="348" width="248.8" height="8" rx="0" fill="#12161d" stroke="none" stroke-width="1.2"/>
+<text x="455.0" y="347.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#ffffff">companies</text>
+<text x="338" y="370.08" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#1d5fbf">PK</text>
+<text x="370" y="370.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="start" fill="#0b0e14">company_id</text>
+<text x="572" y="370.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="370" y="387.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">name</text>
+<text x="572" y="387.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="370" y="405.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">sector</text>
+<text x="572" y="405.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="370" y="422.88" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">nic_code</text>
+<text x="572" y="422.88" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="370" y="440.48" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">annual_revenue_inr</text>
+<text x="572" y="440.48" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">REAL</text>
+<text x="370" y="458.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">employee_count</text>
+<text x="572" y="458.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">INT</text>
+<text x="370" y="475.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">years_in_operation</text>
+<text x="572" y="475.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">REAL</text>
+<text x="370" y="493.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">regulated_rbi_sebi</text>
+<text x="572" y="493.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">INT</text>
+<rect x="330" y="600" width="250" height="120.0" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="330" y="600" width="250" height="26" rx="4" fill="#12161d" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="330.6" y="618" width="248.8" height="8" rx="0" fill="#12161d" stroke="none" stroke-width="1.2"/>
+<text x="455.0" y="617.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#ffffff">agents</text>
+<text x="338" y="640.08" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#1d5fbf">PK</text>
+<text x="370" y="640.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="start" fill="#0b0e14">agent_id</text>
+<text x="572" y="640.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="338" y="657.68" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="370" y="657.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">company_id</text>
+<text x="572" y="657.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="370" y="675.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">token</text>
+<text x="572" y="675.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="370" y="692.88" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">hostname</text>
+<text x="572" y="692.88" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="370" y="710.48" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">last_seen</text>
+<text x="572" y="710.48" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<rect x="330" y="790" width="250" height="102.4" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="330" y="790" width="250" height="26" rx="4" fill="#12161d" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="330.6" y="808" width="248.8" height="8" rx="0" fill="#12161d" stroke="none" stroke-width="1.2"/>
+<text x="455.0" y="807.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#ffffff">agent_reports</text>
+<text x="338" y="830.08" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#1d5fbf">PK</text>
+<text x="370" y="830.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="start" fill="#0b0e14">report_id</text>
+<text x="572" y="830.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="338" y="847.68" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="370" y="847.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">agent_id</text>
+<text x="572" y="847.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="370" y="865.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">received_at</text>
+<text x="572" y="865.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="370" y="882.88" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">raw_json</text>
+<text x="572" y="882.88" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<rect x="640" y="60" width="250" height="225.60000000000002" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="640" y="60" width="250" height="26" rx="4" fill="#12161d" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="640.6" y="78" width="248.8" height="8" rx="0" fill="#12161d" stroke="none" stroke-width="1.2"/>
+<text x="765.0" y="77.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#ffffff">observations</text>
+<text x="648" y="100.08" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#1d5fbf">PK</text>
+<text x="680" y="100.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="start" fill="#0b0e14">observation_id</text>
+<text x="882" y="100.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="648" y="117.68" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="680" y="117.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">company_id</text>
+<text x="882" y="117.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="648" y="135.28" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="680" y="135.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">control_id</text>
+<text x="882" y="135.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="680" y="152.88" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">value</text>
+<text x="882" y="152.88" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">true|false|partial</text>
+<text x="680" y="170.48000000000002" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">dims</text>
+<text x="882" y="170.48000000000002" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">JSON</text>
+<text x="680" y="188.07999999999998" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">source_type</text>
+<text x="882" y="188.07999999999998" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="680" y="205.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">source_id</text>
+<text x="882" y="205.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="680" y="223.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">evidence_strength</text>
+<text x="882" y="223.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="680" y="240.88000000000002" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">observed_at</text>
+<text x="882" y="240.88000000000002" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="680" y="258.48" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">source_locator</text>
+<text x="882" y="258.48" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="680" y="276.08000000000004" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">status</text>
+<text x="882" y="276.08000000000004" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<rect x="640" y="380" width="250" height="172.8" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="640" y="380" width="250" height="26" rx="4" fill="#12161d" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="640.6" y="398" width="248.8" height="8" rx="0" fill="#12161d" stroke="none" stroke-width="1.2"/>
+<text x="765.0" y="397.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#ffffff">policies</text>
+<text x="648" y="420.08" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#1d5fbf">PK</text>
+<text x="680" y="420.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="start" fill="#0b0e14">policy_id</text>
+<text x="882" y="420.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="648" y="437.68" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="680" y="437.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">company_id</text>
+<text x="882" y="437.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="680" y="455.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">status</text>
+<text x="882" y="455.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">DRAFT|QUOTED|BOUND</text>
+<text x="680" y="472.88" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">bound_at</text>
+<text x="882" y="472.88" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="648" y="490.48" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="680" y="490.48" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">bound_calculation_id</text>
+<text x="882" y="490.48" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="680" y="508.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">bound_premium</text>
+<text x="882" y="508.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">REAL</text>
+<text x="680" y="525.6800000000001" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">limit_total_inr</text>
+<text x="882" y="525.6800000000001" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">REAL</text>
+<text x="680" y="543.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">retention_inr</text>
+<text x="882" y="543.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">REAL</text>
+<rect x="640" y="640" width="250" height="172.8" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="640" y="640" width="250" height="26" rx="4" fill="#12161d" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="640.6" y="658" width="248.8" height="8" rx="0" fill="#12161d" stroke="none" stroke-width="1.2"/>
+<text x="765.0" y="657.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#ffffff">calculations</text>
+<text x="648" y="680.08" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#1d5fbf">PK</text>
+<text x="680" y="680.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="start" fill="#0b0e14">calculation_id</text>
+<text x="882" y="680.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="648" y="697.68" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="680" y="697.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">company_id</text>
+<text x="882" y="697.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="648" y="715.28" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="680" y="715.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">policy_id</text>
+<text x="882" y="715.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="680" y="732.88" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">model_version</text>
+<text x="882" y="732.88" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="680" y="750.48" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">input_snapshot</text>
+<text x="882" y="750.48" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">JSON</text>
+<text x="680" y="768.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">result_json</text>
+<text x="882" y="768.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">JSON</text>
+<text x="680" y="785.6800000000001" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">technical_premium</text>
+<text x="882" y="785.6800000000001" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">REAL</text>
+<text x="680" y="803.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">eligibility</text>
+<text x="882" y="803.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<rect x="640" y="880" width="250" height="155.20000000000002" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="640" y="880" width="250" height="26" rx="4" fill="#12161d" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="640.6" y="898" width="248.8" height="8" rx="0" fill="#12161d" stroke="none" stroke-width="1.2"/>
+<text x="765.0" y="897.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#ffffff">policy_coverages</text>
+<text x="648" y="920.08" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#1d5fbf">PK</text>
+<text x="680" y="920.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="start" fill="#0b0e14">id</text>
+<text x="882" y="920.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">INT</text>
+<text x="648" y="937.68" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="680" y="937.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">policy_id</text>
+<text x="882" y="937.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="680" y="955.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">coverage_id</text>
+<text x="882" y="955.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="680" y="972.88" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">limit_inr</text>
+<text x="882" y="972.88" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">REAL</text>
+<text x="680" y="990.48" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">deductible_inr</text>
+<text x="882" y="990.48" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">REAL</text>
+<text x="680" y="1008.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">severity_fraction</text>
+<text x="882" y="1008.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">REAL</text>
+<text x="680" y="1025.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">enabled</text>
+<text x="882" y="1025.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">INT</text>
+<rect x="950" y="60" width="250" height="155.20000000000002" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="950" y="60" width="250" height="26" rx="4" fill="#12161d" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="950.6" y="78" width="248.8" height="8" rx="0" fill="#12161d" stroke="none" stroke-width="1.2"/>
+<text x="1075.0" y="77.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#ffffff">controls</text>
+<text x="958" y="100.08" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#1d5fbf">PK</text>
+<text x="990" y="100.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="start" fill="#0b0e14">control_id</text>
+<text x="1192" y="100.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="990" y="117.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">name</text>
+<text x="1192" y="117.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="990" y="135.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">tier</text>
+<text x="1192" y="135.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">INT</text>
+<text x="990" y="152.88" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">is_warranty</text>
+<text x="1192" y="152.88" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">INT</text>
+<text x="990" y="170.48000000000002" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">monitoring_only</text>
+<text x="1192" y="170.48000000000002" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">INT</text>
+<text x="990" y="188.07999999999998" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">grace_period_days</text>
+<text x="1192" y="188.07999999999998" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">INT</text>
+<text x="990" y="205.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">coverage_effect</text>
+<text x="1192" y="205.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<rect x="950" y="380" width="250" height="155.20000000000002" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="950" y="380" width="250" height="26" rx="4" fill="#12161d" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="950.6" y="398" width="248.8" height="8" rx="0" fill="#12161d" stroke="none" stroke-width="1.2"/>
+<text x="1075.0" y="397.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#ffffff">warranties</text>
+<text x="958" y="420.08" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#1d5fbf">PK</text>
+<text x="990" y="420.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="start" fill="#0b0e14">warranty_id</text>
+<text x="1192" y="420.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="958" y="437.68" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="990" y="437.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">policy_id</text>
+<text x="1192" y="437.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="958" y="455.28" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="990" y="455.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">control_id</text>
+<text x="1192" y="455.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="990" y="472.88" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">state</text>
+<text x="1192" y="472.88" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">MET|IN_GRACE|…</text>
+<text x="990" y="490.48" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">breach_detected_at</text>
+<text x="1192" y="490.48" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="990" y="508.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">grace_expires_at</text>
+<text x="1192" y="508.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="990" y="525.6800000000001" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">grace_period_days</text>
+<text x="1192" y="525.6800000000001" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">INT</text>
+<rect x="950" y="640" width="250" height="137.60000000000002" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="950" y="640" width="250" height="26" rx="4" fill="#12161d" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="950.6" y="658" width="248.8" height="8" rx="0" fill="#12161d" stroke="none" stroke-width="1.2"/>
+<text x="1075.0" y="657.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#ffffff">warranty_events</text>
+<text x="958" y="680.08" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#1d5fbf">PK</text>
+<text x="990" y="680.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="start" fill="#0b0e14">event_id</text>
+<text x="1192" y="680.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="958" y="697.68" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="990" y="697.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">warranty_id</text>
+<text x="1192" y="697.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="990" y="715.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">from_state</text>
+<text x="1192" y="715.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="990" y="732.88" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">to_state</text>
+<text x="1192" y="732.88" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="990" y="750.48" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">at</text>
+<text x="1192" y="750.48" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="958" y="768.08" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="990" y="768.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">trigger_observation_id</text>
+<text x="1192" y="768.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<rect x="1260" y="60" width="250" height="137.60000000000002" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="1260" y="60" width="250" height="26" rx="4" fill="#12161d" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="1260.6" y="78" width="248.8" height="8" rx="0" fill="#12161d" stroke="none" stroke-width="1.2"/>
+<text x="1385.0" y="77.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#ffffff">collectors</text>
+<text x="1268" y="100.08" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#1d5fbf">PK</text>
+<text x="1300" y="100.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="start" fill="#0b0e14">collector_id</text>
+<text x="1502" y="100.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="1300" y="117.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">name</text>
+<text x="1502" y="117.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="1300" y="135.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">secret</text>
+<text x="1502" y="135.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="1300" y="152.88" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">dashboard_url</text>
+<text x="1502" y="152.88" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="1300" y="170.48000000000002" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">last_seq</text>
+<text x="1502" y="170.48000000000002" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">INT</text>
+<text x="1300" y="188.07999999999998" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">last_seen</text>
+<text x="1502" y="188.07999999999998" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<rect x="1260" y="260" width="250" height="84.80000000000001" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="1260" y="260" width="250" height="26" rx="4" fill="#12161d" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="1260.6" y="278" width="248.8" height="8" rx="0" fill="#12161d" stroke="none" stroke-width="1.2"/>
+<text x="1385.0" y="277.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#ffffff">collector_links</text>
+<text x="1268" y="300.08" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#1d5fbf">PK FK</text>
+<text x="1300" y="300.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="start" fill="#0b0e14">collector_id</text>
+<text x="1502" y="300.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="1268" y="317.68" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#1d5fbf">PK FK</text>
+<text x="1300" y="317.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="start" fill="#0b0e14">company_id</text>
+<text x="1502" y="317.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="1300" y="335.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">collector_company_id</text>
+<text x="1502" y="335.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<rect x="1260" y="420" width="250" height="120.0" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="1260" y="420" width="250" height="26" rx="4" fill="#12161d" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="1260.6" y="438" width="248.8" height="8" rx="0" fill="#12161d" stroke="none" stroke-width="1.2"/>
+<text x="1385.0" y="437.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#ffffff">collector_rollups</text>
+<text x="1268" y="460.08" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#1d5fbf">PK</text>
+<text x="1300" y="460.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="start" fill="#0b0e14">rollup_id</text>
+<text x="1502" y="460.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="1268" y="477.68" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="1300" y="477.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">collector_id</text>
+<text x="1502" y="477.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="1268" y="495.28" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="1300" y="495.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">company_id</text>
+<text x="1502" y="495.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="1300" y="512.88" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">seq</text>
+<text x="1502" y="512.88" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">INT</text>
+<text x="1300" y="530.48" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">raw_json</text>
+<text x="1502" y="530.48" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<rect x="1260" y="620" width="250" height="102.4" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="1260" y="620" width="250" height="26" rx="4" fill="#12161d" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="1260.6" y="638" width="248.8" height="8" rx="0" fill="#12161d" stroke="none" stroke-width="1.2"/>
+<text x="1385.0" y="637.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#ffffff">fleet_snapshots</text>
+<text x="1268" y="660.08" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#1d5fbf">PK FK</text>
+<text x="1300" y="660.08" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="start" fill="#0b0e14">company_id</text>
+<text x="1502" y="660.08" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="1268" y="677.68" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="1300" y="677.68" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">collector_id</text>
+<text x="1502" y="677.68" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="1268" y="695.28" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#555d6b">FK</text>
+<text x="1300" y="695.28" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">rollup_id</text>
+<text x="1502" y="695.28" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">TEXT</text>
+<text x="1300" y="712.88" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">snapshot_json</text>
+<text x="1502" y="712.88" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="end" fill="#555d6b">JSON</text>
+<rect x="1560" y="60" width="140" height="300" rx="0" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="5 3"/>
+<polygon points="1560,60 1629.75,60 1629.75,74 1621.75,82 1560,82" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1567" y="75.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="start" fill="#0b0e14">reference</text>
+<rect x="1576" y="100" width="108" height="56" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1630" y="120" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#0b0e14">sectors</text>
+<text x="1630" y="148" font-family="Consolas, Menlo, monospace" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#555d6b">sector PK</text>
+<rect x="1576" y="180" width="108" height="56" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1630" y="200" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#0b0e14">config</text>
+<text x="1630" y="228" font-family="Consolas, Menlo, monospace" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#555d6b">key PK</text>
+<rect x="1576" y="260" width="108" height="56" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1630" y="280" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#0b0e14">coverage_head</text>
+<text x="1630" y="293" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#0b0e14">_defaults</text>
+<text x="1630" y="308" font-family="Consolas, Menlo, monospace" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#555d6b">coverage_id PK</text>
+<polyline points="330,345 310,345 310,120 270,120" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-many)" marker-start="url(#m-one)" stroke-linejoin="round"/>
+<polyline points="330,365 295,365 295,290 270,290" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-many)" marker-start="url(#m-one)" stroke-linejoin="round"/>
+<polyline points="330,460 270,460" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-many)" marker-start="url(#m-one)" stroke-linejoin="round"/>
+<polyline points="330,490 300,490 300,640 270,640" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-many)" marker-start="url(#m-one)" stroke-linejoin="round"/>
+<polyline points="455,503 455,600" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-many)" marker-start="url(#m-one)" stroke-linejoin="round"/>
+<polyline points="455,720 455,790" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-many)" marker-start="url(#m-one)" stroke-linejoin="round"/>
+<polyline points="455,330 455,180 640,180" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-many)" marker-start="url(#m-one)" stroke-linejoin="round"/>
+<polyline points="580,430 640,430" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-many)" marker-start="url(#m-one)" stroke-linejoin="round"/>
+<polyline points="580,345 1235,345 1235,300 1260,300" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-many)" marker-start="url(#m-one)" stroke-linejoin="round"/>
+<text x="986.1" y="339.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">company_id</text>
+<polyline points="580,362 1222,362 1222,660 1260,660" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-one)" marker-start="url(#m-one)" stroke-linejoin="round"/>
+<polyline points="950,110 890,110" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-many)" marker-start="url(#m-one)" stroke-linejoin="round"/>
+<polyline points="1075,215 1075,380" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-many)" marker-start="url(#m-one)" stroke-linejoin="round"/>
+<polyline points="890,430 950,430" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-many)" marker-start="url(#m-one)" stroke-linejoin="round"/>
+<polyline points="700,553 700,640" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-many)" marker-start="url(#m-one)" stroke-linejoin="round"/>
+<text x="706.0" y="600.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">policy_id</text>
+<polyline points="800,553 800,640" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-one)" stroke-linejoin="round"/>
+<text x="806.0" y="600.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">bound_calculation_id</text>
+<polyline points="640,520 615,520 615,950 640,950" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-many)" marker-start="url(#m-one)" stroke-linejoin="round"/>
+<polyline points="1075,535 1075,640" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-many)" marker-start="url(#m-one)" stroke-linejoin="round"/>
+<polyline points="890,250 920,250 920,760 950,760" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-zmany)" marker-start="url(#m-one)" stroke-linejoin="round"/>
+<text x="920.0" y="566.2" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">trigger</text>
+<polyline points="1385,198 1385,260" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-many)" marker-start="url(#m-one)" stroke-linejoin="round"/>
+<polyline points="1510,130 1530,130 1530,480 1510,480" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-many)" marker-start="url(#m-one)" stroke-linejoin="round"/>
+<polyline points="1385,540 1385,620" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-one)" marker-start="url(#m-one)" stroke-linejoin="round"/>
+<text x="1393.0" y="584.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">latest rollup_id</text>
+<polygon points="1260,790 1688,790 1700,802 1700,892 1260,892" fill="#fffdf5" stroke="#b9a978" stroke-width="1"/>
+<polyline points="1688,790 1688,802 1700,802" fill="none" stroke="#b9a978" stroke-width="1"/>
+<text x="1268" y="806.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">Append-only: observations, agent_reports, collector_rollups,</text>
+<text x="1268" y="820.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">warranty_events and audit_events are never updated;</text>
+<text x="1268" y="835.4" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">a correction is a new row.</text>
+<text x="1268" y="850.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">Not drawn, to keep the figure readable:</text>
+<text x="1268" y="864.8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">calculations.company_id, collector_rollups.company_id → companies;</text>
+<text x="1268" y="879.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">outside_in_signals.related_control_id → controls (0..1).</text>
+</svg>

@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="886" viewBox="0 0 1500 886" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>Timing diagram: from enrolment to breach and repair</title>
+<defs>
+<marker id="m-arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11 z" fill="#0b0e14"/></marker>
+<marker id="m-open" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11" fill="none" stroke="#0b0e14" stroke-width="1.3"/></marker>
+<marker id="m-tri" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,1 L15,8 L1,15 z" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-diamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#0b0e14" stroke="#0b0e14"/></marker>
+<marker id="m-odiamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#ffffff" stroke="#0b0e14"/></marker>
+<marker id="m-many" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M19,2 L5,10 L19,18 M5,2 L5,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-one" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M9,3 L9,17 M14,3 L14,17" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-zmany" viewBox="0 0 26 20" refX="25" refY="10" markerWidth="26" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M25,2 L13,10 L25,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/><circle cx="7" cy="10" r="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+</defs>
+<rect width="1500" height="886" fill="#ffffff"/>
+<text x="20" y="32" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0b0e14">Timing: agent roll-out, quote, bind, then a breach and its repair (one control: EDR)</text>
+<polyline points="300.0,140 300.0,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="300.0" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d0</text>
+<polyline points="355.7142857142857,140 355.7142857142857,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="355.7142857142857" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d1</text>
+<polyline points="411.42857142857144,140 411.42857142857144,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="411.42857142857144" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d2</text>
+<polyline points="467.1428571428571,140 467.1428571428571,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="467.1428571428571" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d3</text>
+<polyline points="522.8571428571429,140 522.8571428571429,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="522.8571428571429" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d4</text>
+<polyline points="578.5714285714286,140 578.5714285714286,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="578.5714285714286" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d5</text>
+<polyline points="634.2857142857142,140 634.2857142857142,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="634.2857142857142" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d6</text>
+<polyline points="690.0,140 690.0,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="690.0" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d7</text>
+<polyline points="745.7142857142858,140 745.7142857142858,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="745.7142857142858" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d8</text>
+<polyline points="801.4285714285714,140 801.4285714285714,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="801.4285714285714" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d9</text>
+<polyline points="857.1428571428571,140 857.1428571428571,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="857.1428571428571" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d10</text>
+<polyline points="912.8571428571429,140 912.8571428571429,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="912.8571428571429" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d11</text>
+<polyline points="968.5714285714286,140 968.5714285714286,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="968.5714285714286" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d12</text>
+<polyline points="1024.2857142857142,140 1024.2857142857142,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="1024.2857142857142" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d13</text>
+<polyline points="1080.0,140 1080.0,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="1080.0" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d14</text>
+<polyline points="1135.7142857142858,140 1135.7142857142858,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="1135.7142857142858" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d15</text>
+<polyline points="1191.4285714285716,140 1191.4285714285716,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="1191.4285714285716" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d16</text>
+<polyline points="1247.142857142857,140 1247.142857142857,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="1247.142857142857" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d17</text>
+<polyline points="1302.857142857143,140 1302.857142857143,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="1302.857142857143" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d18</text>
+<polyline points="1358.5714285714287,140 1358.5714285714287,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="1358.5714285714287" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d19</text>
+<polyline points="1414.2857142857142,140 1414.2857142857142,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="1414.2857142857142" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d20</text>
+<polyline points="1470.0,140 1470.0,682" fill="none" stroke="#edf0f4" stroke-width="1" stroke-linejoin="round"/>
+<text x="1470.0" y="700" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">d21</text>
+<text x="885.0" y="722" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">time (days since onboarding; the demo compresses this with fast-forward)</text>
+<polyline points="300.0,132 300.0,682" fill="none" stroke="#1d5fbf" stroke-width="1" stroke-dasharray="4 3" stroke-linejoin="round"/>
+<text x="294.0" y="98" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="end" fill="#1d5fbf">onboarding,</text>
+<text x="294.0" y="112" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="end" fill="#1d5fbf">questionnaire (EDR: yes)</text>
+<polyline points="355.7142857142857,132 355.7142857142857,682" fill="none" stroke="#1d5fbf" stroke-width="1" stroke-dasharray="4 3" stroke-linejoin="round"/>
+<text x="355.7142857142857" y="98" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#1d5fbf">agents</text>
+<text x="355.7142857142857" y="112" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#1d5fbf">enrolled</text>
+<polyline points="411.42857142857144,132 411.42857142857144,682" fill="none" stroke="#1d5fbf" stroke-width="1" stroke-dasharray="4 3" stroke-linejoin="round"/>
+<text x="411.42857142857144" y="112" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#1d5fbf">quote</text>
+<polyline points="467.1428571428571,132 467.1428571428571,682" fill="none" stroke="#1d5fbf" stroke-width="1" stroke-dasharray="4 3" stroke-linejoin="round"/>
+<text x="467.1428571428571" y="112" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#1d5fbf">bind</text>
+<polyline points="857.1428571428571,132 857.1428571428571,682" fill="none" stroke="#1d5fbf" stroke-width="1" stroke-dasharray="4 3" stroke-linejoin="round"/>
+<text x="857.1428571428571" y="98" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#1d5fbf">EDR stops</text>
+<text x="857.1428571428571" y="112" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#1d5fbf">on WS03</text>
+<polyline points="1247.142857142857,132 1247.142857142857,682" fill="none" stroke="#1d5fbf" stroke-width="1" stroke-dasharray="4 3" stroke-linejoin="round"/>
+<text x="1247.142857142857" y="98" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#1d5fbf">grace</text>
+<text x="1247.142857142857" y="112" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#1d5fbf">expires</text>
+<polyline points="1358.5714285714287,132 1358.5714285714287,682" fill="none" stroke="#1d5fbf" stroke-width="1" stroke-dasharray="4 3" stroke-linejoin="round"/>
+<text x="1358.5714285714287" y="98" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#1d5fbf">EDR</text>
+<text x="1358.5714285714287" y="112" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#1d5fbf">restored</text>
+<polyline points="20,226 1470,226" fill="none" stroke="#c9cfd8" stroke-width="1" stroke-linejoin="round"/>
+<text x="24" y="184" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="start" fill="#0b0e14">Host KAL-PLANT-WS03</text>
+<text x="24" y="202" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#555d6b">agent liveness</text>
+<polygon points="300.0,188.0 306.0,173.0 349.7142857142857,173.0 355.7142857142857,188.0 349.7142857142857,203.0 306.0,203.0" fill="#f7f8fa" stroke="#9aa4b5" stroke-width="1.3"/>
+<text x="327.8571428571429" y="192.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="600" text-anchor="middle" fill="#9aa4b5">not ins</text>
+<polygon points="355.7142857142857,188.0 361.7142857142857,173.0 1464.0,173.0 1470.0,188.0 1464.0,203.0 361.7142857142857,203.0" fill="#e2f4e8" stroke="#145c33" stroke-width="1.3"/>
+<text x="912.8571428571429" y="192.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#145c33">ONLINE  (reports every tick; heartbeat keeps it ≤ 6 h)</text>
+<polyline points="20,302 1470,302" fill="none" stroke="#c9cfd8" stroke-width="1" stroke-linejoin="round"/>
+<text x="24" y="260" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="start" fill="#0b0e14">Host WS03: EDR check</text>
+<text x="24" y="278" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#555d6b">edr.running_healthy</text>
+<polygon points="300.0,264.0 306.0,249.0 349.7142857142857,249.0 355.7142857142857,264.0 349.7142857142857,279.0 306.0,279.0" fill="#f7f8fa" stroke="#9aa4b5" stroke-width="1.3"/>
+<text x="327.8571428571429" y="268.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#9aa4b5">—</text>
+<polygon points="355.7142857142857,264.0 361.7142857142857,249.0 851.1428571428571,249.0 857.1428571428571,264.0 851.1428571428571,279.0 361.7142857142857,279.0" fill="#e2f4e8" stroke="#145c33" stroke-width="1.3"/>
+<text x="606.4285714285714" y="268.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#145c33">PASS</text>
+<polygon points="857.1428571428571,264.0 863.1428571428571,249.0 1352.5714285714287,249.0 1358.5714285714287,264.0 1352.5714285714287,279.0 863.1428571428571,279.0" fill="#ffe8e6" stroke="#9b1c22" stroke-width="1.3"/>
+<text x="1107.857142857143" y="268.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#9b1c22">FAIL  (Defender stopped)</text>
+<polygon points="1358.5714285714287,264.0 1364.5714285714287,249.0 1464.0,249.0 1470.0,264.0 1464.0,279.0 1364.5714285714287,279.0" fill="#e2f4e8" stroke="#145c33" stroke-width="1.3"/>
+<text x="1414.2857142857142" y="268.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#145c33">PASS</text>
+<polyline points="20,378 1470,378" fill="none" stroke="#c9cfd8" stroke-width="1" stroke-linejoin="round"/>
+<text x="24" y="336" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="start" fill="#0b0e14">Collector: fleet EDR</text>
+<text x="24" y="354" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#555d6b">4 hosts, 95 % rule</text>
+<polygon points="300.0,340.0 306.0,325.0 349.7142857142857,325.0 355.7142857142857,340.0 349.7142857142857,355.0 306.0,355.0" fill="#f7f8fa" stroke="#9aa4b5" stroke-width="1.3"/>
+<text x="327.8571428571429" y="344.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="600" text-anchor="middle" fill="#9aa4b5">NOT_OBS</text>
+<polygon points="355.7142857142857,340.0 361.7142857142857,325.0 851.1428571428571,325.0 857.1428571428571,340.0 851.1428571428571,355.0 361.7142857142857,355.0" fill="#e2f4e8" stroke="#145c33" stroke-width="1.3"/>
+<text x="606.4285714285714" y="344.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#145c33">PASS  4/4</text>
+<polygon points="857.1428571428571,340.0 863.1428571428571,325.0 1352.5714285714287,325.0 1358.5714285714287,340.0 1352.5714285714287,355.0 863.1428571428571,355.0" fill="#ffe8e6" stroke="#9b1c22" stroke-width="1.3"/>
+<text x="1107.857142857143" y="344.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#9b1c22">FAIL  3/4 = 75 %</text>
+<polygon points="1358.5714285714287,340.0 1364.5714285714287,325.0 1464.0,325.0 1470.0,340.0 1464.0,355.0 1364.5714285714287,355.0" fill="#e2f4e8" stroke="#145c33" stroke-width="1.3"/>
+<text x="1414.2857142857142" y="344.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#145c33">PASS 4/4</text>
+<polyline points="20,454 1470,454" fill="none" stroke="#c9cfd8" stroke-width="1" stroke-linejoin="round"/>
+<text x="24" y="412" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="start" fill="#0b0e14">Platform: CTRL-EDR evidence</text>
+<text x="24" y="430" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#555d6b">resolved posture</text>
+<polygon points="300.0,416.0 306.0,401.0 349.7142857142857,401.0 355.7142857142857,416.0 349.7142857142857,431.0 306.0,431.0" fill="#fff2d6" stroke="#8a4b06" stroke-width="1.3"/>
+<text x="327.8571428571429" y="420.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#8a4b06">STATED</text>
+<polygon points="355.7142857142857,416.0 361.7142857142857,401.0 851.1428571428571,401.0 857.1428571428571,416.0 851.1428571428571,431.0 361.7142857142857,431.0" fill="#e2f4e8" stroke="#145c33" stroke-width="1.3"/>
+<text x="606.4285714285714" y="420.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#145c33">VERIFIED  (AGENT_FLEET)</text>
+<polygon points="857.1428571428571,416.0 863.1428571428571,401.0 1352.5714285714287,401.0 1358.5714285714287,416.0 1352.5714285714287,431.0 863.1428571428571,431.0" fill="#ffe8e6" stroke="#9b1c22" stroke-width="1.3"/>
+<text x="1107.857142857143" y="420.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#9b1c22">NOT_WORKING</text>
+<polygon points="1358.5714285714287,416.0 1364.5714285714287,401.0 1464.0,401.0 1470.0,416.0 1464.0,431.0 1364.5714285714287,431.0" fill="#e2f4e8" stroke="#145c33" stroke-width="1.3"/>
+<text x="1414.2857142857142" y="420.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#145c33">VERIFIED</text>
+<polyline points="20,530 1470,530" fill="none" stroke="#c9cfd8" stroke-width="1" stroke-linejoin="round"/>
+<text x="24" y="488" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="start" fill="#0b0e14">Policy</text>
+<text x="24" y="506" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#555d6b">policies.status</text>
+<polygon points="300.0,492.0 306.0,477.0 405.42857142857144,477.0 411.42857142857144,492.0 405.42857142857144,507.0 306.0,507.0" fill="#f7f8fa" stroke="#9aa4b5" stroke-width="1.3"/>
+<text x="355.7142857142857" y="496.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#9aa4b5">DRAFT</text>
+<polygon points="411.42857142857144,492.0 417.42857142857144,477.0 461.1428571428571,477.0 467.1428571428571,492.0 461.1428571428571,507.0 417.42857142857144,507.0" fill="#e8effa" stroke="#1d5fbf" stroke-width="1.3"/>
+<text x="439.2857142857143" y="496.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#1d5fbf">QUOTED</text>
+<polygon points="467.1428571428571,492.0 473.1428571428571,477.0 1464.0,477.0 1470.0,492.0 1464.0,507.0 473.1428571428571,507.0" fill="#e2f4e8" stroke="#145c33" stroke-width="1.3"/>
+<text x="968.5714285714286" y="496.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#145c33">BOUND</text>
+<polyline points="20,606 1470,606" fill="none" stroke="#c9cfd8" stroke-width="1" stroke-linejoin="round"/>
+<text x="24" y="564" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="start" fill="#0b0e14">Warranty CTRL-EDR</text>
+<text x="24" y="582" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#555d6b">coverage state machine</text>
+<polygon points="300.0,568.0 306.0,553.0 461.1428571428571,553.0 467.1428571428571,568.0 461.1428571428571,583.0 306.0,583.0" fill="#f7f8fa" stroke="#9aa4b5" stroke-width="1.3"/>
+<text x="383.57142857142856" y="572.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#9aa4b5">—</text>
+<polygon points="467.1428571428571,568.0 473.1428571428571,553.0 851.1428571428571,553.0 857.1428571428571,568.0 851.1428571428571,583.0 473.1428571428571,583.0" fill="#e2f4e8" stroke="#145c33" stroke-width="1.3"/>
+<text x="662.1428571428571" y="572.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#145c33">MET</text>
+<polygon points="857.1428571428571,568.0 863.1428571428571,553.0 1241.142857142857,553.0 1247.142857142857,568.0 1241.142857142857,583.0 863.1428571428571,583.0" fill="#fff2d6" stroke="#8a4b06" stroke-width="1.3"/>
+<text x="1052.142857142857" y="572.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#8a4b06">IN_GRACE</text>
+<polygon points="1247.142857142857,568.0 1253.142857142857,553.0 1352.5714285714287,553.0 1358.5714285714287,568.0 1352.5714285714287,583.0 1253.142857142857,583.0" fill="#ffe8e6" stroke="#9b1c22" stroke-width="1.3"/>
+<text x="1302.857142857143" y="572.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#9b1c22">BREACHED</text>
+<polygon points="1358.5714285714287,568.0 1364.5714285714287,553.0 1464.0,553.0 1470.0,568.0 1464.0,583.0 1364.5714285714287,583.0" fill="#e2f4e8" stroke="#145c33" stroke-width="1.3"/>
+<text x="1414.2857142857142" y="572.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#145c33">MET</text>
+<polyline points="20,682 1470,682" fill="none" stroke="#c9cfd8" stroke-width="1" stroke-linejoin="round"/>
+<text x="24" y="640" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="start" fill="#0b0e14">Premium</text>
+<text x="24" y="658" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#555d6b">₹, from the stored calculation</text>
+<polygon points="300.0,644.0 306.0,629.0 405.42857142857144,629.0 411.42857142857144,644.0 405.42857142857144,659.0 306.0,659.0" fill="#f7f8fa" stroke="#9aa4b5" stroke-width="1.3"/>
+<text x="355.7142857142857" y="648.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#9aa4b5">none</text>
+<polygon points="411.42857142857144,644.0 417.42857142857144,629.0 461.1428571428571,629.0 467.1428571428571,644.0 461.1428571428571,659.0 417.42857142857144,659.0" fill="#e8effa" stroke="#1d5fbf" stroke-width="1.3"/>
+<text x="439.2857142857143" y="648.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#1d5fbf">quoted</text>
+<polygon points="467.1428571428571,644.0 473.1428571428571,629.0 1464.0,629.0 1470.0,644.0 1464.0,659.0 473.1428571428571,659.0" fill="#e8effa" stroke="#1d5fbf" stroke-width="1.3"/>
+<text x="968.5714285714286" y="648.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#1d5fbf">bound premium, fixed: unchanged through the breach</text>
+<polyline points="20,150 1470,150" fill="none" stroke="#c9cfd8" stroke-width="1" stroke-linejoin="round"/>
+<polyline points="857.1428571428571,538 1247.142857142857,538" fill="none" stroke="#8a4b06" stroke-width="1.2" marker-end="url(#m-open)" marker-start="url(#m-open)" stroke-linejoin="round"/>
+<text x="1052.142857142857" y="534" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" fill="#8a4b06" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">{7 days grace}</text>
+<polyline points="355.7142857142857,312 355.7142857142857,312" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-linejoin="round"/>
+<polygon points="20,742 1458,742 1470,754 1470,846 20,846" fill="#fffdf5" stroke="#b9a978" stroke-width="1"/>
+<polyline points="1458,742 1458,754 1470,754" fill="none" stroke="#b9a978" stroke-width="1"/>
+<text x="28" y="758.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">• A fleet result reaches the platform within one link-worker pass (≤ 30 s) of the report that changed it, or on the 15-minute heartbeat.</text>
+<text x="28" y="773.4" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">• d10: one failing host out of four puts the fleet below 95 %, so CTRL-EDR is NOT_WORKING and the warranty starts its 7-day grace.</text>
+<text x="28" y="788.8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">• d17: still failing, so BREACHED: the configured coverage consequence applies (incident-response deductible doubled).</text>
+<text x="28" y="804.2" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">• d19: the next passing roll-up moves BREACHED → REMEDIATED → MET at once. The premium line never moves after bind.</text>
+<text x="16" y="872" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#555d6b" font-style="italic">Figure B17. Timing diagram (value-lifeline form). Each row is one lifeline; a change of band is a state change at that time.</text>
+</svg>

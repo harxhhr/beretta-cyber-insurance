@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beretta Live Monitoring</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="inner">
+      <a class="brand" href="#/" aria-label="Beretta live monitoring, all companies">
+        <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><rect x="1" y="13" width="4" height="8" rx="1" fill="#9aa4b5"/><rect x="6.5" y="10" width="4" height="11" rx="1" fill="#6b8fcf"/><rect x="12" y="6" width="4" height="15" rx="1" fill="#3a6fc4"/><rect x="17.5" y="1" width="4" height="20" rx="1" fill="#12161d"/></svg>
+        <b>Beretta</b><span class="sep">/</span><span class="scope">Live monitoring</span>
+      </a>
+      <div class="meta"><span id="updated"></span><button id="logout" class="ghost hidden">Sign out</button></div>
+    </div>
+  </header>
+
+  <section id="login" class="panel narrow hidden">
+    <h2>Administrator sign-in</h2>
+    <p class="muted">Paste the admin token printed by <code>kyh-collector init</code> or <code>demo</code>.</p>
+    <form id="login-form">
+      <label for="token">Admin token</label>
+      <input id="token" type="password" autocomplete="off" placeholder="kyh_admin_..." required>
+      <button type="submit">Open dashboard</button>
+    </form>
+    <p id="login-error" class="error"></p>
+  </section>
+
+  <main id="view"></main>
+
+  <footer class="foot" id="foot"></footer>
+  <script src="/static/app.js"></script>
+</body>
+</html>

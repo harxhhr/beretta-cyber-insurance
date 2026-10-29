@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1354" viewBox="0 0 1000 1354" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>Activity: agent service loop</title>
+<defs>
+<marker id="m-arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11 z" fill="#0b0e14"/></marker>
+<marker id="m-open" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11" fill="none" stroke="#0b0e14" stroke-width="1.3"/></marker>
+<marker id="m-tri" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,1 L15,8 L1,15 z" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-diamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#0b0e14" stroke="#0b0e14"/></marker>
+<marker id="m-odiamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#ffffff" stroke="#0b0e14"/></marker>
+<marker id="m-many" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M19,2 L5,10 L19,18 M5,2 L5,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-one" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M9,3 L9,17 M14,3 L14,17" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-zmany" viewBox="0 0 26 20" refX="25" refY="10" markerWidth="26" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M25,2 L13,10 L25,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/><circle cx="7" cy="10" r="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+</defs>
+<rect width="1000" height="1354" fill="#ffffff"/>
+<text x="20" y="32" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0b0e14">Activity: one tick of the agent service (Agent.tick)</text>
+<circle cx="480" cy="66" r="8" fill="#0b0e14"/>
+<rect x="350.0" y="86" width="260" height="42" rx="12" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="480.0" y="103.47999999999999" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">Service starts</text>
+<text x="480.0" y="118.44" font-family="Consolas, Menlo, monospace" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#555d6b">load agent.json and policy.json</text>
+<polyline points="480,74 480,86" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<polyline points="480,128 480,158" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<polygon points="480,158.0 498.0,175 480,192.0 462.0,175" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<polyline points="480,192 480,210" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<rect x="350.0" y="210" width="260" height="42" rx="12" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="480.0" y="227.48000000000002" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">take_scan_request()</text>
+<text x="480.0" y="242.44000000000003" font-family="Consolas, Menlo, monospace" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#555d6b">scan-now.json in the state dir</text>
+<polyline points="480,252 480,270" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<polygon points="480,270.0 580.0,300 480,330.0 380.0,300" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="480" y="303.96" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">scan-now request?</text>
+<polyline points="380,300 180,300 180,360" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="280.0" y="294.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">[no file]</text>
+<rect x="50.0" y="360" width="260" height="42" rx="12" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="180.0" y="384.96" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">scan()  due checks</text>
+<polyline points="180,402 180,425 462,425" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<polyline points="480,330 480,360" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="488" y="348" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">[controls listed]</text>
+<rect x="350.0" y="360" width="260" height="42" rx="12" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="480.0" y="384.96" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">scan(listed checks)</text>
+<polyline points="480,402 480,408" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<polyline points="580,300 790,300 790,360" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="685.0" y="294.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">[empty request]</text>
+<rect x="660.0" y="360" width="260" height="42" rx="12" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="790.0" y="384.96" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">scan(force_full=True)</text>
+<polyline points="790,402 790,425 498,425" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<polygon points="480,408.0 498.0,425 480,442.0 462.0,425" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<polyline points="480,442 480,466" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<polygon points="480,466.0 595.0,498 480,530.0 365.0,498" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="480" y="494.81" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">full snapshot due?</text>
+<text x="480" y="509.11" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">(or forced)</text>
+<polyline points="595,498 790,498 790,540" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="692.5" y="492.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">[yes]</text>
+<rect x="660.0" y="540" width="260" height="50" rx="12" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="790.0" y="561.48" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">Run all 12 checks</text>
+<text x="790.0" y="576.44" font-family="Consolas, Menlo, monospace" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#555d6b">enqueue('full', results)</text>
+<polyline points="480,530 480,552" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="488" y="546" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">[no]</text>
+<rect x="350.0" y="552" width="260" height="42" rx="12" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="480.0" y="576.96" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">Run checks whose interval is due</text>
+<polyline points="480,594 480,614" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<polygon points="480,614.0 595.0,644 480,674.0 365.0,644" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="480" y="640.8100000000001" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">any fingerprint</text>
+<text x="480" y="655.11" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">changed?</text>
+<polyline points="480,674 480,700" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="488" y="692" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">[yes]</text>
+<rect x="350.0" y="700" width="260" height="42" rx="12" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="480.0" y="724.96" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">enqueue('delta', changed)</text>
+<polyline points="365,644 180,644 180,780 462,780" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="272.5" y="638.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">[no]</text>
+<polyline points="480,742 480,763" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<polyline points="790,590 790,780 498,780" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<polygon points="480,763.0 498.0,780 480,797.0 462.0,780" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<polyline points="480,797 480,822" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<polygon points="480,822.0 580.0,852 480,882.0 380.0,852" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="480" y="855.96" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">heartbeat due?</text>
+<polyline points="580,852 790,852 790,880" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="685.0" y="846.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">[yes]</text>
+<rect x="660.0" y="880" width="260" height="42" rx="12" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="790.0" y="904.96" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">enqueue('heartbeat', [])</text>
+<polyline points="790,922 790,950 498,950" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<polyline points="480,882 480,933" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="488" y="905" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">[no]</text>
+<polygon points="480,933.0 498.0,950 480,967.0 462.0,950" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<polyline points="480,967 480,990" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<rect x="350.0" y="990" width="260" height="50" rx="12" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="480.0" y="1011.48" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">flush(): POST each pending report</text>
+<text x="480.0" y="1026.44" font-family="Consolas, Menlo, monospace" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#555d6b">X-KYH-Signature = v1=HMAC-SHA256</text>
+<polyline points="480,1040 480,1060" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<polygon points="480,1060.0 580.0,1090 480,1120.0 380.0,1090" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="480" y="1093.96" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">collector reply?</text>
+<polyline points="380,1090 180,1090 180,1150" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="280.0" y="1084.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">[200, 202, 409 REPLAY]</text>
+<rect x="50.0" y="1150" width="260" height="46" rx="12" fill="#e2f4e8" stroke="#145c33" stroke-width="1.2"/>
+<text x="180.0" y="1176.96" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">spool.ack(seq)</text>
+<polyline points="180,1196 180,1220 462,1220" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<polyline points="480,1120 480,1150" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="488" y="1140" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">[other 4xx]</text>
+<rect x="350.0" y="1150" width="260" height="46" rx="12" fill="#ffe8e6" stroke="#9b1c22" stroke-width="1.2"/>
+<text x="480.0" y="1176.96" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">spool.dead_letter(seq)</text>
+<polyline points="580,1090 790,1090 790,1150" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="685.0" y="1084.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">[429, 5xx, network]</text>
+<rect x="660.0" y="1150" width="260" height="46" rx="12" fill="#fff2d6" stroke="#8a4b06" stroke-width="1.2"/>
+<text x="790.0" y="1169.48" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">backoff = min(max(2b, 30), 900)</text>
+<text x="790.0" y="1184.44" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">stop this flush</text>
+<polyline points="790,1196 790,1220 498,1220" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<polyline points="480,1196 480,1203" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<polygon points="480,1203.0 498.0,1220 480,1237.0 462.0,1220" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<polyline points="480,1237 480,1258" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<rect x="350.0" y="1258" width="260" height="42" rx="12" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="480.0" y="1282.96" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">sleep(max(30 s, backoff))</text>
+<polyline points="480,1300 480,1320 34,1320 34,175 462,175" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="255.0" y="1320.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">next tick</text>
+<polygon points="640,210 958,210 970,222 970,274 640,274" fill="#fffdf5" stroke="#b9a978" stroke-width="1"/>
+<polyline points="958,210 958,222 970,222" fill="none" stroke="#b9a978" stroke-width="1"/>
+<text x="648" y="226.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">Any exception is written to agent-errors.log;</text>
+<text x="648" y="240.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">the loop survives it. Only this service scans</text>
+<text x="648" y="255.4" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">and sends: the outbox and seq stay consistent.</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="560" viewBox="0 0 1400 560" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>What monitoring does before and after bind</title>
+<rect width="1400" height="560" fill="#ffffff"/>
+<rect x="20" y="30" width="1360" height="230" rx="14" fill="none" stroke="#555d6b" stroke-dasharray="8 6" stroke-width="1.6"/>
+<text x="40.0" y="62.0" font-size="17" text-anchor="start" fill="#555d6b" font-weight="700">Before bind: monitoring is evidence for the quote</text>
+<rect x="20" y="300" width="1360" height="230" rx="14" fill="none" stroke="#555d6b" stroke-dasharray="8 6" stroke-width="1.6"/>
+<text x="40.0" y="332.0" font-size="17" text-anchor="start" fill="#555d6b" font-weight="700">After bind: monitoring drives warranties only</text>
+<rect x="60" y="80" width="280" height="110" rx="12" fill="#f2f4f7" stroke="#0b0e14" stroke-width="2.4"/>
+<text x="200.0" y="120.0" font-size="19" text-anchor="middle" fill="#0b0e14" font-weight="700">Fleet roll-up</text>
+<text x="200.0" y="150.0" font-size="14.5" text-anchor="middle" fill="#0b0e14" font-weight="400">AGENT_FLEET,</text>
+<text x="200.0" y="172.0" font-size="14.5" text-anchor="middle" fill="#0b0e14" font-weight="400">TECHNICALLY_OBSERVED</text>
+<line x1="344.0" y1="135.0" x2="376.0" y2="135.0" stroke="#0b0e14" stroke-width="2.4"/>
+<path d="M374,128.0 L386,135.0 L374,142.0 z" fill="#0b0e14"/>
+<rect x="390" y="80" width="280" height="110" rx="12" fill="#f2f4f7" stroke="#0b0e14" stroke-width="2.4"/>
+<text x="530.0" y="120.0" font-size="19" text-anchor="middle" fill="#0b0e14" font-weight="700">Engine A</text>
+<text x="530.0" y="150.0" font-size="14.5" text-anchor="middle" fill="#0b0e14" font-weight="400">best evidence per control</text>
+<text x="530.0" y="172.0" font-size="14.5" text-anchor="middle" fill="#0b0e14" font-weight="400">(beats questionnaire)</text>
+<line x1="674.0" y1="135.0" x2="706.0" y2="135.0" stroke="#0b0e14" stroke-width="2.4"/>
+<path d="M704,128.0 L716,135.0 L704,142.0 z" fill="#0b0e14"/>
+<rect x="720" y="80" width="280" height="110" rx="12" fill="#f2f4f7" stroke="#0b0e14" stroke-width="2.4"/>
+<text x="860.0" y="120.0" font-size="19" text-anchor="middle" fill="#0b0e14" font-weight="700">Engine B</text>
+<text x="860.0" y="150.0" font-size="14.5" text-anchor="middle" fill="#0b0e14" font-weight="400">VERIFIED status:</text>
+<text x="860.0" y="172.0" font-size="14.5" text-anchor="middle" fill="#0b0e14" font-weight="400">full control effect</text>
+<line x1="1004.0" y1="135.0" x2="1036.0" y2="135.0" stroke="#0b0e14" stroke-width="2.4"/>
+<path d="M1034,128.0 L1046,135.0 L1034,142.0 z" fill="#0b0e14"/>
+<rect x="1050" y="80" width="280" height="110" rx="12" fill="#f2f4f7" stroke="#145c33" stroke-width="2.4"/>
+<text x="1190.0" y="120.0" font-size="19" text-anchor="middle" fill="#145c33" font-weight="700">Quote</text>
+<text x="1190.0" y="150.0" font-size="14.5" text-anchor="middle" fill="#0b0e14" font-weight="400">premium fixed</text>
+<text x="1190.0" y="172.0" font-size="14.5" text-anchor="middle" fill="#0b0e14" font-weight="400">at bind</text>
+<rect x="60" y="350" width="280" height="110" rx="12" fill="#f2f4f7" stroke="#0b0e14" stroke-width="2.4"/>
+<text x="200.0" y="390.0" font-size="19" text-anchor="middle" fill="#0b0e14" font-weight="700">Fleet roll-up</text>
+<text x="200.0" y="420.0" font-size="14.5" text-anchor="middle" fill="#0b0e14" font-weight="400">same signed</text>
+<text x="200.0" y="442.0" font-size="14.5" text-anchor="middle" fill="#0b0e14" font-weight="400">roll-up</text>
+<line x1="344.0" y1="405.0" x2="376.0" y2="405.0" stroke="#0b0e14" stroke-width="2.4"/>
+<path d="M374,398.0 L386,405.0 L374,412.0 z" fill="#0b0e14"/>
+<rect x="390" y="350" width="280" height="110" rx="12" fill="#f2f4f7" stroke="#0b0e14" stroke-width="2.4"/>
+<text x="530.0" y="390.0" font-size="19" text-anchor="middle" fill="#0b0e14" font-weight="700">Engine A</text>
+<text x="530.0" y="420.0" font-size="14.5" text-anchor="middle" fill="#0b0e14" font-weight="400">observation recorded</text>
+<text x="530.0" y="442.0" font-size="14.5" text-anchor="middle" fill="#0b0e14" font-weight="400">(history kept)</text>
+<line x1="674.0" y1="405.0" x2="706.0" y2="405.0" stroke="#0b0e14" stroke-width="2.4"/>
+<path d="M704,398.0 L716,405.0 L704,412.0 z" fill="#0b0e14"/>
+<rect x="720" y="350" width="280" height="110" rx="12" fill="#f2f4f7" stroke="#1d5fbf" stroke-width="2.4"/>
+<text x="860.0" y="390.0" font-size="19" text-anchor="middle" fill="#1d5fbf" font-weight="700">Warranty machine</text>
+<text x="860.0" y="420.0" font-size="14.5" text-anchor="middle" fill="#0b0e14" font-weight="400">MET / IN_GRACE /</text>
+<text x="860.0" y="442.0" font-size="14.5" text-anchor="middle" fill="#0b0e14" font-weight="400">BREACHED / REMEDIATED</text>
+<line x1="1006.0" y1="380.0" x2="1044.0" y2="430.0" stroke="#a3261b" stroke-width="4"/>
+<line x1="1006.0" y1="430.0" x2="1044.0" y2="380.0" stroke="#a3261b" stroke-width="4"/>
+<text x="1025.0" y="340.0" font-size="14" text-anchor="middle" fill="#a3261b" font-weight="400">no path</text>
+<rect x="1050" y="350" width="280" height="110" rx="12" fill="#f2f4f7" stroke="#555d6b" stroke-width="2.4"/>
+<text x="1190.0" y="390.0" font-size="19" text-anchor="middle" fill="#555d6b" font-weight="700">Premium</text>
+<text x="1190.0" y="420.0" font-size="14.5" text-anchor="middle" fill="#0b0e14" font-weight="400">never re-priced</text>
+</svg>

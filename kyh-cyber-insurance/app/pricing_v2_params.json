@@ -1,0 +1,188 @@
+{
+  "model_version": "UNDERWRITING_MODEL_V2",
+  "_readme": "Every V2 parameter. Each entry: value, unit, source, locator, tag. Tags: [L] taken from a published source, [D] derived by a script in scripts/ from [L] values, [A] assumption (always with a sensitivity range). Sources and locators are as given in the V2 specification (KYH_Engine_B_V2_master_prompt.md); they have not been re-checked against the reports. TODO-SOURCE marks a placeholder that needs a real figure.",
+
+  "currency": {
+    "usd_inr": {"value": 88.0, "unit": "INR per USD", "source": "placeholder", "locator": "TODO-SOURCE: set to the current RBI reference rate", "tag": "A", "sensitivity": [83.0, 92.0]}
+  },
+
+  "global": {
+    "claims_frequency": {"value": 0.0148, "unit": "claims per policy-year", "source": "Coalition 2025 Cyber Claims Report", "locator": "2024 global claims frequency", "tag": "L"},
+    "average_loss_usd": {"value": 115000, "unit": "USD per claim", "source": "Coalition 2025 Cyber Claims Report", "locator": "2024 global average loss", "tag": "L"},
+    "other_claims_share": {"value": 0.062, "unit": "share of claims", "source": "Coalition 2025 Cyber Claims Report", "locator": "claims not in the five perils (used only in the reconciliation test)", "tag": "L"}
+  },
+
+  "turnover": {
+    "freq_bands": [
+      {"upper_usd": 10000000, "value": 0.0107, "unit": "frequency", "source": "Coalition 2025 Cyber Claims Report", "locator": "Figs 3.1-3.5, 2024, <$25M band rate applied to <$10M firms (assumes they dominate the band by count)", "tag": "A", "sensitivity": [0.0096, 0.0118]},
+      {"upper_usd": 25000000, "value": 0.0119, "unit": "frequency", "source": "derived: 1.07% / 0.90; 0.90 = Cyentia IRIS 2025 Fig 7 (2024 <$10M 8.7% vs $10-100M 9.7%) and App. A2 (0.60x / 0.67x)", "locator": "scripts/derive_sigma.py prints the check", "tag": "D"},
+      {"upper_usd": 100000000, "value": 0.0399, "unit": "frequency", "source": "Coalition 2025 Cyber Claims Report", "locator": "Figs 3.1-3.5, 2024, $25M-$100M", "tag": "L"},
+      {"upper_usd": null, "value": 0.0597, "unit": "frequency", "source": "Coalition 2025 Cyber Claims Report", "locator": "Figs 3.1-3.5, 2024, >=$100M", "tag": "L"}
+    ],
+    "sev_bands": [
+      {"upper_usd": 25000000, "value": 79000, "unit": "USD average loss", "source": "Coalition 2025 Cyber Claims Report", "locator": "Figs 3.2, 3.4, 3.6, 2024, <$25M", "tag": "L"},
+      {"upper_usd": 100000000, "value": 139000, "unit": "USD average loss", "source": "Coalition 2025 Cyber Claims Report", "locator": "Figs 3.2, 3.4, 3.6, 2024, $25M-$100M", "tag": "L"},
+      {"upper_usd": null, "value": 228000, "unit": "USD average loss", "source": "Coalition 2025 Cyber Claims Report", "locator": "Figs 3.2, 3.4, 3.6, 2024, >=$100M", "tag": "L"}
+    ],
+    "zone_factor": {"value": 1.25, "unit": "ratio", "source": "judgement: width of the log-linear transition zone either side of each band boundary", "locator": "spec 2.1", "tag": "A", "sensitivity": [1.10, 1.50]}
+  },
+
+  "sector": {
+    "nic_map": {"tag": "A", "source": "judgement mapping of NIC 2008 divisions to GICS-style rating sectors", "locator": "spec 2.3", "ranges": [
+      [1, 3, "Consumer Staples"], [5, 9, "Materials"], [10, 12, "Consumer Staples"], [13, 15, "Consumer Discretionary"],
+      [16, 18, "Materials"], [19, 19, "Energy"], [20, 20, "Materials"], [21, 21, "Healthcare"], [22, 24, "Materials"],
+      [25, 25, "Industrials"], [26, 26, "Information Technology"], [27, 28, "Industrials"], [29, 29, "Consumer Discretionary"],
+      [30, 30, "Industrials"], [31, 32, "Consumer Discretionary"], [33, 33, "Industrials"], [35, 35, "Energy"],
+      [36, 39, "Industrials"], [41, 43, "Industrials"], [45, 47, "Consumer Discretionary"], [49, 53, "Industrials"],
+      [55, 56, "Consumer Discretionary"], [58, 63, "Information Technology"], [64, 66, "Financial Services"],
+      [68, 68, "Real Estate"], [69, 75, "Professional Services"], [77, 82, "Industrials"], [84, 84, "Public Sector"],
+      [85, 85, "Education"], [86, 88, "Healthcare"], [90, 93, "Consumer Discretionary"], [94, 94, "Nonprofit"],
+      [95, 96, "Consumer Discretionary"]]},
+    "default_sector": "Global average",
+    "frequency": {
+      "Consumer Discretionary": {"value": 0.0133, "unit": "frequency", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 2.1, 2024", "tag": "L"},
+      "Consumer Staples": {"value": 0.0260, "unit": "frequency", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 2.1, 2024", "tag": "L"},
+      "Energy": {"value": 0.0135, "unit": "frequency", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 2.1, 2024", "tag": "L"},
+      "Financial Services": {"value": 0.0147, "unit": "frequency", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 2.1, 2024", "tag": "L"},
+      "Healthcare": {"value": 0.0138, "unit": "frequency", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 2.1, 2024", "tag": "L"},
+      "Industrials": {"value": 0.0164, "unit": "frequency", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 2.1, 2024", "tag": "L"},
+      "Information Technology": {"value": 0.0136, "unit": "frequency", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 2.1, 2024", "tag": "L"},
+      "Materials": {"value": 0.0220, "unit": "frequency", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 2.1, 2024", "tag": "L"},
+      "Nonprofit": {"value": 0.0134, "unit": "frequency", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 2.1, 2024", "tag": "L"},
+      "Real Estate": {"value": 0.0102, "unit": "frequency", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 2.1, 2024", "tag": "L"}
+    },
+    "frequency_relativity_direct": {
+      "_note": "Sectors Coalition does not report: IRIS relativities to the median sector, used directly as relativities (assumes median ~ average).",
+      "Education": {"value": 1.60, "unit": "relativity", "source": "Cyentia IRIS 2025", "locator": "App. A1 (median-sector assumption is [A])", "tag": "L"},
+      "Professional Services": {"value": 1.50, "unit": "relativity", "source": "Cyentia IRIS 2025", "locator": "App. A1 (median-sector assumption is [A])", "tag": "L"},
+      "Public Sector": {"value": 1.34, "unit": "relativity", "source": "Cyentia IRIS 2025", "locator": "App. A1 (median-sector assumption is [A])", "tag": "L"}
+    },
+    "severity_usd": {
+      "Consumer Discretionary": {"value": 118493, "unit": "USD average loss", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 2.2, 2024", "tag": "L"},
+      "Consumer Staples": {"value": 123718, "unit": "USD average loss", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 2.2, 2024", "tag": "L"},
+      "Energy": {"value": 108000, "unit": "USD average loss", "source": "Coalition 2025 Cyber Claims Report", "locator": "report's stated historical level; the volatile 2024 figure ($292,193) is not used", "tag": "L"},
+      "Financial Services": {"value": 95066, "unit": "USD average loss", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 2.2, 2024", "tag": "L"},
+      "Healthcare": {"value": 144662, "unit": "USD average loss", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 2.2, 2024", "tag": "L"},
+      "Industrials": {"value": 104741, "unit": "USD average loss", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 2.2, 2024", "tag": "L"},
+      "Information Technology": {"value": 131183, "unit": "USD average loss", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 2.2, 2024", "tag": "L"},
+      "Materials": {"value": 99030, "unit": "USD average loss", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 2.2, 2024", "tag": "L"},
+      "Nonprofit": {"value": 73498, "unit": "USD average loss", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 2.2, 2024", "tag": "L"},
+      "Real Estate": {"value": 179237, "unit": "USD average loss", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 2.2, 2024", "tag": "L"}
+    },
+    "severity_relativity_direct": {
+      "_note": "Gap sectors: NetDiligence 2025 SME average incident cost / NetDiligence SME overall average ($264K).",
+      "Education": {"value": 0.65, "unit": "relativity", "source": "NetDiligence Cyber Claims Study 2025", "locator": "Table 5: $172K / $264K", "tag": "D"},
+      "Professional Services": {"value": 1.03, "unit": "relativity", "source": "NetDiligence Cyber Claims Study 2025", "locator": "Table 5: $271K / $264K", "tag": "D"},
+      "Public Sector": {"value": 0.68, "unit": "relativity", "source": "NetDiligence Cyber Claims Study 2025", "locator": "Table 5 (Public Entity): $180K / $264K", "tag": "D"}
+    },
+    "same_relativity_all_perils": {"value": true, "unit": "flag", "source": "no published peril x sector table", "locator": "spec 2.3", "tag": "A", "sensitivity": "not varied"}
+  },
+
+  "perils": {
+    "RANSOMWARE":       {"frequency": {"value": 0.0031, "unit": "frequency", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 6.1, 2024", "tag": "L"},
+                         "mean_loss_usd": {"value": 292000, "unit": "USD", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 6.2, 2024", "tag": "L"}},
+    "BEC":              {"frequency": {"value": 0.0044, "unit": "frequency", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 4.1, 2024", "tag": "L"},
+                         "mean_loss_usd": {"value": 35000, "unit": "USD", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 4.2, 2024", "tag": "L"}},
+    "FTF":              {"frequency": {"value": 0.0044, "unit": "frequency", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 5.1, 2024", "tag": "L"},
+                         "mean_loss_usd": {"value": 185000, "unit": "USD", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 5.2, 2024, initial loss before clawbacks", "tag": "L"}},
+    "MISC_FIRST_PARTY": {"frequency": {"value": 0.0017, "unit": "frequency", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 7.1, 2024", "tag": "L"},
+                         "mean_loss_usd": {"value": 49000, "unit": "USD", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 7.2, 2024", "tag": "L"}},
+    "THIRD_PARTY":      {"frequency": {"value": 0.0002, "unit": "frequency", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 8.1, 2024", "tag": "L"},
+                         "mean_loss_usd": {"value": 23000, "unit": "USD", "source": "Coalition 2025 Cyber Claims Report", "locator": "Fig 8.2, 2024", "tag": "L"}}
+  },
+
+  "india": {
+    "F_india": {"value": {"RANSOMWARE": 1.0, "BEC": 1.0, "FTF": 1.0, "MISC_FIRST_PARTY": 1.0, "THIRD_PARTY": 1.0}, "unit": "frequency factor", "source": "switched off: no India claims data used yet", "locator": "spec 1", "tag": "A", "sensitivity": "not varied"},
+    "S_india": {"value": 1.0, "unit": "severity factor", "source": "switched off: no India claims data used yet", "locator": "spec 1", "tag": "A", "sensitivity": "not varied"}
+  },
+
+  "severity_shape": {
+    "sigma": {"value": 2.193, "unit": "lognormal sigma", "source": "derived from NetDiligence 2025 SMEs: mean $264K (N = 8,936), 395 claims >= $1M, 341 claims $500K-$1M; shared across perils is [A]", "locator": "scripts/derive_sigma.py", "tag": "D", "sensitivity": [1.97, 2.193]},
+    "netdiligence_sme_mean_usd": {"value": 264000, "unit": "USD", "source": "NetDiligence Cyber Claims Study 2025", "locator": "SME mean incident cost", "tag": "L"},
+    "netdiligence_sme_n": {"value": 8936, "unit": "claims", "source": "NetDiligence Cyber Claims Study 2025", "locator": "SME sample size", "tag": "L"},
+    "netdiligence_sme_over_1m": {"value": 395, "unit": "claims", "source": "NetDiligence Cyber Claims Study 2025", "locator": "SME claims >= $1M", "tag": "L"},
+    "netdiligence_sme_500k_1m": {"value": 341, "unit": "claims", "source": "NetDiligence Cyber Claims Study 2025", "locator": "SME claims $500K-$1M", "tag": "L"},
+    "iris_median_usd": {"value": 357000, "unit": "USD", "source": "Cyentia IRIS 2025", "locator": "Table 1, firms < $100M, median", "tag": "L"},
+    "iris_p95_usd": {"value": 9100000, "unit": "USD", "source": "Cyentia IRIS 2025", "locator": "Table 1, firms < $100M, 95th percentile", "tag": "L"},
+    "quantile_points": {"value": 20000, "unit": "mid-point quantiles", "source": "numerical method", "locator": "spec 4", "tag": "A", "sensitivity": "checked against closed-form LEV in tests"},
+    "tail_points": {"value": 4000, "unit": "extra quantiles above the 99th percentile", "source": "numerical method", "locator": "spec 4 (extra upper-tail resolution)", "tag": "A", "sensitivity": "checked against closed-form LEV in tests"}
+  },
+
+  "heads": {
+    "order": ["COV-IR", "COV-BI", "COV-DR", "COV-LEGAL", "COV-TPL", "COV-EXT", "COV-NOTIFY", "COV-FTF"],
+    "names": {"COV-IR": "Incident Response / Forensics", "COV-BI": "Business Interruption", "COV-DR": "Data Restoration",
+              "COV-LEGAL": "Legal & Regulatory", "COV-TPL": "Third-Party Liability", "COV-EXT": "Cyber Extortion / Ransomware",
+              "COV-NOTIFY": "Notification Costs", "COV-FTF": "Funds Transfer Fraud / Social Engineering"},
+    "shares": {
+      "RANSOMWARE":       {"value": {"COV-IR": 0.20, "COV-BI": 0.35, "COV-DR": 0.06, "COV-LEGAL": 0.08, "COV-TPL": 0.02, "COV-EXT": 0.25, "COV-NOTIFY": 0.04, "COV-FTF": 0.0}, "unit": "share of loss", "source": "BI, restoration and forensics [D] from Coalition 2025 p.17 (BI $102K, restoration $18K, forensics $58K of $292K); the other shares are placeholders", "locator": "TODO-SOURCE: refine from NetDiligence 2025 crisis-services tables 10/14", "tag": "A", "sensitivity": "+/-25% on placeholder shares, renormalised"},
+      "BEC":              {"value": {"COV-IR": 0.40, "COV-BI": 0.0, "COV-DR": 0.0, "COV-LEGAL": 0.25, "COV-TPL": 0.05, "COV-EXT": 0.0, "COV-NOTIFY": 0.30, "COV-FTF": 0.0}, "unit": "share of loss", "source": "placeholder", "locator": "TODO-SOURCE: refine from NetDiligence 2025 crisis-services tables 10/14", "tag": "A", "sensitivity": "+/-25%, renormalised"},
+      "FTF":              {"value": {"COV-IR": 0.05, "COV-BI": 0.0, "COV-DR": 0.0, "COV-LEGAL": 0.05, "COV-TPL": 0.0, "COV-EXT": 0.0, "COV-NOTIFY": 0.0, "COV-FTF": 0.90}, "unit": "share of loss", "source": "placeholder", "locator": "TODO-SOURCE: refine from NetDiligence 2025 crisis-services tables 10/14", "tag": "A", "sensitivity": "+/-25%, renormalised"},
+      "MISC_FIRST_PARTY": {"value": {"COV-IR": 0.25, "COV-BI": 0.40, "COV-DR": 0.25, "COV-LEGAL": 0.10, "COV-TPL": 0.0, "COV-EXT": 0.0, "COV-NOTIFY": 0.0, "COV-FTF": 0.0}, "unit": "share of loss", "source": "placeholder", "locator": "TODO-SOURCE: refine from NetDiligence 2025 crisis-services tables 10/14", "tag": "A", "sensitivity": "+/-25%, renormalised"},
+      "THIRD_PARTY":      {"value": {"COV-IR": 0.0, "COV-BI": 0.0, "COV-DR": 0.0, "COV-LEGAL": 0.30, "COV-TPL": 0.70, "COV-EXT": 0.0, "COV-NOTIFY": 0.0, "COV-FTF": 0.0}, "unit": "share of loss", "source": "placeholder", "locator": "TODO-SOURCE: refine from NetDiligence 2025 crisis-services tables 10/14", "tag": "A", "sensitivity": "+/-25%, renormalised"}
+    },
+    "ransomware_measured_shares": ["COV-IR", "COV-BI", "COV-DR"]
+  },
+
+  "controls": {
+    "multiplier_cap": {"value": [0.5, 2.0], "unit": "[min, max] per control", "source": "judgement", "locator": "spec 5.1", "tag": "A", "sensitivity": [[0.4, 2.5]]},
+    "beta": {"value": 0.5, "unit": "within-stage damping", "source": "judgement: overlapping controls in one attack stage", "locator": "spec 5.3", "tag": "A", "sensitivity": [0.0, 1.0]},
+    "credit_x": {"value": 0.6, "unit": "share of verified credit given to STATED", "source": "derived with hollow-declaration rate f = 0.20 [A]", "locator": "scripts/derive_credit_x.py", "tag": "D", "sensitivity": [0.4, 0.8]},
+    "hollow_declaration_rate": {"value": 0.20, "unit": "share of declared controls that are not really working", "source": "judgement", "locator": "spec 5.2", "tag": "A", "sensitivity": [0.1, 0.3]},
+    "combined_bounds": {"value": [0.27, 3.0], "unit": "[floor, ceiling] for a combined multiplier", "source": "Coalition 2025 Cyber Claims Report", "locator": "floor: Executive Summary, policyholders have 73% fewer claims than industry; ceiling: end-of-life software ~3x claims", "tag": "L"},
+    "frequency": {
+      "CTRL-SECCONFIG":  {"S": 5.58, "p": 0.96, "stage": "WEAKNESS",   "perils": ["RANSOMWARE", "MISC_FIRST_PARTY"], "source": "Marsh McLennan, Using data to prioritize cybersecurity investments (2023)", "locator": "Figure 1 / adoption table: hardening / configuration management", "tag": "L"},
+      "CTRL-PAM":        {"S": 2.92, "p": 0.35, "stage": "EXECUTION",  "perils": ["RANSOMWARE", "MISC_FIRST_PARTY"], "source": "Marsh McLennan (2023)", "locator": "Figure 1: endpoint privilege management", "tag": "L"},
+      "CTRL-EDR":        {"S": 2.23, "p": 0.82, "stage": "EXECUTION",  "perils": ["RANSOMWARE", "MISC_FIRST_PARTY"], "source": "Marsh McLennan (2023)", "locator": "Figure 1: advanced endpoint security", "tag": "L"},
+      "CTRL-LOGGING":    {"S": 2.19, "p": 0.88, "stage": "EXECUTION",  "perils": ["RANSOMWARE", "MISC_FIRST_PARTY"], "source": "Marsh McLennan (2023)", "locator": "Figure 1: SOC/SIEM alerting", "tag": "L"},
+      "CTRL-VULNMGMT":   {"S": 2.19, "p": 0.24, "stage": "WEAKNESS",   "perils": ["RANSOMWARE", "MISC_FIRST_PARTY"], "source": "Marsh McLennan (2023)", "locator": "Figure 1: high-severity CVEs patched within 7 days (partial match)", "tag": "L"},
+      "CTRL-PATCH-CRIT": {"S": 1.57, "p": 0.53, "stage": "WEAKNESS",   "perils": ["RANSOMWARE", "MISC_FIRST_PARTY"], "source": "Marsh McLennan (2023)", "locator": "Figure 1: critical CVEs patched within 7 days", "tag": "L"},
+      "CTRL-AWARENESS":  {"S": 1.76, "p": 0.89, "stage": "CREDENTIAL", "perils": ["RANSOMWARE", "BEC", "FTF"], "source": "Marsh McLennan (2023)", "locator": "Figure 1: phishing simulations at least annually", "tag": "L"},
+      "CTRL-EMAILSEC":   {"S": 1.56, "p": 0.75, "stage": "CREDENTIAL", "perils": ["RANSOMWARE", "BEC", "FTF"], "source": "Marsh McLennan (2023)", "locator": "Figure 1: attachment sandboxing (partial match)", "tag": "L"},
+      "CTRL-MFA":        {"S": 1.4,  "p": 0.70, "stage": "CREDENTIAL", "perils": ["RANSOMWARE", "BEC", "FTF"], "source": "Marsh McLennan (2023) for S; adoption is a placeholder", "locator": "Figure 1; TODO-SOURCE: Marsh gives no MFA adoption", "tag": "A", "p_tag": "A", "sensitivity": {"p": [0.5, 0.9]}}
+    },
+    "severity": {
+      "CTRL-BACKUP-TESTED": {"S": 8.0, "p": 0.43, "targets": {"RANSOMWARE": ["COV-BI", "COV-DR", "COV-EXT"], "MISC_FIRST_PARTY": ["COV-BI", "COV-DR"]}, "source": "Sophos, The Impact of Compromised Backups on Ransomware Outcomes (2024)", "locator": "median recovery $375K intact vs $3M compromised (S = 8.0); backups compromised in 57% of attacks (p = 0.43)", "tag": "L"},
+      "CTRL-IRPLAN":        {"S": 1.055, "p": 0.5, "targets": "ALL", "source": "IBM Cost of a Data Breach 2023: IR plans and testing -$232,008 on $4.45M (has = 0.948, S = 1/0.948)", "locator": "TODO-SOURCE: adoption 0.5 is a placeholder", "tag": "A", "p_tag": "A"},
+      "CTRL-AWARENESS":     {"S": 1.055, "p": 0.5, "targets": "ALL", "source": "IBM Cost of a Data Breach 2023: employee training -$232,867 on $4.45M", "locator": "TODO-SOURCE: adoption 0.5 is a placeholder", "tag": "A", "p_tag": "A"},
+      "CTRL-ENCRYPTION":    {"S": 1.101, "p": 0.5, "targets": {"MISC_FIRST_PARTY": ["COV-NOTIFY", "COV-LEGAL", "COV-TPL"], "THIRD_PARTY": ["COV-NOTIFY", "COV-LEGAL", "COV-TPL"]}, "source": "IBM Cost of a Data Breach 2019: extensive encryption -$360K on $3.92M (about -9.2%)", "locator": "outdated; TODO-SOURCE newer figure; adoption 0.5 is a placeholder", "tag": "A", "p_tag": "A"}
+    },
+    "unpriced": {
+      "_note": "Kept as warranty / monitoring / questionnaire items with multiplier 1.0: no centred with/without effect size published.",
+      "items": ["CTRL-SEGMENTATION", "CTRL-ASSETINV", "CTRL-PASSPOLICY", "CTRL-AGENT-COVERAGE", "Q-PAYMENT-VERIFICATION"]
+    },
+    "verified_document_types": {"value": ["SOC2_TYPE2", "ISO27001_SOA", "VAPT_REPORT", "SCAN_EXPORT", "IDP_MFA_EXPORT", "CONFIG_REPORT", "ENDPOINT_REPORT", "BACKUP_TEST_REPORT", "IR_EXERCISE_EVIDENCE", "PENTEST_EVIDENCE"], "unit": "document types counted as independent evidence", "source": "spec 5.2 (SOC 2 Type II, ISO 27001 SoA, VAPT, scanner export, IdP export; tested evidence)", "locator": "spec 5.2", "tag": "A", "sensitivity": "not varied"},
+    "supporting_evidence_notes": [
+      "Coalition 2025: end-of-life software is associated with about 3x claims (used for the 3.0 ceiling).",
+      "Coalition 2025: one unresolved critical vulnerability is associated with +33% claims (not priced separately).",
+      "Meyer et al., How effective is MFA at deterring cyberattacks? (Microsoft, 2023): MFA reduces account compromise by 99.22% (not used as a claims multiplier).",
+      "Sophos Active Adversary Report 2025: compromised credentials are the top root cause (41%).",
+      "CTRL-LOGGING severity effect is not priced (no centred figure).",
+      "Outside-in scan findings are evidence for these controls (for example exposed RDP means SECCONFIG is not working). There is no separate exposure modifier."
+    ]
+  },
+
+  "claims": {
+    "alpha": {"value": 4.22, "unit": "credibility (pseudo-years of expected claims)", "source": "derived: negative binomial fit to Cyentia IRIS 2022 Fig 4 (P(0) = 87.1%, P(1) = 11.3%), less control and sector heterogeneity", "locator": "V2 spec 6; scripts/derive_alpha.py", "tag": "D", "sensitivity": [3.45, 6.94]},
+    "iris_p0": {"value": 0.871, "unit": "share of firms with no incident", "source": "Cyentia IRIS 2022", "locator": "Fig. 4", "tag": "L"},
+    "iris_p1": {"value": 0.113, "unit": "share of firms with one incident", "source": "Cyentia IRIS 2022", "locator": "Fig. 4", "tag": "L"},
+    "lookback_years": {"value": 3, "unit": "years", "source": "spec 6", "locator": "N counts material incidents in the last 3 years; T = min(3, years in operation)", "tag": "A", "sensitivity": "not varied"}
+  },
+
+  "loadings": {
+    "tlr": {"value": 0.50, "unit": "target loss ratio", "source": "Fitch (via Insurance Journal, May 2024) 9-year average US standalone cyber loss ratio 48%; NAIC 2026 Report on the Cybersecurity Insurance Market, primary standalone 2025 57%", "locator": "0.50 sits between the two", "tag": "L", "sensitivity": [0.48, 0.57]},
+    "expense_ratio": {"value": 0.30, "unit": "share of gross premium", "source": "IRDAI (Expenses of Management of Insurers transacting General or Health Insurance Business) Regulations 2023", "locator": "30% cap including commission", "tag": "L"},
+    "trend": {"value": 0.0, "unit": "loss trend", "source": "judgement", "locator": "spec 7", "tag": "A", "sensitivity": [-0.10, 0.10]},
+    "gst": {"value": 0.18, "unit": "tax on premium", "source": "GST on general insurance premium in India", "locator": "18%", "tag": "L"}
+  },
+
+  "gating": {
+    "warranties": ["CTRL-MFA", "CTRL-BACKUP-TESTED", "CTRL-EDR", "CTRL-PATCH-CRIT"],
+    "stated_passes": ["CTRL-MFA"],
+    "_note": "MFA passes when STATED: the platform cannot verify MFA and the questionnaire carries a misrepresentation declaration. Gating never changes the price."
+  },
+
+  "referral": {
+    "turnover_usd_max": {"value": 2000000000, "unit": "USD", "source": "spec 8", "locator": "refer above USD 2B", "tag": "A", "sensitivity": "not varied"},
+    "incidents_min": {"value": 2, "unit": "material incidents", "source": "spec 8", "locator": "refer at N >= 2", "tag": "A", "sensitivity": "not varied"}
+  }
+}

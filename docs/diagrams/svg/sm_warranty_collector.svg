@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="640" viewBox="0 0 1400 640" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>Warranty state machine (collector, standalone)</title>
+<defs>
+<marker id="m-arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11 z" fill="#0b0e14"/></marker>
+<marker id="m-open" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11" fill="none" stroke="#0b0e14" stroke-width="1.3"/></marker>
+<marker id="m-tri" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,1 L15,8 L1,15 z" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-diamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#0b0e14" stroke="#0b0e14"/></marker>
+<marker id="m-odiamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#ffffff" stroke="#0b0e14"/></marker>
+<marker id="m-many" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M19,2 L5,10 L19,18 M5,2 L5,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-one" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M9,3 L9,17 M14,3 L14,17" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-zmany" viewBox="0 0 26 20" refX="25" refY="10" markerWidth="26" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M25,2 L13,10 L25,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/><circle cx="7" cy="10" r="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+</defs>
+<rect width="1400" height="640" fill="#ffffff"/>
+<text x="20" y="32" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0b0e14">Warranty state machine in the collector (standalone companies only)</text>
+<rect x="20" y="50" width="1360" height="470" rx="0" fill="none" stroke="#0b0e14" stroke-width="1.2"/>
+<polygon points="20,50 296.75,50 296.75,64 288.75,72 20,72" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="27" y="65.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="start" fill="#0b0e14">stm  Warranty  (evaluate.step, pure function)</text>
+<circle cx="90" cy="205" r="8" fill="#0b0e14"/>
+<rect x="170" y="160" width="230" height="90" rx="14" fill="#e2f4e8" stroke="#145c33" stroke-width="1.5"/>
+<text x="285.0" y="180" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#145c33">MET</text>
+<polyline points="170,189 400,189" fill="none" stroke="#145c33" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="285.0" y="205.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">fleet control passes</text>
+<rect x="590" y="160" width="240" height="90" rx="14" fill="#fff2d6" stroke="#8a4b06" stroke-width="1.5"/>
+<text x="710.0" y="180" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#8a4b06">IN_GRACE</text>
+<polyline points="590,189 830,189" fill="none" stroke="#8a4b06" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="710.0" y="205.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">grace: PATCH 14 d, EDR 7 d,</text>
+<text x="710.0" y="219.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">BACKUP 7 d, coverage 14 d</text>
+<rect x="1060" y="160" width="260" height="90" rx="14" fill="#ffe8e6" stroke="#9b1c22" stroke-width="1.5"/>
+<text x="1190.0" y="180" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#9b1c22">BREACHED</text>
+<polyline points="1060,189 1320,189" fill="none" stroke="#9b1c22" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="1190.0" y="205.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">coverage effect applies</text>
+<rect x="590" y="380" width="240" height="90" rx="14" fill="#e3edf9" stroke="#1a4f8f" stroke-width="1.5"/>
+<text x="710.0" y="400" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#1a4f8f">REMEDIATED</text>
+<polyline points="590,409 830,409" fill="none" stroke="#1a4f8f" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="710.0" y="425.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">fix must hold 24 h</text>
+<polyline points="98,205 170,205" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="134.0" y="197.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">bind</text>
+<polyline points="400,190 590,190" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="495.0" y="168.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">FAIL /</text>
+<text x="495.0" y="181.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">start grace</text>
+<polyline points="830,190 1060,190" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="945.0" y="168.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">[grace expired]</text>
+<text x="945.0" y="181.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">still FAIL</text>
+<polyline points="680,250 680,380" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="672.0" y="309.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">PASS</text>
+<polyline points="760,380 760,250" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="768.0" y="307.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">FAIL (regression) /</text>
+<text x="768.0" y="320.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">new grace period</text>
+<polyline points="1190,250 1190,425 830,425" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="1010.0" y="417.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">PASS</text>
+<polyline points="590,425 285,425 285,250" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="437.5" y="417.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">[PASS held ≥ 24 h]</text>
+<polygon points="60,300 248,300 260,312 260,378 60,378" fill="#fffdf5" stroke="#b9a978" stroke-width="1"/>
+<polyline points="248,300 248,312 260,312" fill="none" stroke="#b9a978" stroke-width="1"/>
+<text x="68" y="316.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#0b0e14">NOT_OBSERVABLE never</text>
+<text x="68" y="330.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#0b0e14">moves a warranty: absence</text>
+<text x="68" y="344.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#0b0e14">of evidence is not evidence</text>
+<text x="68" y="358.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#0b0e14">of breach.</text>
+<polygon points="30,540 1358,540 1370,552 1370,596 30,596" fill="#fffdf5" stroke="#b9a978" stroke-width="1"/>
+<polyline points="1358,540 1358,552 1370,552" fill="none" stroke="#b9a978" stroke-width="1"/>
+<text x="38" y="556.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">For a company linked to the platform this machine is not used: the collector displays the platform's states (B3), and the platform's REMEDIATED → MET is immediate.</text>
+<text x="38" y="571.4" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">The fleet control fed in is PASS only when ≥ 95 % of observed hosts pass.</text>
+<text x="16" y="626" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#555d6b" font-style="italic">Figure B4. State machine of a collector warranty. Differs from B3 in the 24 h hold and the regression transition.</text>
+</svg>

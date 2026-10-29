@@ -1,0 +1,254 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="824" viewBox="0 0 1560 824" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>Beretta system: component diagram</title>
+<defs>
+<marker id="m-arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11 z" fill="#0b0e14"/></marker>
+<marker id="m-open" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11" fill="none" stroke="#0b0e14" stroke-width="1.3"/></marker>
+<marker id="m-tri" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,1 L15,8 L1,15 z" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-diamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#0b0e14" stroke="#0b0e14"/></marker>
+<marker id="m-odiamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#ffffff" stroke="#0b0e14"/></marker>
+<marker id="m-many" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M19,2 L5,10 L19,18 M5,2 L5,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-one" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M9,3 L9,17 M14,3 L14,17" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-zmany" viewBox="0 0 26 20" refX="25" refY="10" markerWidth="26" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M25,2 L13,10 L25,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/><circle cx="7" cy="10" r="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+</defs>
+<rect width="1560" height="824" fill="#ffffff"/>
+<text x="20" y="32" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0b0e14">Beretta: component view of the three subsystems and how they connect</text>
+<rect x="20" y="50" width="440" height="700" rx="0" fill="#f2f4f7" stroke="#0b0e14" stroke-width="1.2"/>
+<polygon points="20,50 291.0,50 291.0,64 283.0,72 20,72" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="27" y="65.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="start" fill="#0b0e14">subsystem  Endpoint agent  (kyh-agent/agent)</text>
+<rect x="40" y="100" width="230" height="64" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="155.0" y="111.89999999999999" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«component»</text>
+<text x="155.0" y="128.2" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">CLI</text>
+<text x="155.0" y="144.14999999999998" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">once · status · show-policy</text>
+<text x="155.0" y="160.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">scan-now · build-info</text>
+<rect x="246" y="108" width="14" height="18" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="242" y="111" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="242" y="119" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="40" y="194" width="230" height="64" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="155.0" y="205.9" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«component»</text>
+<text x="155.0" y="222.20000000000002" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">Service loop</text>
+<text x="155.0" y="238.15" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">Agent.tick(), every 30 s</text>
+<text x="155.0" y="254.10000000000002" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">full / delta / heartbeat</text>
+<rect x="246" y="202" width="14" height="18" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="242" y="205" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="242" y="213" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="40" y="288" width="230" height="64" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="155.0" y="299.90000000000003" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«component»</text>
+<text x="155.0" y="316.20000000000005" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">Check runner</text>
+<text x="155.0" y="332.15000000000003" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">Runner + REGISTRY</text>
+<text x="155.0" y="348.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">12 checks × 3 OS</text>
+<rect x="246" y="296" width="14" height="18" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="242" y="299" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="242" y="307" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="40" y="382" width="230" height="64" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="155.0" y="393.90000000000003" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«component»</text>
+<text x="155.0" y="410.20000000000005" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">Outbox</text>
+<text x="155.0" y="426.15000000000003" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">Spool (SQLite)</text>
+<text x="155.0" y="442.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">seq, ack, dead-letter</text>
+<rect x="246" y="390" width="14" height="18" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="242" y="393" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="242" y="401" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="40" y="476" width="230" height="64" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="155.0" y="487.90000000000003" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«component»</text>
+<text x="155.0" y="504.20000000000005" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">Transport</text>
+<text x="155.0" y="520.1500000000001" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">HTTPS, pinned ca.pem</text>
+<text x="155.0" y="536.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">HMAC-SHA256 signature</text>
+<rect x="246" y="484" width="14" height="18" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="242" y="487" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="242" y="495" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="290" y="194" width="150" height="64" rx="2" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="365.0" y="205.9" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«artifact»</text>
+<text x="365.0" y="222.20000000000002" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">Baseline policy</text>
+<text x="365.0" y="238.15" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">policy.json</text>
+<text x="365.0" y="254.10000000000002" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">sha-256 policy hash</text>
+<rect x="290" y="288" width="150" height="64" rx="2" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="5 3"/>
+<text x="365.0" y="299.90000000000003" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«external»</text>
+<text x="365.0" y="316.20000000000005" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">Host OS</text>
+<text x="365.0" y="332.15000000000003" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">read-only commands,</text>
+<text x="365.0" y="348.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">files, PowerShell</text>
+<rect x="290" y="382" width="150" height="64" rx="2" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="365.0" y="393.90000000000003" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«artifact»</text>
+<text x="365.0" y="410.20000000000005" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">Transparency log</text>
+<text x="365.0" y="426.15000000000003" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">sent.jsonl</text>
+<text x="365.0" y="442.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">readable by staff</text>
+<polyline points="155,164 155,194" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="161.0" y="183.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">scan-now request file</text>
+<polyline points="155,258 155,288" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<polyline points="155,352 155,382" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="161.0" y="371.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">enqueue report</text>
+<polyline points="155,446 155,476" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="161.0" y="465.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">flush pending</text>
+<polyline points="270,226 290,226" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<polyline points="270,320 290,320" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<polyline points="270,414 290,414" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<polygon points="40,580 428,580 440,592 440,672 40,672" fill="#fffdf5" stroke="#b9a978" stroke-width="1"/>
+<polyline points="428,580 428,592 440,592" fill="none" stroke="#b9a978" stroke-width="1"/>
+<text x="48" y="596.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">Read-only by design. Never collects file contents,</text>
+<text x="48" y="610.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">browsing, keystrokes, e-mail, passwords or clear-text</text>
+<text x="48" y="625.4" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">user names. Runs as a Windows service, systemd unit</text>
+<text x="48" y="640.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">or launchd daemon. Python standard library only.</text>
+<rect x="500" y="50" width="460" height="700" rx="0" fill="#f2f4f7" stroke="#0b0e14" stroke-width="1.2"/>
+<polygon points="500,50 765.25,50 765.25,64 757.25,72 500,72" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="507" y="65.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="start" fill="#0b0e14">subsystem  Collector  (kyh-agent/collector)</text>
+<rect x="540" y="100" width="360" height="64" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="720.0" y="111.89999999999999" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«component»</text>
+<text x="720.0" y="128.2" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">Ingest</text>
+<text x="720.0" y="144.14999999999998" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">core.enroll() · core.ingest()</text>
+<text x="720.0" y="160.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">token, HMAC, replay, clock-skew checks</text>
+<rect x="876" y="108" width="14" height="18" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="872" y="111" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="872" y="119" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="540" y="194" width="360" height="80" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="720.0" y="206.475" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«component»</text>
+<text x="720.0" y="222.775" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">Evaluation</text>
+<text x="720.0" y="238.725" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">evaluate.evaluate_company()</text>
+<text x="720.0" y="254.675" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">liveness → host control → fleet roll-up</text>
+<text x="720.0" y="270.625" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">95 % hosts pass · 90 % coverage</text>
+<rect x="876" y="202" width="14" height="18" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="872" y="205" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="872" y="213" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="540" y="304" width="360" height="64" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="720.0" y="315.90000000000003" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«component»</text>
+<text x="720.0" y="332.20000000000005" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">Warranty state machine</text>
+<text x="720.0" y="348.15000000000003" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">evaluate.step()</text>
+<text x="720.0" y="364.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">standalone companies only</text>
+<rect x="876" y="312" width="14" height="18" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="872" y="315" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="872" y="323" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="540" y="398" width="360" height="64" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="720.0" y="409.90000000000003" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«component»</text>
+<text x="720.0" y="426.20000000000005" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">Platform link</text>
+<text x="720.0" y="442.15000000000003" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">LinkWorker · sync_company()</text>
+<text x="720.0" y="458.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">signed roll-up on change, 15 min heartbeat</text>
+<rect x="876" y="406" width="14" height="18" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="872" y="409" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="872" y="417" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="540" y="492" width="360" height="64" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="720.0" y="503.90000000000003" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«component»</text>
+<text x="720.0" y="520.2" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">Dashboard</text>
+<text x="720.0" y="536.1500000000001" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">static/index.html, app.js</text>
+<text x="720.0" y="552.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">admin token, strict CSP</text>
+<rect x="876" y="500" width="14" height="18" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="872" y="503" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="872" y="511" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<path d="M620,600 A100.0,8 0 0 0 820,600 L820,650 A100.0,8 0 0 1 620,650 Z" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<ellipse cx="720.0" cy="600" rx="100.0" ry="8" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="720.0" y="631.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="#0b0e14">collector.db</text>
+<text x="720.0" y="645.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#555d6b">SQLite, WAL</text>
+<polyline points="720,164 720,194" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="726.0" y="183.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">results_current</text>
+<polyline points="720,274 720,304" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<polyline points="900,234 935,234 935,430 900,430" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="931.0" y="394.72" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="end" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">snapshot</text>
+<polyline points="540,524 522,524 522,234 540,234" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<polyline points="720,556 720,592" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<polygon points="540,676 928,676 940,688 940,736 540,736" fill="#fffdf5" stroke="#b9a978" stroke-width="1"/>
+<polyline points="928,676 928,688 940,688" fill="none" stroke="#b9a978" stroke-width="1"/>
+<text x="548" y="692.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">Linked company: no state machine of its own;</text>
+<text x="548" y="706.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">shows the platform's warranty states.</text>
+<rect x="1000" y="50" width="540" height="700" rx="0" fill="#f2f4f7" stroke="#0b0e14" stroke-width="1.2"/>
+<polygon points="1000,50 1305.5,50 1305.5,64 1297.5,72 1000,72" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1007" y="65.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="start" fill="#0b0e14">subsystem  Beretta platform  (kyh-cyber-insurance)</text>
+<rect x="1020" y="100" width="235" height="64" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1137.5" y="111.89999999999999" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«component»</text>
+<text x="1137.5" y="128.2" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">Web UI</text>
+<text x="1137.5" y="144.14999999999998" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">frontend/index.html</text>
+<text x="1137.5" y="160.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">app.js, styles.css</text>
+<rect x="1231" y="108" width="14" height="18" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1227" y="111" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1227" y="119" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1020" y="194" width="235" height="64" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1137.5" y="205.9" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«component»</text>
+<text x="1137.5" y="222.20000000000002" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">HTTP API</text>
+<text x="1137.5" y="238.15" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">api.Handler</text>
+<text x="1137.5" y="254.10000000000002" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">role tokens, 1 MB cap</text>
+<rect x="1231" y="202" width="14" height="18" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1227" y="205" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1227" y="213" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1020" y="300" width="235" height="70" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1137.5" y="314.90000000000003" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«component»</text>
+<text x="1137.5" y="331.20000000000005" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">Fleet link</text>
+<text x="1137.5" y="347.15000000000003" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">fleet.ingest_rollup()</text>
+<text x="1137.5" y="363.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">HMAC, seq, ±5 min, mapping</text>
+<rect x="1231" y="308" width="14" height="18" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1227" y="311" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1227" y="319" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1020" y="470" width="235" height="64" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1137.5" y="481.90000000000003" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«component»</text>
+<text x="1137.5" y="498.20000000000005" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">Audit</text>
+<text x="1137.5" y="514.1500000000001" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">audit.log()</text>
+<text x="1137.5" y="530.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">append-only trail</text>
+<rect x="1231" y="478" width="14" height="18" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1227" y="481" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1227" y="489" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1285" y="100" width="235" height="64" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1402.5" y="111.89999999999999" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«component»</text>
+<text x="1402.5" y="128.2" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">Engine B: pricing V2</text>
+<text x="1402.5" y="144.14999999999998" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">pricing_v2.price()</text>
+<text x="1402.5" y="160.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">perils × lognormal</text>
+<rect x="1496" y="108" width="14" height="18" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1492" y="111" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1492" y="119" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1285" y="194" width="235" height="64" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1402.5" y="205.9" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«component»</text>
+<text x="1402.5" y="222.20000000000002" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">Underwriting</text>
+<text x="1402.5" y="238.15" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">bind_policy(), gate()</text>
+<text x="1402.5" y="254.10000000000002" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">refer()</text>
+<rect x="1496" y="202" width="14" height="18" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1492" y="205" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1492" y="213" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1285" y="300" width="235" height="70" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1402.5" y="314.90000000000003" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«component»</text>
+<text x="1402.5" y="331.20000000000005" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">Coverage engine</text>
+<text x="1402.5" y="347.15000000000003" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">coverage.evaluate_policy()</text>
+<text x="1402.5" y="363.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">the warranty state machine</text>
+<rect x="1496" y="308" width="14" height="18" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1492" y="311" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1492" y="319" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1285" y="400" width="235" height="64" rx="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1402.5" y="411.90000000000003" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«component»</text>
+<text x="1402.5" y="428.20000000000005" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">Engine A: evidence</text>
+<text x="1402.5" y="444.15000000000003" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">observations.resolve_posture()</text>
+<text x="1402.5" y="460.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">best evidence per control</text>
+<rect x="1496" y="408" width="14" height="18" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1492" y="411" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="1492" y="419" width="8" height="4" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<path d="M1200,608 A90.0,8 0 0 0 1380,608 L1380,658 A90.0,8 0 0 1 1200,658 Z" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<ellipse cx="1290.0" cy="608" rx="90.0" ry="8" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1290.0" y="639.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="#0b0e14">kyh.db</text>
+<text x="1290.0" y="653.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#555d6b">SQLite, WAL</text>
+<polyline points="1137,164 1137,194" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="1143.0" y="183.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">fetch /api/*</text>
+<polyline points="1255,212 1270,212 1270,132 1285,132" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<polyline points="1255,236 1285,236" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<polyline points="1255,335 1285,335" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<polyline points="1402,258 1402,300" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="1408.0" y="283.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">initialise warranties</text>
+<polyline points="1402,370 1402,400" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<polyline points="1520,132 1532,132 1532,432 1520,432" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<polyline points="1137,370 1137,440 1285,440" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="1211.0" y="435.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">record AGENT_FLEET</text>
+<polyline points="1402,464 1402,633 1380,633" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<polyline points="1137,534 1137,633 1200,633" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<polygon points="1020,686 1508,686 1520,698 1520,736 1020,736" fill="#fffdf5" stroke="#b9a978" stroke-width="1"/>
+<polyline points="1508,686 1508,698 1520,698" fill="none" stroke="#b9a978" stroke-width="1"/>
+<text x="1028" y="702.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">The only warranty authority. Monitoring never re-prices a bound</text>
+<text x="1028" y="716.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">policy: repricing_performed is always false.</text>
+<polyline points="270,508 480,508 480,132 540,132" fill="none" stroke="#1d5fbf" stroke-width="1.6" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<polyline points="900,446 980,446 980,318 1020,318" fill="none" stroke="#1d5fbf" stroke-width="1.6" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<polyline points="1020,356 990,356 990,520 900,520" fill="none" stroke="#1d5fbf" stroke-width="1.4" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<circle cx="480" cy="300" r="9" fill="#1d5fbf" stroke="#ffffff" stroke-width="1.5"/>
+<text x="480" y="304" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#ffffff">1</text>
+<circle cx="980" cy="380" r="9" fill="#1d5fbf" stroke="#ffffff" stroke-width="1.5"/>
+<text x="980" y="384" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#ffffff">2</text>
+<circle cx="990" cy="470" r="9" fill="#1d5fbf" stroke="#ffffff" stroke-width="1.5"/>
+<text x="990" y="474" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#ffffff">3</text>
+<circle cx="30" cy="772" r="9" fill="#1d5fbf" stroke="#ffffff" stroke-width="1.5"/>
+<text x="30" y="776" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#ffffff">1</text>
+<text x="46" y="776" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#0b0e14">HTTPS POST /api/v1/enroll and /api/v1/report: TLS with a pinned CA, body signed HMAC-SHA256</text>
+<circle cx="790" cy="772" r="9" fill="#1d5fbf" stroke="#ffffff" stroke-width="1.5"/>
+<text x="790" y="776" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#ffffff">2</text>
+<text x="806" y="776" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#0b0e14">POST /api/collector/rollup: one signed, sequenced fleet roll-up per linked company</text>
+<circle cx="30" cy="796" r="9" fill="#1d5fbf" stroke="#ffffff" stroke-width="1.5"/>
+<text x="30" y="800" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#ffffff">3</text>
+<text x="46" y="800" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#0b0e14">200 response: the platform's warranty states, repricing_performed = false</text>
+</svg>

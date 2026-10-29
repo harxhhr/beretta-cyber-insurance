@@ -1,0 +1,47 @@
+[
+  {
+    "file": "CyberUW-Cyber-Insurance-Proposal-Form.pdf",
+    "code": "CYBERUW-IQ-1.0",
+    "title": "Cyber Insurance Proposal Form (Full)",
+    "audience": "All applicants",
+    "pages": 19,
+    "desc": "The complete pre-application questionnaire. Sections A-Q covering company profile, financial exposure, data handling, regulatory position, eleven security-control domains, loss history and the coverage sought, with an evidence annexure and declaration.",
+    "primary": true
+  },
+  {
+    "file": "CyberUW-IQ-1.1-Addendum.pdf",
+    "code": "CYBERUW-IQ-1.1",
+    "title": "Rating Addendum (pricing V2)",
+    "audience": "All applicants, with the full form",
+    "pages": 3,
+    "desc": "The facts the premium model rates on that the 1.0 form does not ask: NIC 2008 code, RBI/SEBI regulation, material incidents with the definition, a yes / no / don't know answer for each priced control, payment verification, and the misrepresentation declaration.",
+    "primary": false
+  },
+  {
+    "file": "CyberUW-Short-Form-Screening-Questionnaire.pdf",
+    "code": "CYBERUW-IQ-1.0-SF",
+    "title": "Short-Form Screening Questionnaire",
+    "audience": "Small applicants / first-pass triage",
+    "pages": 12,
+    "desc": "A condensed subset covering the sections that most affect price and eligibility - the four Tier-1 controls, claims history, sector and coverage structure. Produces an indicative quotation only.",
+    "primary": false
+  },
+  {
+    "file": "CyberUW-Supplementary-Security-Controls.pdf",
+    "code": "CYBERUW-IQ-1.0-SEC",
+    "title": "Supplementary: Security Controls",
+    "audience": "Attach to any proposal",
+    "pages": 11,
+    "desc": "The eleven security-control sections (E-N) as a standalone form, for applicants completing the security review separately from the commercial sections.",
+    "primary": false
+  },
+  {
+    "file": "CyberUW-Supplementary-India-Regulatory.pdf",
+    "code": "CYBERUW-IQ-1.0-IN",
+    "title": "Supplementary: India Regulatory Declarations",
+    "audience": "India-incorporated applicants",
+    "pages": 4,
+    "desc": "Section Q as a standalone form - DPDP Act 2023, CERT-In 2022, sector-regulator declarations, and the statutory proposal-form declarations under the Insurance Act, 1938.",
+    "primary": false
+  }
+]

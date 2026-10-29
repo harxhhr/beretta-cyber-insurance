@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="834" viewBox="0 0 1400 834" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>Use cases: insured</title>
+<defs>
+<marker id="m-arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11 z" fill="#0b0e14"/></marker>
+<marker id="m-open" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11" fill="none" stroke="#0b0e14" stroke-width="1.3"/></marker>
+<marker id="m-tri" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,1 L15,8 L1,15 z" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-diamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#0b0e14" stroke="#0b0e14"/></marker>
+<marker id="m-odiamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#ffffff" stroke="#0b0e14"/></marker>
+<marker id="m-many" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M19,2 L5,10 L19,18 M5,2 L5,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-one" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M9,3 L9,17 M14,3 L14,17" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-zmany" viewBox="0 0 26 20" refX="25" refY="10" markerWidth="26" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M25,2 L13,10 L25,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/><circle cx="7" cy="10" r="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+</defs>
+<rect width="1400" height="834" fill="#ffffff"/>
+<text x="20" y="32" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0b0e14">Use cases for the insured company: the customer user and its IT administrator</text>
+<rect x="260" y="60" width="560" height="740" rx="6" fill="#f2f4f7" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="540.0" y="82" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0b0e14">Beretta platform  (role CUSTOMER: read only, own company)</text>
+<rect x="900" y="60" width="360" height="740" rx="6" fill="#f2f4f7" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1080.0" y="82" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0b0e14">Endpoint agent  (on each machine)</text>
+<circle cx="120" cy="300" r="9" fill="#ffffff" stroke="#0b0e14" stroke-width="1.4"/>
+<polyline points="120,309 120,334" fill="none" stroke="#0b0e14" stroke-width="1.4" stroke-linejoin="round"/>
+<polyline points="105,318 135,318" fill="none" stroke="#0b0e14" stroke-width="1.4" stroke-linejoin="round"/>
+<polyline points="107,352 120,334 133,352" fill="none" stroke="#0b0e14" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="120" y="370" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#0b0e14">Insured user</text>
+<text x="120" y="385" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">CUSTOMER role token</text>
+<circle cx="1340" cy="260" r="9" fill="#ffffff" stroke="#0b0e14" stroke-width="1.4"/>
+<polyline points="1340,269 1340,294" fill="none" stroke="#0b0e14" stroke-width="1.4" stroke-linejoin="round"/>
+<polyline points="1325,278 1355,278" fill="none" stroke="#0b0e14" stroke-width="1.4" stroke-linejoin="round"/>
+<polyline points="1327,312 1340,294 1353,312" fill="none" stroke="#0b0e14" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="1340" y="330" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#0b0e14">IT administrator</text>
+<text x="1340" y="345" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">admin rights on</text>
+<text x="1340" y="359" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">the endpoint</text>
+<circle cx="1340" cy="640" r="9" fill="#ffffff" stroke="#0b0e14" stroke-width="1.4"/>
+<polyline points="1340,649 1340,674" fill="none" stroke="#0b0e14" stroke-width="1.4" stroke-linejoin="round"/>
+<polyline points="1325,658 1355,658" fill="none" stroke="#0b0e14" stroke-width="1.4" stroke-linejoin="round"/>
+<polyline points="1327,692 1340,674 1353,692" fill="none" stroke="#0b0e14" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="1340" y="710" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#0b0e14">Agent service</text>
+<text x="1340" y="725" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">timer, «system»</text>
+<ellipse cx="540" cy="120" rx="96.06" ry="28" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="540" y="116.665" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">Send proposal form</text>
+<text x="540" y="131.615" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">and documents (offline)</text>
+<ellipse cx="540" cy="195" rx="79.96000000000001" ry="28" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="540" y="191.665" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">View own profile</text>
+<text x="540" y="206.61499999999998" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">and classification</text>
+<ellipse cx="540" cy="270" rx="86.4" ry="28" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="540" y="266.66499999999996" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">View questionnaire</text>
+<text x="540" y="281.61499999999995" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">answers and evidence</text>
+<ellipse cx="540" cy="345" rx="79.96000000000001" ry="28" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="540" y="341.66499999999996" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">View documents and</text>
+<text x="540" y="356.61499999999995" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">claims on record</text>
+<ellipse cx="540" cy="420" rx="89.62" ry="28" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="540" y="416.66499999999996" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">View evidence posture</text>
+<text x="540" y="431.61499999999995" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">per control</text>
+<ellipse cx="540" cy="495" rx="102.50000000000001" ry="28" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="540" y="491.66499999999996" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">View premium, eligibility</text>
+<text x="540" y="506.61499999999995" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">and savings</text>
+<ellipse cx="540" cy="570" rx="70.30000000000001" ry="28" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="540" y="566.665" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">View policy and</text>
+<text x="540" y="581.615" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">warranty states</text>
+<ellipse cx="540" cy="645" rx="125.04" ry="28" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="540" y="641.665" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">View Monitoring tab</text>
+<text x="540" y="656.615" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">(fleet roll-up, SIMULATED label)</text>
+<ellipse cx="540" cy="720" rx="99.28" ry="28" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="540" y="716.665" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">Ask the underwriter</text>
+<text x="540" y="731.615" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">to change data (offline)</text>
+<polyline points="150,340 443.94,120" fill="none" stroke="#0b0e14" stroke-width="1.1" stroke-linejoin="round"/>
+<polyline points="150,340 460.03999999999996,195" fill="none" stroke="#0b0e14" stroke-width="1.1" stroke-linejoin="round"/>
+<polyline points="150,340 453.6,270" fill="none" stroke="#0b0e14" stroke-width="1.1" stroke-linejoin="round"/>
+<polyline points="150,340 460.03999999999996,345" fill="none" stroke="#0b0e14" stroke-width="1.1" stroke-linejoin="round"/>
+<polyline points="150,340 450.38,420" fill="none" stroke="#0b0e14" stroke-width="1.1" stroke-linejoin="round"/>
+<polyline points="150,340 437.5,495" fill="none" stroke="#0b0e14" stroke-width="1.1" stroke-linejoin="round"/>
+<polyline points="150,340 469.7,570" fill="none" stroke="#0b0e14" stroke-width="1.1" stroke-linejoin="round"/>
+<polyline points="150,340 414.96,645" fill="none" stroke="#0b0e14" stroke-width="1.1" stroke-linejoin="round"/>
+<polyline points="150,340 440.72,720" fill="none" stroke="#0b0e14" stroke-width="1.1" stroke-linejoin="round"/>
+<ellipse cx="1080" cy="140" rx="150" ry="28" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1080" y="136.665" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">Install and enrol agent</text>
+<text x="1080" y="151.61499999999998" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">(token + ca.pem)</text>
+<ellipse cx="1080" cy="225" rx="150" ry="28" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1080" y="229.14" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">Pin collector CA</text>
+<ellipse cx="1080" cy="320" rx="150" ry="28" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1080" y="316.66499999999996" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">Run checks locally,</text>
+<text x="1080" y="331.61499999999995" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">send nothing  (once --no-send)</text>
+<ellipse cx="1080" cy="405" rx="150" ry="28" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1080" y="401.66499999999996" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">See what is checked</text>
+<text x="1080" y="416.61499999999995" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">and never collected</text>
+<ellipse cx="1080" cy="490" rx="150" ry="28" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1080" y="486.66499999999996" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">Request a scan now</text>
+<text x="1080" y="501.61499999999995" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">after a fix</text>
+<ellipse cx="1080" cy="575" rx="150" ry="28" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1080" y="571.665" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">Read transparency log</text>
+<text x="1080" y="586.615" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">(sent.jsonl)</text>
+<ellipse cx="1080" cy="680" rx="150" ry="28" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1080" y="676.665" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">Send signed reports</text>
+<text x="1080" y="691.615" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">full / delta / heartbeat</text>
+<polyline points="1325,320 1230,140" fill="none" stroke="#0b0e14" stroke-width="1.1" stroke-linejoin="round"/>
+<polyline points="1325,320 1230,320" fill="none" stroke="#0b0e14" stroke-width="1.1" stroke-linejoin="round"/>
+<polyline points="1325,320 1230,405" fill="none" stroke="#0b0e14" stroke-width="1.1" stroke-linejoin="round"/>
+<polyline points="1325,320 1230,490" fill="none" stroke="#0b0e14" stroke-width="1.1" stroke-linejoin="round"/>
+<polyline points="1325,320 1230,575" fill="none" stroke="#0b0e14" stroke-width="1.1" stroke-linejoin="round"/>
+<polyline points="1325,660 1230,680" fill="none" stroke="#0b0e14" stroke-width="1.1" stroke-linejoin="round"/>
+<polyline points="1080,168 1080,197" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="1088" y="186" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#555d6b">«include»</text>
+<polyline points="930,680 840,680 840,645 770,645" fill="none" stroke="#1d5fbf" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="885.0" y="674.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1d5fbf" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">feeds (via collector)</text>
+</svg>
