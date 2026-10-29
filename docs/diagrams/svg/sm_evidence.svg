@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="860" viewBox="0 0 1400 860" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>Control evidence state machine</title>
+<defs>
+<marker id="m-arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11 z" fill="#0b0e14"/></marker>
+<marker id="m-open" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11" fill="none" stroke="#0b0e14" stroke-width="1.3"/></marker>
+<marker id="m-tri" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,1 L15,8 L1,15 z" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-diamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#0b0e14" stroke="#0b0e14"/></marker>
+<marker id="m-odiamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#ffffff" stroke="#0b0e14"/></marker>
+<marker id="m-many" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M19,2 L5,10 L19,18 M5,2 L5,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-one" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M9,3 L9,17 M14,3 L14,17" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-zmany" viewBox="0 0 26 20" refX="25" refY="10" markerWidth="26" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M25,2 L13,10 L25,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/><circle cx="7" cy="10" r="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+</defs>
+<rect width="1400" height="860" fill="#ffffff"/>
+<text x="20" y="32" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0b0e14">Evidence status of one control: how new observations change what pricing sees</text>
+<rect x="20" y="50" width="930" height="640" rx="0" fill="none" stroke="#0b0e14" stroke-width="1.2"/>
+<polygon points="20,50 411.75,50 411.75,64 403.75,72 20,72" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="27" y="65.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="start" fill="#0b0e14">stm  Control evidence status  (resolve_posture → evidence_status)</text>
+<circle cx="80" cy="150" r="8" fill="#0b0e14"/>
+<rect x="130" y="110" width="220" height="80" rx="14" fill="#eaedf1" stroke="#434956" stroke-width="1.5"/>
+<text x="240.0" y="130" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#434956">UNKNOWN</text>
+<polyline points="130,139 350,139" fill="none" stroke="#434956" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="240.0" y="155.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">no evidence  →  m_lacks</text>
+<rect x="620" y="110" width="260" height="80" rx="14" fill="#fff2d6" stroke="#8a4b06" stroke-width="1.5"/>
+<text x="750.0" y="130" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#8a4b06">STATED</text>
+<polyline points="620,139 880,139" fill="none" stroke="#8a4b06" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="750.0" y="155.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">declared or partial</text>
+<text x="750.0" y="169.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">→ 1 − 0.6 (1 − m_has)</text>
+<rect x="130" y="480" width="220" height="80" rx="14" fill="#ffe8e6" stroke="#9b1c22" stroke-width="1.5"/>
+<text x="240.0" y="500" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#9b1c22">NOT_WORKING</text>
+<polyline points="130,509 350,509" fill="none" stroke="#9b1c22" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="240.0" y="525.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">observed failing  →  m_lacks</text>
+<rect x="620" y="480" width="260" height="80" rx="14" fill="#e2f4e8" stroke="#145c33" stroke-width="1.5"/>
+<text x="750.0" y="500" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#145c33">VERIFIED</text>
+<polyline points="620,509 880,509" fill="none" stroke="#145c33" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="750.0" y="525.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">observed, tested or</text>
+<text x="750.0" y="539.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">independent  →  m_has</text>
+<polyline points="88,150 130,150" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<polyline points="350,140 620,140" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="485.0" y="118.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">questionnaire yes · self-assessment</text>
+<text x="485.0" y="131.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">· own policy doc · partial result</text>
+<polyline points="240,190 240,480" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="232.0" y="329.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">questionnaire no ·</text>
+<text x="232.0" y="342.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">agent / fleet /</text>
+<text x="232.0" y="356.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">scan FAIL</text>
+<polyline points="350,180 620,500" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="419.0" y="270.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">TECHNICALLY_OBSERVED PASS ·</text>
+<text x="419.0" y="283.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">TESTED · SOC 2 / ISO / VAPT</text>
+<polyline points="800,190 800,480" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="808.0" y="329.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">stronger PASS</text>
+<text x="808.0" y="342.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">[strength ≥ best]</text>
+<polyline points="700,480 700,190" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="692.0" y="329.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">PARTIAL</text>
+<text x="692.0" y="342.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">[strength ≥ best]</text>
+<text x="692.0" y="356.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">e.g. fleet BACKUP</text>
+<polyline points="620,535 350,535" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="485.0" y="527.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">FAIL [strength ≥ best]</text>
+<polyline points="350,555 620,555" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="485.0" y="575.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">PASS [strength ≥ best], e.g. fix seen by agent</text>
+<polyline points="620,175 330,480" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="430.2" y="358.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">FAIL [strength ≥ best]</text>
+<polygon points="40,610 908,610 920,622 920,672 40,672" fill="#fffdf5" stroke="#b9a978" stroke-width="1"/>
+<polyline points="908,610 908,622 920,622" fill="none" stroke="#b9a978" stroke-width="1"/>
+<text x="48" y="626.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">Resolution rule: among a control's ACTIVE observations, the highest evidence strength wins; a tie goes to the most recent.</text>
+<text x="48" y="640.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">So a later questionnaire "yes" (DECLARED) cannot hide an agent FAIL (TECHNICALLY_OBSERVED). Before bind the status prices the</text>
+<text x="48" y="655.4" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">risk at the next quote; after bind it only drives warranties (B3).</text>
+<text x="990" y="70" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start" fill="#0b0e14">Evidence strength (lowest to highest)</text>
+<rect x="990" y="110" width="380" height="52" rx="6" fill="#ffffff" stroke="#c9cfd8" stroke-width="1.2"/>
+<rect x="1006.0" y="141.4" width="4.4" height="6.6000000000000005" rx="0" fill="#9aa4b5" stroke="#9aa4b5" stroke-width="0.8"/>
+<rect x="1012.6" y="137.0" width="4.4" height="11.0" rx="0" fill="#ffffff" stroke="#c9cfd8" stroke-width="0.8"/>
+<rect x="1019.2" y="132.6" width="4.4" height="15.400000000000002" rx="0" fill="#ffffff" stroke="#c9cfd8" stroke-width="0.8"/>
+<rect x="1025.8" y="128.2" width="4.4" height="19.8" rx="0" fill="#ffffff" stroke="#c9cfd8" stroke-width="0.8"/>
+<text x="1046" y="132" font-family="Consolas, Menlo, monospace" font-size="12" font-weight="700" text-anchor="start" fill="#9aa4b5">DECLARED</text>
+<text x="1046" y="150" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#555d6b">questionnaire answer</text>
+<rect x="990" y="172" width="380" height="52" rx="6" fill="#ffffff" stroke="#c9cfd8" stroke-width="1.2"/>
+<rect x="1006.0" y="203.4" width="4.4" height="6.6000000000000005" rx="0" fill="#9aa4b5" stroke="#9aa4b5" stroke-width="0.8"/>
+<rect x="1012.6" y="199.0" width="4.4" height="11.0" rx="0" fill="#6b8fcf" stroke="#6b8fcf" stroke-width="0.8"/>
+<rect x="1019.2" y="194.6" width="4.4" height="15.400000000000002" rx="0" fill="#ffffff" stroke="#c9cfd8" stroke-width="0.8"/>
+<rect x="1025.8" y="190.2" width="4.4" height="19.8" rx="0" fill="#ffffff" stroke="#c9cfd8" stroke-width="0.8"/>
+<text x="1046" y="194" font-family="Consolas, Menlo, monospace" font-size="12" font-weight="700" text-anchor="start" fill="#6b8fcf">DOCUMENTED</text>
+<text x="1046" y="212" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#555d6b">document assessed, with locator</text>
+<rect x="990" y="234" width="380" height="52" rx="6" fill="#ffffff" stroke="#c9cfd8" stroke-width="1.2"/>
+<rect x="1006.0" y="265.4" width="4.4" height="6.6000000000000005" rx="0" fill="#9aa4b5" stroke="#9aa4b5" stroke-width="0.8"/>
+<rect x="1012.6" y="261.0" width="4.4" height="11.0" rx="0" fill="#6b8fcf" stroke="#6b8fcf" stroke-width="0.8"/>
+<rect x="1019.2" y="256.6" width="4.4" height="15.400000000000002" rx="0" fill="#3a6fc4" stroke="#3a6fc4" stroke-width="0.8"/>
+<rect x="1025.8" y="252.2" width="4.4" height="19.8" rx="0" fill="#ffffff" stroke="#c9cfd8" stroke-width="0.8"/>
+<text x="1046" y="256" font-family="Consolas, Menlo, monospace" font-size="12" font-weight="700" text-anchor="start" fill="#3a6fc4">TESTED</text>
+<text x="1046" y="274" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#555d6b">restore test, tabletop, pentest</text>
+<rect x="990" y="296" width="380" height="52" rx="6" fill="#ffffff" stroke="#c9cfd8" stroke-width="1.2"/>
+<rect x="1006.0" y="327.4" width="4.4" height="6.6000000000000005" rx="0" fill="#9aa4b5" stroke="#9aa4b5" stroke-width="0.8"/>
+<rect x="1012.6" y="323.0" width="4.4" height="11.0" rx="0" fill="#6b8fcf" stroke="#6b8fcf" stroke-width="0.8"/>
+<rect x="1019.2" y="318.6" width="4.4" height="15.400000000000002" rx="0" fill="#3a6fc4" stroke="#3a6fc4" stroke-width="0.8"/>
+<rect x="1025.8" y="314.2" width="4.4" height="19.8" rx="0" fill="#1d4f9e" stroke="#1d4f9e" stroke-width="0.8"/>
+<text x="1046" y="318" font-family="Consolas, Menlo, monospace" font-size="12" font-weight="700" text-anchor="start" fill="#1d4f9e">TECHNICALLY_OBSERVED</text>
+<text x="1046" y="336" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#555d6b">agent, fleet or outside-in scan</text>
+<text x="990" y="380" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start" fill="#0b0e14">Multipliers (Marsh 2023: relative risk S, adoption p)</text>
+<rect x="990" y="394" width="380" height="104.5" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<rect x="990" y="394" width="380" height="20.9" rx="0" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1"/>
+<text x="998" y="407.794" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" text-anchor="start" fill="#0b0e14">Status</text>
+<text x="1148" y="407.794" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" text-anchor="start" fill="#0b0e14">Multiplier</text>
+<text x="998" y="428.69399999999996" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">VERIFIED</text>
+<text x="1148" y="428.69399999999996" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">m_has = 1 / (p + (1−p) S)</text>
+<polyline points="990,414.9 1370,414.9" fill="none" stroke="#c9cfd8" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="998" y="449.594" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">STATED</text>
+<text x="1148" y="449.594" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">1 − x (1 − m_has), x = 0.6</text>
+<polyline points="990,435.8 1370,435.8" fill="none" stroke="#c9cfd8" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="998" y="470.49399999999997" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">NOT_WORKING</text>
+<text x="1148" y="470.49399999999997" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">m_lacks = S / (p + (1−p) S)</text>
+<polyline points="990,456.7 1370,456.7" fill="none" stroke="#c9cfd8" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="998" y="491.394" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">UNKNOWN</text>
+<text x="1148" y="491.394" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">m_lacks</text>
+<polyline points="990,477.6 1370,477.6" fill="none" stroke="#c9cfd8" stroke-width="0.8" stroke-linejoin="round"/>
+<polygon points="990,520 1358,520 1370,532 1370,612 990,612" fill="#fffdf5" stroke="#b9a978" stroke-width="1"/>
+<polyline points="1358,520 1358,532 1370,532" fill="none" stroke="#b9a978" stroke-width="1"/>
+<text x="998" y="536.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">Gate: a warranty passes only when VERIFIED;</text>
+<text x="998" y="550.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">MFA also passes when STATED (it cannot</text>
+<text x="998" y="565.4" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">be observed). STATED → conditionally eligible;</text>
+<text x="998" y="580.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">NOT_WORKING or UNKNOWN → ineligible</text>
+<text x="998" y="594.8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">under BLOCK.</text>
+<text x="20" y="730" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start" fill="#0b0e14">Examples</text>
+<text x="20" y="752.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#0b0e14">• Questionnaire says EDR yes → STATED. The fleet roll-up then reports EDR PASS on ≥ 95 % of hosts → VERIFIED.</text>
+<text x="20" y="767.525" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#0b0e14">• One host's EDR stops and the fleet drops below 95 % → NOT_WORKING. A later questionnaire "yes" changes nothing.</text>
+<text x="20" y="783.05" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#0b0e14">• Backups: the fleet can see a recent backup but not a restore test, so a pass arrives as PARTIAL → STATED.</text>
+<text x="16" y="846" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#555d6b" font-style="italic">Figure B5. State machine of a control's evidence status. Every transition is a new observation that becomes the best one.</text>
+</svg>

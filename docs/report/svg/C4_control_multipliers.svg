@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="546" viewBox="0 0 1200 546" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>Frequency multiplier by evidence status</title>
+<rect width="1200" height="546" fill="#ffffff"/>
+<text x="20.0" y="34.0" font-size="18" text-anchor="start" fill="#0b0e14" font-weight="700">Frequency multiplier of each priced control by evidence status (log scale)</text>
+<line x1="338.8" y1="80.0" x2="338.8" y2="456.0" stroke="#c9cfd8" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="338.8" y="74.0" font-size="12" text-anchor="middle" fill="#555d6b" font-weight="400">×0.5</text>
+<line x1="565.2" y1="80.0" x2="565.2" y2="456.0" stroke="#c9cfd8" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="565.2" y="74.0" font-size="12" text-anchor="middle" fill="#555d6b" font-weight="400">×0.75</text>
+<line x1="725.8" y1="80.0" x2="725.8" y2="456.0" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="725.8" y="74.0" font-size="12" text-anchor="middle" fill="#555d6b" font-weight="400">×1</text>
+<line x1="952.2" y1="80.0" x2="952.2" y2="456.0" stroke="#c9cfd8" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="952.2" y="74.0" font-size="12" text-anchor="middle" fill="#555d6b" font-weight="400">×1.5</text>
+<line x1="1112.8" y1="80.0" x2="1112.8" y2="456.0" stroke="#c9cfd8" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="1112.8" y="74.0" font-size="12" text-anchor="middle" fill="#555d6b" font-weight="400">×2</text>
+<text x="266.0" y="121.0" font-size="14" text-anchor="end" fill="#0b0e14" font-weight="400">Privileged access mgmt</text>
+<line x1="338.8" y1="116.0" x2="871.8" y2="116.0" stroke="#c9cfd8" stroke-width="3"/>
+<circle cx="338.8" cy="116.0" r="7" fill="#145c33"/>
+<circle cx="526.7" cy="116.0" r="6" fill="#8a5a00"/>
+<circle cx="871.8" cy="116.0" r="7" fill="#a3261b"/>
+<text x="266.0" y="161.0" font-size="14" text-anchor="end" fill="#0b0e14" font-weight="400">Secure configuration</text>
+<line x1="631.9" y1="156.0" x2="1112.8" y2="156.0" stroke="#c9cfd8" stroke-width="3"/>
+<circle cx="631.9" cy="156.0" r="7" fill="#145c33"/>
+<circle cx="671.4" cy="156.0" r="6" fill="#8a5a00"/>
+<circle cx="1112.8" cy="156.0" r="7" fill="#a3261b"/>
+<text x="266.0" y="201.0" font-size="14" text-anchor="end" fill="#0b0e14" font-weight="400">EDR</text>
+<line x1="614.1" y1="196.0" x2="1061.9" y2="196.0" stroke="#c9cfd8" stroke-width="3"/>
+<circle cx="614.1" cy="196.0" r="7" fill="#145c33"/>
+<circle cx="661.5" cy="196.0" r="6" fill="#8a5a00"/>
+<circle cx="1061.9" cy="196.0" r="7" fill="#a3261b"/>
+<text x="266.0" y="241.0" font-size="14" text-anchor="end" fill="#0b0e14" font-weight="400">Logging &amp; monitoring</text>
+<line x1="651.3" y1="236.0" x2="1088.9" y2="236.0" stroke="#c9cfd8" stroke-width="3"/>
+<circle cx="651.3" cy="236.0" r="7" fill="#145c33"/>
+<circle cx="682.3" cy="236.0" r="6" fill="#8a5a00"/>
+<circle cx="1088.9" cy="236.0" r="7" fill="#a3261b"/>
+<text x="266.0" y="281.0" font-size="14" text-anchor="end" fill="#0b0e14" font-weight="400">Vulnerability mgmt</text>
+<line x1="366.2" y1="276.0" x2="803.8" y2="276.0" stroke="#c9cfd8" stroke-width="3"/>
+<circle cx="366.2" cy="276.0" r="7" fill="#145c33"/>
+<circle cx="538.5" cy="276.0" r="6" fill="#8a5a00"/>
+<circle cx="803.8" cy="276.0" r="7" fill="#a3261b"/>
+<text x="266.0" y="321.0" font-size="14" text-anchor="end" fill="#0b0e14" font-weight="400">Security awareness</text>
+<line x1="681.0" y1="316.0" x2="996.6" y2="316.0" stroke="#c9cfd8" stroke-width="3"/>
+<circle cx="681.0" cy="316.0" r="7" fill="#145c33"/>
+<circle cx="699.3" cy="316.0" r="6" fill="#8a5a00"/>
+<circle cx="996.6" cy="316.0" r="7" fill="#a3261b"/>
+<text x="266.0" y="361.0" font-size="14" text-anchor="end" fill="#0b0e14" font-weight="400">Critical patching</text>
+<line x1="593.3" y1="356.0" x2="845.1" y2="356.0" stroke="#c9cfd8" stroke-width="3"/>
+<circle cx="593.3" cy="356.0" r="7" fill="#145c33"/>
+<circle cx="650.1" cy="356.0" r="6" fill="#8a5a00"/>
+<circle cx="845.1" cy="356.0" r="7" fill="#a3261b"/>
+<text x="266.0" y="401.0" font-size="14" text-anchor="end" fill="#0b0e14" font-weight="400">Email security</text>
+<line x1="652.6" y1="396.0" x2="900.9" y2="396.0" stroke="#c9cfd8" stroke-width="3"/>
+<circle cx="652.6" cy="396.0" r="7" fill="#145c33"/>
+<circle cx="683.1" cy="396.0" r="6" fill="#8a5a00"/>
+<circle cx="900.9" cy="396.0" r="7" fill="#a3261b"/>
+<text x="266.0" y="441.0" font-size="14" text-anchor="end" fill="#0b0e14" font-weight="400">MFA</text>
+<line x1="662.5" y1="436.0" x2="850.4" y2="436.0" stroke="#c9cfd8" stroke-width="3"/>
+<circle cx="662.5" cy="436.0" r="7" fill="#145c33"/>
+<circle cx="688.7" cy="436.0" r="6" fill="#8a5a00"/>
+<circle cx="850.4" cy="436.0" r="7" fill="#a3261b"/>
+<circle cx="290.0" cy="506.0" r="7" fill="#145c33"/>
+<text x="304.0" y="511.0" font-size="12.5" text-anchor="start" fill="#555d6b" font-weight="400">VERIFIED (m_has)</text>
+<circle cx="570.0" cy="506.0" r="7" fill="#8a5a00"/>
+<text x="584.0" y="511.0" font-size="12.5" text-anchor="start" fill="#555d6b" font-weight="400">STATED (credit x = 0.6)</text>
+<circle cx="850.0" cy="506.0" r="7" fill="#a3261b"/>
+<text x="864.0" y="511.0" font-size="12.5" text-anchor="start" fill="#555d6b" font-weight="400">NOT_WORKING / UNKNOWN (m_lacks)</text>
+</svg>

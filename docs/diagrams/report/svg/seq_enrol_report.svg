@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1460" height="1202" viewBox="0 0 1460 1202" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>Sequence: enrolment and reporting</title>
+<defs>
+<marker id="m-arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11 z" fill="#0b0e14"/></marker>
+<marker id="m-open" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11" fill="none" stroke="#0b0e14" stroke-width="1.3"/></marker>
+<marker id="m-tri" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,1 L15,8 L1,15 z" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-diamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#0b0e14" stroke="#0b0e14"/></marker>
+<marker id="m-odiamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#ffffff" stroke="#0b0e14"/></marker>
+<marker id="m-many" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M19,2 L5,10 L19,18 M5,2 L5,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-one" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M9,3 L9,17 M14,3 L14,17" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-zmany" viewBox="0 0 26 20" refX="25" refY="10" markerWidth="26" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M25,2 L13,10 L25,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/><circle cx="7" cy="10" r="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+</defs>
+<rect width="1460" height="1202" fill="#ffffff"/>
+<text x="20" y="32" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0b0e14">Sequence: agent enrolment, then signed reports to the collector</text>
+<circle cx="70" cy="70" r="9" fill="#ffffff" stroke="#0b0e14" stroke-width="1.4"/>
+<polyline points="70,79 70,104" fill="none" stroke="#0b0e14" stroke-width="1.4" stroke-linejoin="round"/>
+<polyline points="55,88 85,88" fill="none" stroke="#0b0e14" stroke-width="1.4" stroke-linejoin="round"/>
+<polyline points="57,122 70,104 83,122" fill="none" stroke="#0b0e14" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="70" y="140" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#0b0e14">IT admin</text>
+<polyline points="70,152 70,1178" fill="none" stroke="#555d6b" stroke-width="1" stroke-dasharray="5 4" stroke-linejoin="round"/>
+<rect x="185.5" y="60" width="129.0" height="34" rx="3" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="250" y="82" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#0b0e14">installer / CLI</text>
+<polyline points="250,94 250,1178" fill="none" stroke="#555d6b" stroke-width="1" stroke-dasharray="5 4" stroke-linejoin="round"/>
+<rect x="412.5" y="60" width="115.00000000000001" height="34" rx="3" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="470" y="82" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#0b0e14">Agent service</text>
+<polyline points="470,94 470,1178" fill="none" stroke="#555d6b" stroke-width="1" stroke-dasharray="5 4" stroke-linejoin="round"/>
+<rect x="648.5" y="60" width="143.0" height="34" rx="3" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="720" y="82" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#0b0e14">Collector Handler</text>
+<polyline points="720,94 720,1178" fill="none" stroke="#555d6b" stroke-width="1" stroke-dasharray="5 4" stroke-linejoin="round"/>
+<rect x="882.0" y="60" width="96" height="44" rx="3" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="930" y="75" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#555d6b">«module»</text>
+<text x="930" y="93" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#0b0e14">core</text>
+<polyline points="930,104 930,1178" fill="none" stroke="#555d6b" stroke-width="1" stroke-dasharray="5 4" stroke-linejoin="round"/>
+<rect x="1066.0" y="60" width="108.00000000000001" height="34" rx="3" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1120" y="82" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#0b0e14">collector.db</text>
+<polyline points="1120,94 1120,1178" fill="none" stroke="#555d6b" stroke-width="1" stroke-dasharray="5 4" stroke-linejoin="round"/>
+<rect x="1272.0" y="60" width="96" height="34" rx="3" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1320" y="82" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#0b0e14">LinkWorker</text>
+<polyline points="1320,94 1320,1178" fill="none" stroke="#555d6b" stroke-width="1" stroke-dasharray="5 4" stroke-linejoin="round"/>
+<polyline points="75,170 245,170" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="160.0" y="164" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">install.ps1 -Server URL -Token kyh_enr_… -CaFile ca.pem</text>
+<polyline points="255,218 715,218" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="485.0" y="198" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">POST /api/v1/enroll</text>
+<text x="485.0" y="212" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">{enrollment_token, hostname, platform, os, build_hash, policy_hash}</text>
+<polyline points="725,252 925,252" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="825.0" y="246" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">enroll(conn, now, body)</text>
+<polyline points="935,286 1115,286" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="1025.0" y="280" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">find token by sha-256 hash</text>
+<polyline points="925,346 255,346" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="590.0" y="340" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">401 BAD_TOKEN | TOKEN_EXPIRED | TOKEN_EXHAUSTED</text>
+<polyline points="935,398 1115,398" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="1025.0" y="392" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">INSERT agent (new secret, build_trusted, policy_trusted)</text>
+<polyline points="935,432 1115,432" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="1025.0" y="426" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">uses + 1; audit AGENT_ENROLLED</text>
+<polyline points="925,466 255,466" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="590.0" y="460" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">200 {agent_id, agent_secret, company_id}</text>
+<rect x="225" y="306" width="955" height="188" rx="0" fill="none" stroke="#0b0e14" stroke-width="1"/>
+<polygon points="225,306 260.25,306 260.25,320 252.25,328 225,328" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<text x="232" y="321.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="start" fill="#0b0e14">alt</text>
+<text x="272.25" y="322" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start" fill="#1d5fbf">[token unknown, expired or used up]</text>
+<polyline points="225,366 1180,366" fill="none" stroke="#0b0e14" stroke-width="1" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<text x="235" y="380" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start" fill="#1d5fbf">[valid]</text>
+<polyline points="255,504 290,504 290,522 256,522" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="296" y="508" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">save agent.json</text>
+<polyline points="255,552 465,552" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="360.0" y="546" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">start service (Windows service / systemd / launchd)</text>
+<polyline points="475,610 510,610 510,628 476,628" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="516" y="614" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">scan(): run due checks; full every snapshot period, else delta</text>
+<polyline points="475,650 510,650 510,668 476,668" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="516" y="654" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">enqueue(): spool.put(seq, signed body); line in sent.jsonl</text>
+<polyline points="475,712 715,712" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="595.0" y="692" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">POST /api/v1/report</text>
+<text x="595.0" y="706" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">X-KYH-Agent-Id, X-KYH-Signature: v1=HMAC-SHA256(secret, body)</text>
+<polyline points="725,746 925,746" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="825.0" y="740" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">ingest(conn, now, agent_id, signature, raw)</text>
+<polyline points="935,772 970,772 970,790 936,790" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="976" y="776" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">size, enrolled, HMAC, schema, seq &gt; last_seq, clock</text>
+<polyline points="935,812 970,812 970,830 936,830" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="976" y="816" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">strength = SIMULATED | UNTRUSTED_BUILD | UNTRUSTED_POLICY</text>
+<text x="976" y="830" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">| TECHNICALLY_OBSERVED</text>
+<polyline points="935,860 1115,860" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="1025.0" y="854" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">INSERT report, observations; upsert results_current</text>
+<polyline points="725,894 1315,894" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="1020.0" y="888" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">wake() (linked companies re-evaluated)</text>
+<polyline points="715,954 475,954" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="595.0" y="948" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">202 {accepted, report_id, evidence_strength}</text>
+<polyline points="475,980 510,980 510,998 476,998" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="516" y="984" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">spool.ack(seq)</text>
+<polyline points="475,1038 510,1038 510,1056 476,1056" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="516" y="1042" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">backoff = min(max(2 × backoff, 30 s), 900 s); retry later</text>
+<polyline points="475,1096 510,1096 510,1114 476,1114" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="516" y="1100" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">spool.dead_letter(seq): never retried</text>
+<rect x="425" y="914" width="960" height="224" rx="0" fill="none" stroke="#0b0e14" stroke-width="1"/>
+<polygon points="425,914 460.25,914 460.25,928 452.25,936 425,936" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<text x="432" y="929.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="start" fill="#0b0e14">alt</text>
+<text x="472.25" y="930" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start" fill="#1d5fbf">[202 accepted, or 409 REPLAY]</text>
+<polyline points="425,1014 1385,1014" fill="none" stroke="#0b0e14" stroke-width="1" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<text x="435" y="1028" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start" fill="#1d5fbf">[429, 5xx or network error]</text>
+<polyline points="425,1072 1385,1072" fill="none" stroke="#0b0e14" stroke-width="1" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<text x="435" y="1086" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start" fill="#1d5fbf">[other 4xx]</text>
+<rect x="410" y="578" width="990" height="572" rx="0" fill="none" stroke="#0b0e14" stroke-width="1"/>
+<polygon points="410,578 451.0,578 451.0,592 443.0,600 410,600" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<text x="417" y="593.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="start" fill="#0b0e14">loop</text>
+<text x="463.0" y="594" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start" fill="#1d5fbf">[every 30 s tick]</text>
+</svg>

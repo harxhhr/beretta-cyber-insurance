@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>Host liveness state machine</title>
+<defs>
+<marker id="m-arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11 z" fill="#0b0e14"/></marker>
+<marker id="m-open" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11" fill="none" stroke="#0b0e14" stroke-width="1.3"/></marker>
+<marker id="m-tri" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,1 L15,8 L1,15 z" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-diamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#0b0e14" stroke="#0b0e14"/></marker>
+<marker id="m-odiamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#ffffff" stroke="#0b0e14"/></marker>
+<marker id="m-many" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M19,2 L5,10 L19,18 M5,2 L5,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-one" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M9,3 L9,17 M14,3 L14,17" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-zmany" viewBox="0 0 26 20" refX="25" refY="10" markerWidth="26" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M25,2 L13,10 L25,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/><circle cx="7" cy="10" r="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+</defs>
+<rect width="1400" height="760" fill="#ffffff"/>
+<text x="20" y="32" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0b0e14">Machine liveness: how long a host may stay quiet before its results stop counting</text>
+<rect x="20" y="50" width="1360" height="400" rx="0" fill="none" stroke="#0b0e14" stroke-width="1.2"/>
+<polygon points="20,50 423.25,50 423.25,64 415.25,72 20,72" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="27" y="65.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="start" fill="#0b0e14">stm  Host liveness  (evaluate.liveness, judged on every evaluation)</text>
+<circle cx="70" cy="200" r="8" fill="#0b0e14"/>
+<rect x="120" y="150" width="220" height="100" rx="14" fill="#ffffff" stroke="#0b0e14" stroke-width="1.5"/>
+<text x="230.0" y="170" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#0b0e14">ENROLLED</text>
+<polyline points="120,179 340,179" fill="none" stroke="#0b0e14" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="230.0" y="195.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">agent_id + secret issued</text>
+<text x="230.0" y="209.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">clock starts at enrolled_at</text>
+<rect x="460" y="150" width="220" height="100" rx="14" fill="#e2f4e8" stroke="#145c33" stroke-width="1.5"/>
+<text x="570.0" y="170" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#145c33">ONLINE</text>
+<polyline points="460,179 680,179" fill="none" stroke="#145c33" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="570.0" y="195.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">quiet ≤ 6 h</text>
+<text x="570.0" y="209.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">results count</text>
+<rect x="800" y="150" width="220" height="100" rx="14" fill="#fff2d6" stroke="#8a4b06" stroke-width="1.5"/>
+<text x="910.0" y="170" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#8a4b06">UNVERIFIED</text>
+<polyline points="800,179 1020,179" fill="none" stroke="#8a4b06" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="910.0" y="195.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">6 h &lt; quiet ≤ 72 h</text>
+<text x="910.0" y="209.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">shown, no warranty change</text>
+<rect x="1140" y="150" width="220" height="100" rx="14" fill="#ffe8e6" stroke="#9b1c22" stroke-width="1.5"/>
+<text x="1250.0" y="170" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#9b1c22">SILENT</text>
+<polyline points="1140,179 1360,179" fill="none" stroke="#9b1c22" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="1250.0" y="195.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">quiet &gt; 72 h</text>
+<text x="1250.0" y="209.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">silence rule applies</text>
+<polyline points="78,200 120,200" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<polyline points="340,200 460,200" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="400.0" y="178.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">first accepted</text>
+<text x="400.0" y="191.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">report</text>
+<polyline points="680,185 800,185" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="740.0" y="177.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">[quiet &gt; 6 h]</text>
+<polyline points="1020,185 1140,185" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="1080.0" y="177.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">[quiet &gt; 72 h]</text>
+<polyline points="800,225 680,225" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="740.0" y="245.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">report accepted</text>
+<polyline points="1250,250 1250,310 570,310 570,250" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="910.0" y="304.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">report accepted (any kind, heartbeat too)</text>
+<polyline points="230,250 230,360 1290,360 1290,250" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="760.0" y="354.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">[never reported, 72 h after enrolment]</text>
+<polyline points="1360,200 1372,200" fill="none" stroke="#ffffff" stroke-width="1.2" stroke-linejoin="round"/>
+<circle cx="1350" cy="420" r="10" fill="#ffffff" stroke="#0b0e14" stroke-width="1.4"/>
+<circle cx="1350" cy="420" r="6" fill="#0b0e14"/>
+<polyline points="1320,250 1340,410" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="1340.0" y="324.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">retire</text>
+<rect x="20" y="470" width="1360" height="230" rx="0" fill="none" stroke="#0b0e14" stroke-width="1.2"/>
+<polygon points="20,470 469.25,470 469.25,484 461.25,492 20,492" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="27" y="485.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="start" fill="#0b0e14">stm  Silence rule for one control on a SILENT host  (evaluate.host_control)</text>
+<circle cx="70" cy="590" r="8" fill="#0b0e14"/>
+<polygon points="200,555.0 285.0,590 200,625.0 115.0,590" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="200" y="586.8100000000001" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">last trusted</text>
+<text x="200" y="601.11" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14">result?</text>
+<polyline points="78,590 115,590" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<rect x="420" y="510" width="260" height="64" rx="14" fill="#ffe8e6" stroke="#9b1c22" stroke-width="1.5"/>
+<text x="550.0" y="530" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#9b1c22">FAIL</text>
+<polyline points="420,539 680,539" fill="none" stroke="#9b1c22" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="550.0" y="555.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">counts as failing in the roll-up</text>
+<rect x="420" y="610" width="260" height="64" rx="14" fill="#eaedf1" stroke="#434956" stroke-width="1.5"/>
+<text x="550.0" y="630" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#434956">SILENT_PASS</text>
+<polyline points="420,639 680,639" fill="none" stroke="#434956" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="550.0" y="655.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">left out of the fleet ratio</text>
+<rect x="860" y="610" width="260" height="64" rx="14" fill="#ffe8e6" stroke="#9b1c22" stroke-width="1.5"/>
+<text x="990.0" y="630" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#9b1c22">FAIL</text>
+<polyline points="860,639 1120,639" fill="none" stroke="#9b1c22" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="990.0" y="655.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">counts as failing</text>
+<polyline points="200,555 200,542 420,542" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="310.0" y="536.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">[FAIL, or no trusted result]</text>
+<polyline points="285,590 300,590 300,642 420,642" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="360.0" y="636.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">[PASS]</text>
+<polyline points="680,642 860,642" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="770.0" y="636.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">[quiet &gt; 14 days]</text>
+<polygon points="1150,500 1358,500 1370,512 1370,680 1150,680" fill="#fffdf5" stroke="#b9a978" stroke-width="1"/>
+<polyline points="1358,500 1358,512 1370,512" fill="none" stroke="#b9a978" stroke-width="1"/>
+<text x="1158" y="516.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">Going quiet can never hide</text>
+<text x="1158" y="530.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">a failure. A host whose last</text>
+<text x="1158" y="545.4" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">result passed is excused for</text>
+<text x="1158" y="560.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">14 days (leave, holidays),</text>
+<text x="1158" y="574.8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">then counts as FAIL.</text>
+<text x="1158" y="589.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">Coverage still counts every</text>
+<text x="1158" y="604.2" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">SILENT host as not</text>
+<text x="1158" y="618.9" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">reporting.</text>
+<text x="20" y="726" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#555d6b">Thresholds from collector settings ([C-asm] demonstration values): unverified_after_hours 6, silent_after_hours 72, silent_pass_exclusion_days 14.</text>
+<text x="16" y="746" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#555d6b" font-style="italic">Figure B6. State machines for host liveness (top) and the per-control silence rule (bottom).</text>
+</svg>

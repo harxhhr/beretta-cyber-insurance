@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="660" viewBox="0 0 1400 660" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>Policy lifecycle state machine</title>
+<defs>
+<marker id="m-arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11 z" fill="#0b0e14"/></marker>
+<marker id="m-open" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11" fill="none" stroke="#0b0e14" stroke-width="1.3"/></marker>
+<marker id="m-tri" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,1 L15,8 L1,15 z" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-diamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#0b0e14" stroke="#0b0e14"/></marker>
+<marker id="m-odiamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#ffffff" stroke="#0b0e14"/></marker>
+<marker id="m-many" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M19,2 L5,10 L19,18 M5,2 L5,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-one" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M9,3 L9,17 M14,3 L14,17" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-zmany" viewBox="0 0 26 20" refX="25" refY="10" markerWidth="26" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M25,2 L13,10 L25,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/><circle cx="7" cy="10" r="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+</defs>
+<rect width="1400" height="660" fill="#ffffff"/>
+<text x="20" y="32" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0b0e14">Policy lifecycle: from intake to a bound, monitored policy</text>
+<rect x="20" y="50" width="1360" height="520" rx="0" fill="none" stroke="#0b0e14" stroke-width="1.2"/>
+<polygon points="20,50 210.5,50 210.5,64 202.5,72 20,72" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="27" y="65.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="start" fill="#0b0e14">stm  Policy  (policies.status)</text>
+<circle cx="70" cy="200" r="8" fill="#0b0e14"/>
+<rect x="120" y="150" width="220" height="100" rx="14" fill="#ffffff" stroke="#0b0e14" stroke-width="1.5"/>
+<text x="230.0" y="170" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#0b0e14">DRAFT</text>
+<polyline points="120,179 340,179" fill="none" stroke="#0b0e14" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="230.0" y="195.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">created at onboarding</text>
+<text x="230.0" y="209.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">evidence being gathered</text>
+<rect x="500" y="150" width="240" height="100" rx="14" fill="#e8effa" stroke="#1d5fbf" stroke-width="1.5"/>
+<text x="620.0" y="170" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#1d5fbf">QUOTED</text>
+<polyline points="500,179 740,179" fill="none" stroke="#1d5fbf" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="620.0" y="195.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">≥ 1 stored calculation</text>
+<text x="620.0" y="209.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14">price, gate, referral</text>
+<rect x="960" y="100" width="400" height="330" rx="14" fill="#ffffff" stroke="#145c33" stroke-width="1.5"/>
+<text x="1160" y="124" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#145c33">BOUND</text>
+<polyline points="960,136 1360,136" fill="none" stroke="#145c33" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="980" y="160.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">bound_premium and calculation fixed</text>
+<text x="980" y="174.85" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">coverages locked; quote refused (409)</text>
+<text x="980" y="189.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">do / one warranty machine per</text>
+<text x="980" y="204.55" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">      warranty control (B3)</text>
+<rect x="985" y="250" width="115" height="44" rx="10" fill="#e2f4e8" stroke="#145c33" stroke-width="1.5"/>
+<text x="1042.5" y="276.14" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#145c33">MET</text>
+<rect x="1110" y="250" width="115" height="44" rx="10" fill="#fff2d6" stroke="#8a4b06" stroke-width="1.5"/>
+<text x="1167.5" y="276.14" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#8a4b06">IN_GRACE</text>
+<rect x="1235" y="250" width="115" height="44" rx="10" fill="#ffe8e6" stroke="#9b1c22" stroke-width="1.5"/>
+<text x="1292.5" y="276.14" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#9b1c22">BREACHED</text>
+<text x="1160" y="330" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">monitoring changes these states only;</text>
+<text x="1160" y="346" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">repricing_performed is always false</text>
+<text x="30" y="136" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">created by POST /api/companies</text>
+<polyline points="78,200 120,200" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<polyline points="340,200 500,200" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="420.0" y="178.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">calculate_premium()</text>
+<text x="420.0" y="191.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">[persist] / POLICY_QUOTED</text>
+<polyline points="560,150 560,110 680,110 680,150" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="620.0" y="104.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">re-quote / new calculation</text>
+<polygon points="850,170.0 880.0,200 850,230.0 820.0,200" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<polyline points="740,200 820,200" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="780.0" y="192.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">bind_policy()</text>
+<polyline points="880,200 960,200" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="920.0" y="178.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">[gate ok and</text>
+<text x="920.0" y="191.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">referral cleared]</text>
+<polyline points="850,230 850,330 620,330 620,250" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="735.0" y="352.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">[INELIGIBLE under BLOCK] / 409 INELIGIBLE</text>
+<text x="735.0" y="365.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">[referral not approved] / REFERRAL_REQUIRED</text>
+<polygon points="980,470 1348,470 1360,482 1360,550 980,550" fill="#fffdf5" stroke="#b9a978" stroke-width="1"/>
+<polyline points="1348,470 1348,482 1360,482" fill="none" stroke="#b9a978" stroke-width="1"/>
+<text x="988" y="486.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">Effect of bind: status BOUND, bound_at,</text>
+<text x="988" y="500.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">bound_calculation_id, bound_premium;</text>
+<text x="988" y="515.4" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">initialize_warranties() then evaluate at once,</text>
+<text x="988" y="530.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">so a control already failing starts IN_GRACE.</text>
+<polygon points="60,400 568,400 580,412 580,550 60,550" fill="#fffdf5" stroke="#b9a978" stroke-width="1"/>
+<polyline points="568,400 568,412 580,412" fill="none" stroke="#b9a978" stroke-width="1"/>
+<text x="68" y="416.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">Referral reasons (pricing V2):</text>
+<text x="68" y="430.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">• turnover above USD 2B</text>
+<text x="68" y="445.4" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">• a peril's control multiplier at the 3.0 ceiling</text>
+<text x="68" y="460.1" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">• two or more material incidents in 3 years</text>
+<text x="68" y="474.8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">• an RBI- or SEBI-regulated entity</text>
+<text x="68" y="489.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">Gate: warranties MFA, backups, EDR, patching must be</text>
+<text x="68" y="504.2" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">VERIFIED (MFA may be STATED).</text>
+<text x="30" y="602" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#555d6b">There is no final state in the prototype: policy expiry and renewal are not modelled.</text>
+<text x="16" y="646" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#555d6b" font-style="italic">Figure B7. State machine of a policy. The diamond is a choice point evaluated by bind_policy().</text>
+</svg>

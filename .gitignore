@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+
+# Demo runs (recreated every time; contain tokens and secrets)
+demo-linked/
+demo-tls/
+vm-kit/
+vm-kit.zip
+kyh-agent/demo-data/
+
+# Databases and secrets
+*.db
+*.db-journal
+secrets.json
+kyh-cyber-insurance/data/*.db
+kyh-cyber-insurance/data/secrets.json
+
+# Built documents (rebuilt from the scripts in docs/; the questionnaire forms in
+# kyh-cyber-insurance/frontend/forms/ are part of the app and stay tracked)
+docs/**/*.docx
+docs/**/*.pdf
+kyh-agent/docs/*.docx
+kyh-agent/docs/*.pdf
+
+# Not published: the V2 specification prompt, the university logo, tool folders
+KYH_Engine_B_V2_master_prompt.md
+docs/report/nmims_logo.jpg
+.taste-skill/
+
+# Document build leftovers
+docs/report/r.txt
+docs/pages.json
+docs/headings.json
+kyh-agent/docs/pages.json
+kyh-agent/docs/headings.json
+node_modules/

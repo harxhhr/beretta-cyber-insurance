@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="940" viewBox="0 0 1500 940" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>Platform: module and class diagram</title>
+<defs>
+<marker id="m-arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11 z" fill="#0b0e14"/></marker>
+<marker id="m-open" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11" fill="none" stroke="#0b0e14" stroke-width="1.3"/></marker>
+<marker id="m-tri" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,1 L15,8 L1,15 z" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-diamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#0b0e14" stroke="#0b0e14"/></marker>
+<marker id="m-odiamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#ffffff" stroke="#0b0e14"/></marker>
+<marker id="m-many" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M19,2 L5,10 L19,18 M5,2 L5,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-one" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M9,3 L9,17 M14,3 L14,17" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-zmany" viewBox="0 0 26 20" refX="25" refY="10" markerWidth="26" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M25,2 L13,10 L25,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/><circle cx="7" cy="10" r="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+</defs>
+<rect width="1500" height="940" fill="#ffffff"/>
+<text x="20" y="32" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0b0e14">Beretta platform (kyh-cyber-insurance/app): modules and their dependencies</text>
+<rect x="560" y="60" width="380" height="141.7" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="560" y="60" width="380" height="26" rx="0" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="750.0" y="78" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">api.Handler</text>
+<polyline points="560,127.9 940,127.9" fill="none" stroke="#0b0e14" stroke-width="1" stroke-linejoin="round"/>
+<text x="568" y="102.76" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">BaseHTTPRequestHandler</text>
+<text x="568" y="118.71000000000001" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">ROUTES: 40 method/path pairs</text>
+<text x="568" y="144.66" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ _route(method, path)</text>
+<text x="568" y="160.61" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ _user(conn, perm) : user</text>
+<text x="568" y="176.56" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ h_quote · h_bind · h_collector_rollup</text>
+<text x="568" y="192.51" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ h_questionnaire_submit · h_posture …</text>
+<rect x="40" y="60" width="360" height="139.75" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="40" y="60" width="360" height="40" rx="0" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="220.0" y="76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#555d6b">«module»</text>
+<text x="220.0" y="92" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">security</text>
+<polyline points="40,157.85 400,157.85" fill="none" stroke="#0b0e14" stroke-width="1" stroke-linejoin="round"/>
+<text x="48" y="116.76" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">ROLE_PERMS: CUSTOMER read (own company);</text>
+<text x="48" y="132.71" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">UNDERWRITER + staff, intake, quote,</text>
+<text x="48" y="148.66" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">bind, assess; ADMIN + admin</text>
+<text x="48" y="174.60999999999999" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ authenticate(conn, token) : user</text>
+<text x="48" y="190.56" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ require(user, perm)</text>
+<rect x="1100" y="60" width="360" height="155.7" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="1100" y="60" width="360" height="40" rx="0" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1280.0" y="76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#555d6b">«module»</text>
+<text x="1280.0" y="92" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">fleet</text>
+<polyline points="1100,141.9 1460,141.9" fill="none" stroke="#0b0e14" stroke-width="1" stroke-linejoin="round"/>
+<text x="1108" y="116.76" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">SCHEMA_ID = kyh-fleet-rollup/1</text>
+<text x="1108" y="132.71" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">MAX_SKEW = 5 min · REFRESH_HOURS = 6</text>
+<text x="1108" y="158.66" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ register_collector(…) · link_company(…)</text>
+<text x="1108" y="174.61" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ authenticate(conn, id, signature, raw)</text>
+<text x="1108" y="190.56" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ ingest_rollup(conn, collector, raw)</text>
+<text x="1108" y="206.51" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ latest_snapshot(conn, company_id)</text>
+<rect x="40" y="330" width="380" height="171.64999999999998" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="40" y="330" width="380" height="40" rx="0" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="230.0" y="346" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#555d6b">«module»</text>
+<text x="230.0" y="362" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">observations  (Engine A)</text>
+<polyline points="40,427.85 420,427.85" fill="none" stroke="#0b0e14" stroke-width="1" stroke-linejoin="round"/>
+<text x="48" y="386.76" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">EVIDENCE_STRENGTHS ranked:</text>
+<text x="48" y="402.71" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">DECLARED &lt; DOCUMENTED &lt; TESTED</text>
+<text x="48" y="418.65999999999997" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">&lt; TECHNICALLY_OBSERVED</text>
+<text x="48" y="444.61" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ record_observation(conn, company, control, …)</text>
+<text x="48" y="460.56" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ resolve_posture(conn, company_id)</text>
+<text x="48" y="476.51" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ record_signal(…) · register_document(…)</text>
+<text x="48" y="492.46000000000004" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ assess_document_field(…)</text>
+<rect x="560" y="330" width="380" height="219.5" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="560" y="330" width="380" height="40" rx="0" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="750.0" y="346" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#555d6b">«module»</text>
+<text x="750.0" y="362" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">pricing_v2  (Engine B)</text>
+<polyline points="560,411.9 940,411.9" fill="none" stroke="#0b0e14" stroke-width="1" stroke-linejoin="round"/>
+<text x="568" y="386.76" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">UNDERWRITING_MODEL_V2</text>
+<text x="568" y="402.71" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">PERILS: RANSOMWARE, BEC, FTF, ...</text>
+<text x="568" y="428.65999999999997" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ classify(inputs, prm)</text>
+<text x="568" y="444.60999999999996" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ evidence_status(entry, docs, prm)</text>
+<text x="568" y="460.55999999999995" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ control_effects(statuses, prm)</text>
+<text x="568" y="476.51" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ expected_payout(mu, sigma, d, f, L, prm)</text>
+<text x="568" y="492.46" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ price(inputs, prm) · what_if(…)</text>
+<text x="568" y="508.40999999999997" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ gate(statuses, mode, prm) · refer(…)</text>
+<text x="568" y="524.36" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ calculate_premium(conn, policy_id)</text>
+<text x="568" y="540.31" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ reproduce(snapshot)</text>
+<rect x="1100" y="330" width="360" height="155.7" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="1100" y="330" width="360" height="40" rx="0" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1280.0" y="346" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#555d6b">«module»</text>
+<text x="1280.0" y="362" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">coverage</text>
+<polyline points="1100,411.9 1460,411.9" fill="none" stroke="#0b0e14" stroke-width="1" stroke-linejoin="round"/>
+<text x="1108" y="386.76" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">STATES: MET, IN_GRACE,</text>
+<text x="1108" y="402.71" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">BREACHED, REMEDIATED</text>
+<text x="1108" y="428.65999999999997" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ initialize_warranties(conn, policy_id)</text>
+<text x="1108" y="444.60999999999996" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ evaluate_policy(conn, policy, company)</text>
+<text x="1108" y="460.55999999999995" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ expire_grace_periods(conn)</text>
+<text x="1108" y="476.51" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ coverage_consequence(w)</text>
+<rect x="1100" y="660" width="360" height="139.75" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="1100" y="660" width="360" height="40" rx="0" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1280.0" y="676" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#555d6b">«module»</text>
+<text x="1280.0" y="692" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">underwriting</text>
+<polyline points="1100,741.9 1460,741.9" fill="none" stroke="#0b0e14" stroke-width="1" stroke-linejoin="round"/>
+<text x="1108" y="716.76" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">V1 model, frozen so stored quotes</text>
+<text x="1108" y="732.71" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">reproduce</text>
+<text x="1108" y="758.66" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ bind_policy(conn, policy, calc, referral_ok)</text>
+<text x="1108" y="774.61" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ calculate_premium(…)  V1 only</text>
+<text x="1108" y="790.56" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ reproduce_v1(snapshot, result)</text>
+<rect x="560" y="680" width="380" height="64" rx="2" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="750.0" y="699.325" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">«artifact»</text>
+<text x="750.0" y="715.625" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">pricing_v2_params.json</text>
+<text x="750.0" y="731.575" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b">value · unit · source · locator · tag [L] [D] [A]</text>
+<rect x="40" y="660" width="380" height="105.85" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="40" y="660" width="380" height="40" rx="0" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="230.0" y="676" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#555d6b">«module»</text>
+<text x="230.0" y="692" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">catalogue</text>
+<polyline points="40,757.85 420,757.85" fill="none" stroke="#0b0e14" stroke-width="1" stroke-linejoin="round"/>
+<text x="48" y="716.76" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">CONTROLS: 15 priced + CTRL-AGENT-COVERAGE</text>
+<text x="48" y="732.71" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">SOURCE_TYPES</text>
+<text x="48" y="748.66" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">EVIDENCE_STRENGTHS</text>
+<rect x="560" y="790" width="180" height="73.95" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="560" y="790" width="180" height="40" rx="0" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="650.0" y="806" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#555d6b">«module»</text>
+<text x="650.0" y="822" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">audit</text>
+<polyline points="560,838 740,838" fill="none" stroke="#0b0e14" stroke-width="1" stroke-linejoin="round"/>
+<text x="568" y="854.76" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ log(conn, actor, …)</text>
+<rect x="760" y="790" width="180" height="89.9" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/>
+<rect x="760" y="790" width="180" height="40" rx="0" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="850.0" y="806" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#555d6b">«module»</text>
+<text x="850.0" y="822" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#0b0e14">database</text>
+<polyline points="760,838 940,838" fill="none" stroke="#0b0e14" stroke-width="1" stroke-linejoin="round"/>
+<text x="768" y="854.76" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ connect() · init()</text>
+<text x="768" y="870.71" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">+ new_id() · now_iso()</text>
+<polyline points="560,110 400,110" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="480.0" y="104.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">«use»</text>
+<polyline points="940,110 1100,110" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="1020.0" y="104.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">rollup</text>
+<polyline points="600,201.7 600,275 230,275 230,330" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="415.0" y="269.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">posture, questionnaire</text>
+<polyline points="750,201.7 750,330" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="758.0" y="244.19" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">quote</text>
+<polyline points="900,201.7 900,285 1070,285 1070,710 1100,710" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="1064.0" y="682.75" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="end" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">bind</text>
+<polyline points="1130,215.7 1130,305 400,305 400,330" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="838.0" y="319.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">record_observation</text>
+<polyline points="1280,215.7 1280,330" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="1288.0" y="276.85" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">evaluate_policy</text>
+<polyline points="560,420 420,420" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="490.0" y="414.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">resolve</text>
+<polyline points="1150,485.7 1150,630 370,630 370,501.65" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="760.0" y="624.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">resolve_posture</text>
+<polyline points="1280,660 1280,485.7" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="1288.0" y="576.85" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">initialize_warranties</text>
+<polyline points="750,549.5 750,680" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="758.0" y="600.75" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">load_params</text>
+<polyline points="230,501.65 230,660" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="238.0" y="553.155" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">reads controls</text>
+<polygon points="40,800 408,800 420,812 420,864 40,864" fill="#fffdf5" stroke="#b9a978" stroke-width="1"/>
+<polyline points="408,800 408,812 420,812" fill="none" stroke="#b9a978" stroke-width="1"/>
+<text x="48" y="816.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">Monitoring never re-prices: fleet calls</text>
+<text x="48" y="830.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">coverage only, never pricing_v2.</text>
+<text x="48" y="845.4" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">Every module logs through audit.</text>
+<text x="16" y="926" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#555d6b" font-style="italic">Figure S5. Module diagram of the platform. Every number used by Engine B comes from the parameter file.</text>
+</svg>

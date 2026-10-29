@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>DFD level 0: context</title>
+<defs>
+<marker id="m-arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11 z" fill="#0b0e14"/></marker>
+<marker id="m-open" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11" fill="none" stroke="#0b0e14" stroke-width="1.3"/></marker>
+<marker id="m-tri" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,1 L15,8 L1,15 z" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-diamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#0b0e14" stroke="#0b0e14"/></marker>
+<marker id="m-odiamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#ffffff" stroke="#0b0e14"/></marker>
+<marker id="m-many" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M19,2 L5,10 L19,18 M5,2 L5,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-one" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M9,3 L9,17 M14,3 L14,17" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-zmany" viewBox="0 0 26 20" refX="25" refY="10" markerWidth="26" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M25,2 L13,10 L25,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/><circle cx="7" cy="10" r="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+</defs>
+<rect width="1400" height="820" fill="#ffffff"/>
+<text x="20" y="32" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0b0e14">Data flow diagram, level 0 (context): Beretta and the people and machines around it</text>
+<rect x="540" y="300" width="320" height="170" rx="12" fill="#e8effa" stroke="#1d5fbf" stroke-width="1.5"/>
+<polyline points="540,324 860,324" fill="none" stroke="#1d5fbf" stroke-width="1" stroke-linejoin="round"/>
+<text x="700.0" y="317" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#1d5fbf">0</text>
+<text x="700.0" y="346" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#0b0e14">Beretta cyber-insurance</text>
+<text x="700.0" y="362" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#0b0e14">system</text>
+<text x="700.0" y="380" font-family="Consolas, Menlo, monospace" font-size="10" font-weight="normal" text-anchor="middle" fill="#555d6b">agent · collector · platform</text>
+<rect x="65" y="115" width="220" height="70" rx="0" fill="#c9cfd8" stroke="none" stroke-width="1.2"/>
+<rect x="60" y="110" width="220" height="70" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1.4"/>
+<text x="170.0" y="143.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="middle" fill="#0b0e14">Insured SME</text>
+<text x="170.0" y="160.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">CUSTOMER role</text>
+<rect x="65" y="595" width="220" height="70" rx="0" fill="#c9cfd8" stroke="none" stroke-width="1.2"/>
+<rect x="60" y="590" width="220" height="70" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1.4"/>
+<text x="170.0" y="623.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="middle" fill="#0b0e14">Underwriter</text>
+<text x="170.0" y="640.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">UNDERWRITER role</text>
+<rect x="595" y="85" width="220" height="70" rx="0" fill="#c9cfd8" stroke="none" stroke-width="1.2"/>
+<rect x="590" y="80" width="220" height="70" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1.4"/>
+<text x="700.0" y="113.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="middle" fill="#0b0e14">Insured endpoints</text>
+<text x="700.0" y="130.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">Windows · Linux · macOS</text>
+<rect x="1125" y="115" width="220" height="70" rx="0" fill="#c9cfd8" stroke="none" stroke-width="1.2"/>
+<rect x="1120" y="110" width="220" height="70" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1.4"/>
+<text x="1230.0" y="143.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="middle" fill="#0b0e14">Collector operator</text>
+<text x="1230.0" y="160.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">insurer IT</text>
+<rect x="1125" y="595" width="220" height="70" rx="0" fill="#c9cfd8" stroke="none" stroke-width="1.2"/>
+<rect x="1120" y="590" width="220" height="70" rx="0" fill="#ffffff" stroke="#0b0e14" stroke-width="1.4"/>
+<text x="1230.0" y="623.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="middle" fill="#0b0e14">Administrator</text>
+<text x="1230.0" y="640.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#555d6b">ADMIN role</text>
+<polyline points="280,135 560,135 560,300" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="420.0" y="113.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">proposal form, documents, claims</text>
+<text x="420.0" y="126.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">(entered by the underwriter)</text>
+<polyline points="600,300 600,165 280,165" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="440.0" y="185.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">own company only: premium, evidence,</text>
+<text x="440.0" y="198.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">warranty states, monitoring view</text>
+<polyline points="660,150 660,300" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="652.0" y="217.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">read-only check results</text>
+<text x="652.0" y="231.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">(signed reports)</text>
+<polyline points="740,300 740,150" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="748.0" y="232.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">enrolment credentials</text>
+<text x="748.0" y="246.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">(agent_id, secret)</text>
+<polyline points="280,615 580,615 580,470" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="430.0" y="593.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">intake entry, document assessments,</text>
+<text x="430.0" y="606.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">signals, quote and bind decisions, referral approval</text>
+<polyline points="620,470 620,640 280,640" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="450.0" y="660.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">premium breakdown, gate, referral</text>
+<text x="450.0" y="673.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">reasons, warranty events, audit</text>
+<polyline points="1120,135 840,135 840,300" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="980.0" y="113.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">companies, enrolment tokens,</text>
+<text x="980.0" y="126.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">approved build and policy hashes</text>
+<polyline points="800,300 800,165 1120,165" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="960.0" y="185.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">fleet dashboard: hosts,</text>
+<text x="960.0" y="198.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">liveness, controls</text>
+<polyline points="1120,615 820,615 820,470" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="970.0" y="593.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">loadings, gate mode, control weights,</text>
+<text x="970.0" y="606.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">sector frequencies, collectors</text>
+<polyline points="780,470 780,640 1120,640" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="950.0" y="656.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">audit log</text>
+<polygon points="60,700 1328,700 1340,712 1340,752 60,752" fill="#fffdf5" stroke="#b9a978" stroke-width="1"/>
+<polyline points="1328,700 1328,712 1340,712" fill="none" stroke="#b9a978" stroke-width="1"/>
+<text x="68" y="716.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">What never crosses the boundary from an endpoint: file contents, browsing, keystrokes, e-mail, passwords, clear-text user names.</text>
+<text x="68" y="731.4" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14">Simulated endpoints in the demo are labelled SIMULATED in every view.</text>
+<text x="16" y="806" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#555d6b" font-style="italic">Figure B15. Context DFD. Squares: external entities; rounded box: the system as one process.</text>
+</svg>

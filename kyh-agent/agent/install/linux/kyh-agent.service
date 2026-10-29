@@ -1,0 +1,37 @@
+[Unit]
+Description=KYH Live Monitoring Agent (read-only security posture sensor)
+Documentation=file:///opt/kyh-agent/README.md
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/kyh-agent
+Environment=PYTHONPATH=/opt/kyh-agent
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/usr/bin/python3 -m kyh_agent run
+Restart=always
+RestartSec=30
+
+# Be a good guest on the insured's machine
+Nice=10
+IOSchedulingClass=idle
+CPUQuota=5%
+MemoryMax=150M
+
+# Runs as root only because some checks need it (firewall rules, sshd -T, full process list).
+# The sandbox below makes the whole filesystem read-only except the agent's own state folder.
+NoNewPrivileges=yes
+ProtectSystem=strict
+ReadWritePaths=/var/lib/kyh-agent
+ProtectHome=read-only
+PrivateTmp=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes
+LockPersonality=yes
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1460" height="1312" viewBox="0 0 1460 1312" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>Sequence: fleet roll-up to the platform</title>
+<defs>
+<marker id="m-arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11 z" fill="#0b0e14"/></marker>
+<marker id="m-open" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L11,6 L0,11" fill="none" stroke="#0b0e14" stroke-width="1.3"/></marker>
+<marker id="m-tri" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,1 L15,8 L1,15 z" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-diamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#0b0e14" stroke="#0b0e14"/></marker>
+<marker id="m-odiamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#ffffff" stroke="#0b0e14"/></marker>
+<marker id="m-many" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M19,2 L5,10 L19,18 M5,2 L5,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-one" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M9,3 L9,17 M14,3 L14,17" fill="none" stroke="#0b0e14" stroke-width="1.2"/></marker>
+<marker id="m-zmany" viewBox="0 0 26 20" refX="25" refY="10" markerWidth="26" markerHeight="20" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M25,2 L13,10 L25,18" fill="none" stroke="#0b0e14" stroke-width="1.2"/><circle cx="7" cy="10" r="4" fill="#ffffff" stroke="#0b0e14" stroke-width="1.2"/></marker>
+</defs>
+<rect width="1460" height="1312" fill="#ffffff"/>
+<text x="20" y="32" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0b0e14">Sequence: collector pushes a signed fleet roll-up; the platform updates warranties only</text>
+<rect x="32.0" y="60" width="96" height="34" rx="3" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="80" y="82" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#0b0e14">LinkWorker</text>
+<polyline points="80,94 80,1288" fill="none" stroke="#555d6b" stroke-width="1" stroke-dasharray="5 4" stroke-linejoin="round"/>
+<rect x="202.0" y="60" width="96" height="44" rx="3" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="250" y="75" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#555d6b">«module»</text>
+<text x="250" y="93" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#0b0e14">evaluate</text>
+<polyline points="250,104 250,1288" fill="none" stroke="#555d6b" stroke-width="1" stroke-dasharray="5 4" stroke-linejoin="round"/>
+<rect x="382.5" y="60" width="115.00000000000001" height="44" rx="3" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="440" y="75" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#555d6b">«module»</text>
+<text x="440" y="93" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#0b0e14">platform_link</text>
+<polyline points="440,104 440,1288" fill="none" stroke="#555d6b" stroke-width="1" stroke-dasharray="5 4" stroke-linejoin="round"/>
+<rect x="596.0" y="60" width="108.00000000000001" height="34" rx="3" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="650" y="82" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#0b0e14">Platform API</text>
+<polyline points="650,94 650,1288" fill="none" stroke="#555d6b" stroke-width="1" stroke-dasharray="5 4" stroke-linejoin="round"/>
+<rect x="782.0" y="60" width="96" height="44" rx="3" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="830" y="75" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#555d6b">«module»</text>
+<text x="830" y="93" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#0b0e14">fleet</text>
+<polyline points="830,104 830,1288" fill="none" stroke="#555d6b" stroke-width="1" stroke-dasharray="5 4" stroke-linejoin="round"/>
+<rect x="956.0" y="60" width="108.00000000000001" height="44" rx="3" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1010" y="75" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#555d6b">«module»</text>
+<text x="1010" y="93" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#0b0e14">observations</text>
+<polyline points="1010,104 1010,1288" fill="none" stroke="#555d6b" stroke-width="1" stroke-dasharray="5 4" stroke-linejoin="round"/>
+<rect x="1132.0" y="60" width="96" height="44" rx="3" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1180" y="75" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#555d6b">«module»</text>
+<text x="1180" y="93" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#0b0e14">coverage</text>
+<polyline points="1180,104 1180,1288" fill="none" stroke="#555d6b" stroke-width="1" stroke-dasharray="5 4" stroke-linejoin="round"/>
+<rect x="1312.0" y="60" width="96" height="34" rx="3" fill="#f7f8fa" stroke="#0b0e14" stroke-width="1.2"/>
+<text x="1360" y="82" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" fill="#0b0e14">kyh.db</text>
+<polyline points="1360,94 1360,1288" fill="none" stroke="#555d6b" stroke-width="1" stroke-dasharray="5 4" stroke-linejoin="round"/>
+<polyline points="85,196 435,196" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="260.0" y="190" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">sync_company(app, company_id, link)</text>
+<polyline points="435,230 255,230" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="345.0" y="224" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">evaluate_company(conn, id, now, s)</text>
+<polyline points="255,256 290,256 290,274 256,274" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="296" y="260" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">liveness per host (ONLINE / UNVERIFIED / SILENT)</text>
+<polyline points="255,296 290,296 290,314 256,314" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="296" y="300" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">host_control(): silence rule per control</text>
+<polyline points="255,336 290,336 290,354 256,354" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="296" y="340" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">company_control(): PASS if ≥ 95 % of observed hosts pass</text>
+<polyline points="255,376 290,376 290,394 256,394" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="296" y="380" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">coverage(): reporting ÷ declared ≥ 90 %</text>
+<polyline points="255,424 435,424" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="345.0" y="418" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">snapshot</text>
+<polyline points="445,450 480,450 480,468 446,468" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="486" y="454" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">build_controls(): map to CTRL-*; any failing source fails;</text>
+<text x="486" y="468" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">BACKUP pass sent as partial; MFA not sent</text>
+<polyline points="435,528 85,528" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="260.0" y="522" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">no push</text>
+<rect x="200" y="488" width="420" height="68" rx="0" fill="none" stroke="#0b0e14" stroke-width="1"/>
+<polygon points="200,488 235.25,488 235.25,502 227.25,510 200,510" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<text x="207" y="503.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="start" fill="#0b0e14">opt</text>
+<text x="247.25" y="504" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start" fill="#1d5fbf">[change_hash same and last push &lt; 15 min ago]</text>
+<polyline points="445,566 480,566 480,584 446,584" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="486" y="570" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">seq = next_seq(); signature = HMAC-SHA256(secret, body)</text>
+<polyline points="445,628 645,628" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="545.0" y="608" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">POST /api/collector/rollup</text>
+<text x="545.0" y="622" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">{schema, collector_id, seq, sent_at, company, controls[], fleet}</text>
+<polyline points="655,662 825,662" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="740.0" y="656" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">authenticate(conn, collector_id, signature, raw)</text>
+<polyline points="655,696 825,696" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="740.0" y="690" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">ingest_rollup(conn, collector, raw)</text>
+<polyline points="835,722 870,722 870,740 836,740" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="876" y="726" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">schema, collector, seq &gt; last_seq, |now − sent_at| ≤ 5 min, link</text>
+<polyline points="835,770 1355,770" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="1095.0" y="764" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">INSERT collector_rollups (immutable); last_seq = seq</text>
+<polyline points="835,830 1005,830" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="920.0" y="824" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">record_observation(AGENT_FLEET, TECHNICALLY_OBSERVED, locator)</text>
+<polyline points="1015,864 1355,864" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="1185.0" y="858" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">INSERT observation</text>
+<rect x="790" y="790" width="615" height="102" rx="0" fill="none" stroke="#0b0e14" stroke-width="1"/>
+<polygon points="790,790 831.0,790 831.0,804 823.0,812 790,812" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<text x="797" y="805.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="start" fill="#0b0e14">loop</text>
+<text x="843.0" y="806" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start" fill="#1d5fbf">[each control, if changed or &gt; 6 h since the last record]</text>
+<polyline points="835,910 1355,910" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="1095.0" y="904" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">upsert fleet_snapshots; audit COLLECTOR_ROLLUP_RECEIVED</text>
+<polyline points="835,970 1175,970" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="1005.0" y="964" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">evaluate_policy(conn, policy_id, company_id)</text>
+<polyline points="1175,1004 1015,1004" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="1095.0" y="998" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">resolve_posture(conn, company_id)</text>
+<polyline points="1015,1038 1175,1038" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="1095.0" y="1032" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">best evidence per control</text>
+<polyline points="1185,1064 1220,1064 1220,1082 1186,1082" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="1226" y="1068" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">state transitions (B3)</text>
+<polyline points="1185,1112 1355,1112" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="1270.0" y="1106" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">UPDATE warranties; INSERT warranty_events; audit</text>
+<rect x="790" y="930" width="615" height="210" rx="0" fill="none" stroke="#0b0e14" stroke-width="1"/>
+<polygon points="790,930 825.25,930 825.25,944 817.25,952 790,952" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<text x="797" y="945.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="start" fill="#0b0e14">opt</text>
+<text x="837.25" y="946" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start" fill="#1d5fbf">[policy is BOUND]</text>
+<polyline points="825,1158 655,1158" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="740.0" y="1152" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">result</text>
+<polyline points="645,1192 445,1192" fill="none" stroke="#0b0e14" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#m-open)" stroke-linejoin="round"/>
+<text x="545.0" y="1186" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#555d6b" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">200 {observations_recorded, warranties[], repricing_performed: false}</text>
+<polyline points="445,1218 480,1218 480,1236 446,1236" fill="none" stroke="#0b0e14" stroke-width="1.2" marker-end="url(#m-arrow)" stroke-linejoin="round"/>
+<text x="486" y="1222" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#0b0e14" stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">store platform_state (dashboard shows these states)</text>
+<polygon points="1010,1146 1398,1146 1410,1158 1410,1196 1010,1196" fill="#fffdf5" stroke="#b9a978" stroke-width="1"/>
+<polyline points="1398,1146 1398,1158 1410,1158" fill="none" stroke="#b9a978" stroke-width="1"/>
+<text x="1018" y="1162.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">Pre-bind, the observations wait for the next quote.</text>
+<text x="1018" y="1176.7" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#0b0e14">Post-bind, only the warranty machine runs.</text>
+<rect x="30" y="156" width="1390" height="1104" rx="0" fill="none" stroke="#0b0e14" stroke-width="1"/>
+<polygon points="30,156 71.0,156 71.0,170 63.0,178 30,178" fill="#ffffff" stroke="#0b0e14" stroke-width="1"/>
+<text x="37" y="171.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="start" fill="#0b0e14">loop</text>
+<text x="83.0" y="172" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start" fill="#1d5fbf">[every 30 s, or when a report arrives; each linked company]</text>
+</svg>

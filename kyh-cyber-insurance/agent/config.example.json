@@ -1,0 +1,5 @@
+{
+  "server_url": "http://127.0.0.1:8000",
+  "agent_token": "PASTE-AGENT-TOKEN-FROM-data/demo_profiles.json-OR-COMPANY-CREATION",
+  "agent_id": "AGT-example"
+}

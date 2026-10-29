@@ -1,0 +1,16 @@
+{
+  "agent_id": "AGT-example",
+  "hostname": "endpoint-01",
+  "platform": "Linux",
+  "timestamp": "2026-08-18T12:00:00+00:00",
+  "checks": [
+    {"control_id": "CTRL-MFA", "status": "NOT_SUPPORTED",
+     "evidence": "MFA lives in the identity provider; not observable from this endpoint."},
+    {"control_id": "CTRL-EDR", "status": "PASS", "value": true,
+     "evidence": "EDR sensor process running (observed working; policy not verified)."},
+    {"control_id": "CTRL-PATCH-CRIT", "status": "FAIL", "value": false,
+     "evidence": "7 pending security updates."},
+    {"control_id": "CTRL-ENCRYPTION", "status": "PASS", "value": true,
+     "evidence": "dm-crypt volume present."}
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "policy": {
+    "id": "kyh-endpoint-baseline",
+    "version": "2.1.0",
+    "name": "KYH Endpoint Warranty & Hygiene Baseline",
+    "as_of": "2026-09-30",
+    "description": "Read-only checks the KYH agent runs on insured endpoints. Thresholds tagged [C-asm] are assumed demonstration values, not actuarially derived.",
+    "unverified_after_hours": 6,
+    "silent_after_hours": 72
+  },
+  "defaults": {"timeout_seconds": 60, "jitter_fraction": 0.1},
+  "checks": [
+    {
+      "id": "patch.security_updates", "control": "PATCH", "tier": "warranty",
+      "title": "Security updates applied within the patch cycle",
+      "interval_minutes": 240, "timeout_seconds": 300,
+      "params": {"max_patch_age_days": 7, "max_index_age_days": 14, "timeout": 300},
+      "provenance": {"max_patch_age_days": "L: Marsh McLennan (2023) Fig. 1, critical CVEs patched within 7 days (the definition pricing V2 prices CTRL-PATCH-CRIT on)", "max_index_age_days": "C-asm"},
+      "references": ["CIS Controls v8 7.3", "CIS Controls v8 7.4"],
+      "rationale": "Unpatched, known-exploited vulnerabilities are a leading ransomware entry point."
+    },
+    {
+      "id": "edr.running_healthy", "control": "EDR", "tier": "warranty",
+      "title": "EDR / anti-malware running and current",
+      "interval_minutes": 60,
+      "params": {
+        "max_signature_age_days": 3,
+        "known_processes": {
+          "MsMpEng": "Microsoft Defender Antivirus", "MsSense": "Microsoft Defender for Endpoint",
+          "wdavdaemon": "Microsoft Defender for Endpoint",
+          "CSFalconService": "CrowdStrike Falcon", "falcon-sensor": "CrowdStrike Falcon", "falcond": "CrowdStrike Falcon",
+          "SentinelAgent": "SentinelOne", "sentineld": "SentinelOne", "s1-agent": "SentinelOne",
+          "cyserver": "Palo Alto Cortex XDR", "ekrn": "ESET Endpoint", "avp": "Kaspersky Endpoint",
+          "SophosFileScanner": "Sophos Endpoint", "SEDService": "Sophos Endpoint",
+          "ntrtscan": "Trend Micro Apex One", "ds_agent": "Trend Micro Deep Security",
+          "RepMgr": "VMware Carbon Black", "cbagentd": "VMware Carbon Black",
+          "elastic-endpoint": "Elastic Defend", "wazuh-agentd": "Wazuh agent (XDR telemetry)",
+          "wazuh-agent": "Wazuh agent (XDR telemetry)"
+        }
+      },
+      "provenance": {"max_signature_age_days": "C-asm", "known_processes": "vendor documentation; extend per insured"},
+      "references": ["CIS Controls v8 10.1", "CIS Controls v8 10.2"],
+      "rationale": "Endpoint protection is a standard warranty in ransomware-era cyber policies."
+    },
+    {
+      "id": "backup.recent_success", "control": "BACKUP", "tier": "warranty",
+      "title": "Recent successful backup",
+      "interval_minutes": 240,
+      "params": {
+        "max_backup_age_days": 7,
+        "marker_paths": {
+          "linux": ["/var/lib/kyh-agent/backup-last-success"],
+          "windows": ["C:\\ProgramData\\KYH\\Agent\\backup-last-success"],
+          "darwin": ["/Library/Application Support/KYH/Agent/backup-last-success"]
+        },
+        "process_keywords": ["veeam", "acronis", "restic", "borg", "duplicati", "urbackup", "cohesity", "rubrik", "commvault"]
+      },
+      "provenance": {"max_backup_age_days": "C-asm"},
+      "references": ["CIS Controls v8 11.2"],
+      "rationale": "Recoverable backups decide whether a ransomware event is an outage or a ransom payment."
+    },
+    {
+      "id": "mfa.identity_provider", "control": "MFA", "tier": "warranty",
+      "title": "Multi-factor authentication enforced",
+      "interval_minutes": 1440, "params": {},
+      "references": ["CIS Controls v8 6.3", "CIS Controls v8 6.4", "CIS Controls v8 6.5"],
+      "rationale": "Listed so the report is complete and honest: MFA is not observable from an endpoint."
+    },
+    {
+      "id": "disk.encryption", "control": "DISK_ENCRYPTION", "tier": "important",
+      "title": "System drive encrypted", "interval_minutes": 1440, "params": {},
+      "references": ["CIS Controls v8 3.6", "DPDP Act 2023 s.8(5) reasonable security safeguards"],
+      "rationale": "A lost laptop without encryption is a notifiable personal-data breach."
+    },
+    {
+      "id": "firewall.enabled", "control": "FIREWALL", "tier": "important",
+      "title": "Host firewall enabled", "interval_minutes": 1440, "params": {},
+      "references": ["CIS Controls v8 4.4", "CIS Controls v8 4.5"],
+      "rationale": "Limits lateral movement once one machine is compromised."
+    },
+    {
+      "id": "network.exposed_services", "control": "EXPOSED_SERVICES", "tier": "important",
+      "title": "No high-risk services listening on network interfaces", "interval_minutes": 1440,
+      "params": {
+        "critical_ports": {"21": "FTP", "23": "Telnet", "5900": "VNC", "6379": "Redis", "9200": "Elasticsearch", "11211": "Memcached", "27017": "MongoDB"},
+        "review_ports": {"22": "SSH", "445": "SMB", "3389": "RDP", "1433": "MS SQL", "3306": "MySQL", "5432": "PostgreSQL"},
+        "allow_ports": []
+      },
+      "provenance": {"critical_ports": "C-asm", "review_ports": "C-asm"},
+      "references": ["CIS Controls v8 4.8"],
+      "rationale": "Unauthenticated or clear-text services are frequently abused initial-access paths."
+    },
+    {
+      "id": "remote.access_hardening", "control": "REMOTE_ACCESS", "tier": "important",
+      "title": "Remote access hardened (SSH / RDP)", "interval_minutes": 1440,
+      "params": {"require_key_auth": true},
+      "provenance": {"require_key_auth": "C-asm"},
+      "references": ["CIS Controls v8 4.1", "CIS Benchmarks (OpenSSH, Windows RDP NLA)"],
+      "rationale": "Remote services with weak authentication are exposed to credential stuffing."
+    },
+    {
+      "id": "accounts.local_admins", "control": "ADMIN_ACCOUNTS", "tier": "important",
+      "title": "Local administrator accounts limited", "interval_minutes": 1440,
+      "params": {"max_local_admins": 3, "admin_groups": ["sudo", "wheel", "admin"]},
+      "provenance": {"max_local_admins": "C-asm"},
+      "references": ["CIS Controls v8 5.4"],
+      "rationale": "Fewer admins means fewer accounts whose theft gives full control."
+    },
+    {
+      "id": "os.vendor_support", "control": "OS_SUPPORT", "tier": "important",
+      "title": "Operating system still receives vendor security updates", "interval_minutes": 1440,
+      "params": {
+        "as_of": "2026-10-27", "warn_days": 90,
+        "eol": {
+          "linux": {
+            "ubuntu:18.04": "2023-05-31", "ubuntu:20.04": "2025-05-31", "ubuntu:22.04": "2027-06-01",
+            "ubuntu:24.04": "2029-05-31", "ubuntu:26.04": "2031-05-31",
+            "debian:10": "2024-06-30", "debian:11": "2026-08-31", "debian:12": "2028-06-30", "debian:13": "2030-06-30",
+            "rhel:8": "2029-05-31", "rhel:9": "2032-05-31", "rocky:8": "2029-05-31", "rocky:9": "2032-05-31",
+            "almalinux:8": "2029-05-31", "almalinux:9": "2032-05-31", "centos:7": "2024-06-30"
+          },
+          "windows": {
+            "client": {"19045": "2025-10-14", "22000": "2023-10-10", "22621": "2024-10-08", "22631": "2025-11-11", "26100": "2026-10-13", "26200": "2027-10-12", "26300": "2028-10-10"},
+            "client_enterprise": {"19045": "2025-10-14", "22000": "2024-10-08", "22621": "2025-10-14", "22631": "2026-11-10", "26100": "2027-10-12", "26200": "2028-10-10", "26300": "2029-10-09"},
+            "server": {"14393": "2027-01-12", "17763": "2029-01-09", "20348": "2031-10-14", "26100": "2034-10-10"}
+          },
+          "darwin_min_major": 14
+        }
+      },
+      "provenance": {"eol": "vendor lifecycle pages as understood on as_of date — verify before submission", "darwin_min_major": "C-asm (Apple publishes no EOL; convention: current and two prior majors)"},
+      "references": ["CIS Controls v8 2.2"],
+      "rationale": "An unsupported OS cannot be patched, so the PATCH warranty cannot hold on it."
+    },
+    {
+      "id": "logging.retention", "control": "LOG_RETENTION", "tier": "regulatory",
+      "title": "Logs enabled and retained 180 days (CERT-In)", "interval_minutes": 1440,
+      "params": {
+        "required_retention_days": 180,
+        "forwarder_processes": {
+          "wazuh-agentd": "Wazuh", "wazuh-agent": "Wazuh", "filebeat": "Filebeat", "winlogbeat": "Winlogbeat",
+          "elastic-agent": "Elastic Agent", "fluent-bit": "Fluent Bit", "fluentd": "Fluentd", "td-agent-bit": "Fluent Bit",
+          "splunkd": "Splunk Forwarder", "nxlog": "NXLog", "vector": "Vector", "promtail": "Promtail",
+          "velociraptor": "Velociraptor"
+        }
+      },
+      "references": ["CERT-In Directions No. 20(3)/2022-CERT-In, 28 Apr 2022, para (iv)", "CIS Controls v8 8.2", "CIS Controls v8 8.10"],
+      "rationale": "Indian entities must enable ICT logs and keep them for a rolling 180 days within India."
+    },
+    {
+      "id": "time.sync_source", "control": "TIME_SYNC", "tier": "regulatory",
+      "title": "Clock synchronised to NIC/NPL time (CERT-In)", "interval_minutes": 1440,
+      "params": {
+        "approved_sources": ["samay1.nic.in", "samay2.nic.in", "time.nplindia.org"],
+        "require_nic_npl_source": true
+      },
+      "provenance": {"require_nic_npl_source": "C-asm (the Directions also allow sources traceable to NIC/NPL)"},
+      "references": ["CERT-In Directions No. 20(3)/2022-CERT-In, 28 Apr 2022, para (i)", "CIS Controls v8 8.4"],
+      "rationale": "Log timestamps are forensic evidence only if clocks agree with a national reference."
+    }
+  ]
+}
