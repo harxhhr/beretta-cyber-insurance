@@ -1,11 +1,11 @@
-Group 19 - Capstone Project Video
+﻿Group 19 - Capstone Project Video
 An Explainable Automated Cyber-Insurance Underwriting and Continuous Monitoring Platform (Beretta)
 
 Team: Krish Mundhra (K041), Harsh Rathod (K080), Yugandhara Goud (K023)
 Faculty Mentor: Prof. Rohit Suryawanshi
 B.Tech CSE (Cybersecurity), MPSTME, SVKM's NMIMS, Mumbai, 2026-27
 
-Video link: (Google Drive link to be added)
+Video link: https://drive.google.com/drive/folders/1qD-7Tdxda_28Y-5FUo0m9qV3VpOJa5fl?usp=sharing
 
 What the video shows
 Beretta prices cyber insurance for Indian SMEs from graded evidence and published claims data, explains
