@@ -1,7 +1,8 @@
 # Assembles deliverables/Group19_Capstone_data.zip for the capstone upload.
-#   powershell -ExecutionPolicy Bypass -File docs\submission\build_submission_zip.ps1
-# Put the video in deliverables as Group19_Capstone_video.<mp4|mkv|mov> and the log book as
-# Group19_Capstone_logbook.<pdf|docx|xlsx> before running; anything missing is reported.
+#   powershell -ExecutionPolicy Bypass -File docs\submission\build_submission_zip.ps1 [-VideoLink <url>]
+# The video itself is not packed (it is too large); its Google Drive link goes into the video description.
+# Put the log book in deliverables as Group19_Capstone_logbook.<pdf|docx|xlsx>; anything missing is reported.
+param([string]$VideoLink)
 $ErrorActionPreference = 'Stop'
 $root = (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path
 $del = Join-Path $root 'deliverables'
@@ -21,7 +22,12 @@ function Put($folder, $patterns, $label) {
 }
 
 Put '1_Executive_Summary' @('Group19_Capstone_exe_summary.pdf', 'Group19_Capstone_exe_summary.docx') 'executive summary'
-Put '2_Video' @('Group19_Capstone_video.mp4', 'Group19_Capstone_video.mkv', 'Group19_Capstone_video.mov') 'video'
+$desc = Join-Path $del 'Group19_Capstone_video_description.txt'
+if ($VideoLink) {
+  $lines = Get-Content -LiteralPath $desc -Encoding UTF8 | ForEach-Object { if ($_ -like 'Video link:*') { "Video link: $VideoLink" } else { $_ } }
+  Set-Content -LiteralPath $desc -Value $lines -Encoding UTF8
+}
+if (-not (Select-String -LiteralPath $desc -Pattern '^Video link: https?://' -Quiet)) { $missing += 'video link (run with -VideoLink <url>)' }
 Put '2_Video' @('Group19_Capstone_video_description.txt') 'video description'
 Put '3_Research_Paper' @('Beretta_Research_Paper_IEEE.pdf') 'research paper'
 Put '4_Poster' @('Group19_Capstone_Poster.pdf', 'Group19_Capstone_Poster.pptx') 'poster'

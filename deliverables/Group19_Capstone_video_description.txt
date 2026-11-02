@@ -5,6 +5,8 @@ Team: Krish Mundhra (K041), Harsh Rathod (K080), Yugandhara Goud (K023)
 Faculty Mentor: Prof. Rohit Suryawanshi
 B.Tech CSE (Cybersecurity), MPSTME, SVKM's NMIMS, Mumbai, 2026-27
 
+Video link: (Google Drive link to be added)
+
 What the video shows
 Beretta prices cyber insurance for Indian SMEs from graded evidence and published claims data, explains
 every factor in the premium, and keeps watching the insured company's machines after the policy is bound.
