@@ -1,0 +1,31 @@
+Group 19 - Capstone Project Video
+An Explainable Automated Cyber-Insurance Underwriting and Continuous Monitoring Platform (Beretta)
+
+Team: Krish Mundhra (K041), Harsh Rathod (K080), Yugandhara Goud (K023)
+Faculty Mentor: Prof. Rohit Suryawanshi
+B.Tech CSE (Cybersecurity), MPSTME, SVKM's NMIMS, Mumbai, 2026-27
+
+What the video shows
+Beretta prices cyber insurance for Indian SMEs from graded evidence and published claims data, explains
+every factor in the premium, and keeps watching the insured company's machines after the policy is bound.
+The video runs the working system end to end: the underwriting platform (Part 1) and the live-monitoring
+collector (Part 2), with four SIMULATED endpoints reporting through signed reports.
+
+Chapters
+1. The problem: why SME cyber insurance is priced from unverified, once-a-year answers.
+2. Starting the linked demo: the platform and the collector come up together.
+3. Evidence: the questionnaire and how each control is graded from DECLARED to TECHNICALLY_OBSERVED.
+4. The quote: premium by peril, the effect of each control, and how much verifying a control would save.
+5. Monitoring: the collector's fleet view, with every endpoint labelled SIMULATED.
+6. Bind: the policy is bound and its warranties start as MET.
+7. A lapse: EDR is stopped on one machine; the EDR warranty moves to IN_GRACE within seconds while the
+   premium stays the same.
+8. Breach and repair: the grace period is fast-forwarded (an audited demo step) to show BREACHED, then the
+   machine is fixed and the warranty returns to MET. A re-price of the bound policy is refused.
+9. The insured's view: a read-only page showing the premium, the evidence held and the savings per control.
+10. Tests: all 224 automated tests pass across both systems.
+
+Key point
+Monitoring never re-prices a bound policy. It changes warranty states only, with a grace period first.
+
+Source code: https://github.com/harxhhr/beretta-cyber-insurance
