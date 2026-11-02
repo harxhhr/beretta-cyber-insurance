@@ -36,8 +36,9 @@ kyh-agent/docs/pages.json
 kyh-agent/docs/headings.json
 node_modules/
 
-# capstone upload bundle (built by docs/submission/build_submission_zip.ps1)
+# build outputs; only the final upload bundle (docs/submission/build_submission_zip.ps1) is kept
 deliverables/*.zip
+!deliverables/Group19_Capstone_data.zip
 docs/submission/poster_preview.png
 deliverables/Group19_Capstone_video.*
 deliverables/Group19_Capstone_logbook.*
