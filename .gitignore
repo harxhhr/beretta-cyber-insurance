@@ -39,3 +39,5 @@ node_modules/
 # capstone upload bundle (built by docs/submission/build_submission_zip.ps1)
 deliverables/*.zip
 docs/submission/poster_preview.png
+deliverables/Group19_Capstone_video.*
+deliverables/Group19_Capstone_logbook.*
