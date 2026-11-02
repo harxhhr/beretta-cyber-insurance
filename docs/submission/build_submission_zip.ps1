@@ -1,4 +1,4 @@
-# Assembles deliverables/Group19_Capstone_data.zip for the capstone upload.
+# Assembles Group19_Capstone_data.zip (at the repository root) for the capstone upload.
 #   powershell -ExecutionPolicy Bypass -File docs\submission\build_submission_zip.ps1 [-VideoLink <url>]
 # The video itself is not packed (it is too large); its Google Drive link goes into the video description.
 # Put the log book in deliverables as Group19_Capstone_logbook.<pdf|docx|xlsx>; anything missing is reported.
@@ -8,7 +8,7 @@ $root = (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path
 $del = Join-Path $root 'deliverables'
 $name = 'Group19_Capstone_data'
 $stage = Join-Path ([IO.Path]::GetTempPath()) $name
-$zip = Join-Path $del "$name.zip"
+$zip = Join-Path $root "$name.zip"
 if (Test-Path $stage) { Remove-Item $stage -Recurse -Force }
 $missing = @()
 
